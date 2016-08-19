@@ -1,0 +1,15 @@
+\section{Strategy for detecting transverse implications}\label{section:strategy}
+
+Let $X$ be a $1$-connected $2$-local Postnikov piece of finite type and let $n\geq2$ be the largest integer such that $\pi_n X\not=0$. Then the Postnikov tower yields the following fibre square in which $X$ is the homotopy fibre of $f$:
+$$\xymatrix{
+K(\pi_n X,n)\ar[d]_i\\
+X\ar[r]\ar[d] &PK(\pi_n X,n+1)\simeq{*}\ar[d]\\
+X[n-1]\ar[r]_-f &K(\pi_n X,n+1).
+}$$
+Moreover, if $X$ is a homotopy associative H-space, then $f$ and $i$ are H-maps. 
+
+Consider an element $x\in Q\subker f^*\subset H^{*+1}(K(\pi_nX,n+1);\F_2)$. Following Corollary \ref{c:main EMSS} and Theorem \ref{t:EMSS and cohomology suspension}, consider also its image $\tilde{x}\in H^*(X;\F_2)$. Theorem \ref{t:EMSS and cohomology suspension} implies that $i^*(\tilde{x})=\sigma^*(x)$ where $\sigma^*:H^{*+1}(K(\pi_n X,n+1);\F_2)\to H^*(K(\pi_n X,n);\F_2)$ denotes the cohomology suspension. Suppose now that $i^*(\tilde{x})=\sigma^*(x)$ is $\infty$-transverse. Then, following Lemma \ref{l:transversity from the fibre}, $\tilde{x}$ is $\infty$-transverse as well. {\bf Therefore it suffices to find an element $x\in Q\subker f^*\subset H^{*+1}(K(\pi_nX,n+1);\F_2)$ such that $\sigma^*(x)$ is $\infty$-transverse in $H^*(K(\pi_n X,n);\F_2)$} in order to detect an $\infty$-transverse element in the mod-$2$ cohomology Bockstein spectral sequence of $X$. 
+
+According to Theorem \ref{t:transversity for Eilenberg-MacLane spaces}, recall that $\sigma^*(x)\in H^*(K(\pi_n X,n);\F_2)$ is $\infty$-transverse if $\sigma^*(x)\in P\even H^*(K(\pi_n X,n);\F_2)$ is such that $Sq^1\sigma^*(x)\not=0$. Since $\sigma^*$ sends indecomposables to primitives (see \cite[pp. 210-211]{Ka88}) and commutes with Steenrod squares (because they are cohomology operations), {\bf these conditions are satisfied when $x\in Q\odd\subker f^*$ is such that $Sq^1x\not\in\ker\sigma^*$}. 
+
+\endinput

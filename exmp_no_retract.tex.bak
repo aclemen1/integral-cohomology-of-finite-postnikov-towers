@@ -1,0 +1,13 @@
+%1.3.9
+Let $X$ be the space given by the fibration
+$$\xymatrix{
+X\ar[r]^-i &K(\Z/2,2)\ar[r]^-k &K(\Z/2,4),
+}$$
+with
+\begin{align*}
+k \in& [K(\Z/2,2),K(\Z/2,4)]\\
+\cong &H^4(K(\Z/2,2);\F_2)\\
+\cong &\F_2\{u_2^2\}
+\end{align*}
+given by $k=u_2^2$ where $u_2$ is the fundamental class of $K(\Z/2,2)$. The space $X$ has only two non-trivial homotopy groups $\pi_2(X)\cong\Z/2\cong\pi_3(X)$.
+\endinput

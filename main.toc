@@ -1,0 +1,75 @@
+\select@language {french}
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Abstract}}{iii}
+\select@language {french}
+\contentsline {chapter}{\tocchapter {Chapitre}{}{R\'esum\'e}}{v}
+\select@language {english}
+\select@language {french}
+\contentsline {chapter}{\tocchapter {Chapitre}{}{Remerciements}}{vii}
+\select@language {english}
+\contentsline {chapter}{\tocchapter {Chapter}{1}{Introduction}}{1}
+\contentsline {section}{\tocsection {}{1.1}{Basic definitions and notations}}{3}
+\contentsline {section}{\tocsection {}{1.2}{Historical survey}}{6}
+\contentsline {subsection}{\tocsubsection {}{1.2.1}{Homotopy theory of finite CW-complexes}}{6}
+\contentsline {subsection}{\tocsubsection {}{1.2.2}{Homology theory of finite CW-complexes}}{7}
+\contentsline {subsection}{\tocsubsection {}{1.2.3}{Known results on Postnikov pieces}}{8}
+\contentsline {subsection}{\tocsubsection {}{}{Calculation of $H^*(K(\@mathbb {Z}/2^r,n);\@mathbb {F}_2)$ -- work of J.-P. Serre}}{8}
+\contentsline {subsection}{\tocsubsection {}{}{Calculation of $H^*(K(G,n);\@mathbb {Z})$ -- s\'eminaire H. Cartan 1954-1955}}{8}
+\contentsline {subsection}{\tocsubsection {}{}{Mod-$2$ cohomology of $2$-stage Postnikov systems}}{9}
+\contentsline {subsection}{\tocsubsection {}{1.2.4}{Some Other Related and Motivating Results}}{9}
+\contentsline {subsection}{\tocsubsection {}{}{On associative and commutative H-spaces}}{9}
+\contentsline {subsection}{\tocsubsection {}{}{R. Levi's PhD thesis}}{10}
+\contentsline {subsection}{\tocsubsection {}{}{``A short walk in the Alps'' with F. R. Cohen and F. P. Peterson}}{10}
+\contentsline {section}{\tocsection {}{1.3}{Statement of the main results}}{12}
+\contentsline {section}{\tocsection {}{1.4}{Guesses, questions and further developments}}{18}
+\contentsline {section}{\tocsection {}{1.5}{Organization of the work}}{20}
+\contentsline {chapter}{\tocchapter {Chapter}{2}{(Co)Homology of Eilenberg-MacLane spaces}}{21}
+\contentsline {section}{\tocsection {}{2.1}{J.-P. Serre's description}}{21}
+\contentsline {section}{\tocsection {}{2.2}{H. Cartan's description}}{24}
+\contentsline {section}{\tocsection {}{2.3}{Duality}}{33}
+\contentsline {section}{\tocsection {}{2.4}{Transverse implications in Eilenberg-MacLane spaces}}{36}
+\contentsline {section}{\tocsection {}{2.5}{A counterexample towards transverse implications}}{41}
+\contentsline {chapter}{\tocchapter {Chapter}{3}{The ``Eilenberg-MacLane machine''}}{43}
+\contentsline {section}{\tocsection {}{3.1}{Main algorithms}}{43}
+\contentsline {section}{\tocsection {}{3.2}{Heuristic results}}{46}
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Examples of spaces and classification}}{49}
+\contentsline {section}{\tocsection {}{4.1}{A space ``with retract''}}{49}
+\contentsline {section}{\tocsection {}{4.2}{A generalization for some H-spaces ``with retract''}}{51}
+\contentsline {section}{\tocsection {}{4.3}{A space ``without retract''}}{59}
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Cohomology of some $2$-stage Postnikov systems}}{63}
+\contentsline {section}{\tocsection {}{5.1}{Transverse implications coming from the fibre}}{63}
+\contentsline {section}{\tocsection {}{5.2}{Properties of the Eilenberg-Moore spectral sequence}}{65}
+\contentsline {section}{\tocsection {}{5.3}{Strategy for detecting transverse implications}}{71}
+\contentsline {section}{\tocsection {}{5.4}{Proof of the first main theorem}}{72}
+\contentsline {section}{\tocsection {}{5.5}{Asymptotic behaviour of Poincar\'e series}}{74}
+\contentsline {section}{\tocsection {}{5.6}{Proof of the second main theorem}}{80}
+\contentsline {section}{\tocsection {}{5.7}{Conclusion and conjectures}}{84}
+\newpage 
+\contentsline {chapter}{\tocappendix {Appendix}{A}{Adem relations among Steenrod Squares}}{85}
+\contentsline {chapter}{\tocappendix {Appendix}{B}{A universal table for admissible words}}{87}
+\contentsline {section}{\tocsection {}{B.1}{Elementary theoretical results}}{87}
+\contentsline {section}{\tocsection {}{B.2}{Universal table in range $1\leqslant h\leqslant 5$, $0\leqslant \degst \leqslant 10$}}{88}
+\contentsline {section}{\tocsection {}{B.3}{User's guide and examples}}{89}
+\contentsline {chapter}{\tocappendix {Appendix}{C}{Tables for Eilenberg-MacLane spaces homology}}{91}
+\contentsline {section}{\tocsection {}{C.1}{Integral homology and cohomology of $K(\@mathbb {Z}/2,2)$}}{91}
+\contentsline {section}{\tocsection {}{C.2}{Integral homology and cohomology of $K(\@mathbb {Z}/2,3)$.}}{98}
+\contentsline {section}{\tocsection {}{C.3}{Integral homology and cohomology of $K(\@mathbb {Z}/2^{2},2)$.}}{106}
+\contentsline {section}{\tocsection {}{C.4}{Integral homology and cohomology of $K(\@mathbb {Z}/2^{2},3)$.}}{113}
+\contentsline {chapter}{\tocappendix {Appendix}{D}{C++ implementation of the\\ ``Eilenberg-MacLane machine''}}{121}
+\contentsline {section}{\tocsection {}{D.1}{Header file \texttt {Mod2GradedGroups.hpp}}}{121}
+\contentsline {section}{\tocsection {}{D.2}{Header file \texttt {Mod2AdmissibleSequence.hpp}}}{123}
+\contentsline {section}{\tocsection {}{D.3}{Header file \texttt {Mod2Words.hpp}}}{125}
+\contentsline {section}{\tocsection {}{D.4}{Header file \texttt {Mod2ElementaryComplexHomology.hpp}}}{126}
+\contentsline {section}{\tocsection {}{D.5}{Header file \texttt {Mod2EilenbergMacLaneHomology.hpp}}}{127}
+\contentsline {section}{\tocsection {}{D.6}{Header file \texttt {LaTeXLayout.hpp}}}{128}
+\contentsline {chapter}{\tocchapter {\chaptername }{}{Bibliography}}{129}
+\contentsline {chapter}{\tocchapter {\chaptername }{}{Index}}{133}

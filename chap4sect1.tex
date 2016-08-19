@@ -1,0 +1,38 @@
+\section{A space ``with retract''}\label{section:space_with_retract}
+%\section{Proof of Theorem \ref{t:space with a retract}}
+
+Let us consider the following example:
+
+\begin{exmp_retract}
+\input exmp_retract
+\end{exmp_retract}
+
+The rest of this section is devoted to proof the following result:
+
+\begin{thm_retract}
+\input thm_retract
+\end{thm_retract}
+
+\begin{proof}
+The space $X$ is not a GEM since its k-invariant $u_2\otimes v_2$ is not trivial. Moreover, $u_2\otimes v_2$ is decomposable in $H^*(K(\Z/2,2)\times K(\Z/2,2);\F_2)$ and therefore not primitive. Thus $X$ is not an H-space. 
+
+Consider the following homotopy commutative diagram based on the fibration in which $X$ is the fibre:
+$$\xymatrix{
+&X\ar[d]^i\ar@/^/[rd]^f\\
+K(\Z/2,2)\ar[r]^-{i_1}\ar@/^/@{.>}[ru]^g\ar@/_/[rd]_{*} &K(\Z/2,2)\times K(\Z/2,2)\ar[r]^-{p_1}\ar[d]^k &K(\Z/2,2)\\
+&K(\Z/2,4),
+}$$ where $i_1$ denotes the inclusion into the first factor, $p_1$ denotes the projection onto the first factor and $f=p_1i$. The existence of a (generally not unique) map $g$ is a consequence of the fact that $k i_1\simeq*$. To see that $k i_1\simeq*$, recall first that the isomorphism $[K(\Z/2,2),K(\Z/2,4)]\cong H^4(K(\Z/2,2);\F_2)$ maps $ki_1$ to $(ki_1)^*(u_4)$, where $(ki_1)^*=(i_1)^*k^*:H^4(K(\Z/2,4);\F_2)\to H^4(K(\Z/2,2);\F_2)$ and $u_4\in H^4(K(\Z/2,4);\F_2)$ is the fundamental class. Now we have 
+\begin{align*}
+(i_1)^*k^*(u_4) &=(i_1)^*(u_2\otimes v_2) &&\text{by definition of $k$,}\\
+&=(i_1)^*(u_2\otimes1\cdot1\otimes v_2)\\
+&=(i_1)^*(u_2\otimes1)\cdot(i_1)^*(1\otimes v_2) &&\text{since $(i_1)^*$ is a ring map,}\\
+&=0 &&\text{since $(i_1)^*(1\otimes v_2)=0$.}
+\end{align*}
+Therefore $fg\simeq p_1ig\simeq p_1i_1=\id$ i.e. $X$ retracts (weakly) onto $K(\Z/2,2)$. Consider now the following induced commutative diagram:
+$$\xymatrix{
+&H^*(X;\F_2)\ar@/^/[rd]^{g^*}\\
+H^*(K(\Z/2,2);\F_2)\ar@/^/[ru]^{f^*}\ar@{=}[rr] &&H^*(K(\Z/2,2);\F_2).
+}$$ The induced map $f^*$ is clearly a monomorphism. Let us remark that this remains true if one look at the induced diagram via $H^*(-;R)$ for any ring $R$. The fact that $K(\Z/2,2)$ has no homology exponent then obviously implies that the same is true for $X$.
+\end{proof}
+
+\endinput

@@ -1,0 +1,70 @@
+\section{Proof of the first main theorem}\label{section:proof_first_main}
+%\section{Proof of Theorem \ref{t:no exponent for spaces with two homotopy groups}}
+
+\begin{defn}
+For all $l\geq0$, we define the admissible sequence 
+$$\gamma(l)=(2^l-1,2^{l-1}-1,\dots,3,1),$$
+of stable degree $\degst(\gamma(l))=2(2^l-1)-l$ and excess $e(\gamma(l))=l$.
+\end{defn}
+
+\begin{lem}\label{l:criminal}
+Let $G$ be a non-trivial finitely generated $2$-torsion abelian group and $m$ an integer $\geq2$. Then
+\begin{align*}
+&Sq^{\gamma(m-1)}P^{m+2}H^*(K(G,m);\F_2)=0,\\
+&Sq^{\gamma(m)}P^{\geq m+3}H^*(K(G,m);\F_2)=0.
+\end{align*}
+\end{lem}
+
+\begin{proof} %[Proof of Lemma \ref{l:criminal}]
+It suffices to establish the assertion for the group $G=\Z/2^s$ with $s\geq1$. Let us recall that
+$$
+H^*(K(G,m);\F_2)\cong\F_2[Sq^I_s u_m\ |\ \text{$I$ admissible and $e(I)<m$}].
+$$ It is then clear that we have
+$$
+H^{m+2}(K(G,m);\F_2)\cong\F_2\{Sq^2_s u_m\},
+$$ the $\F_2$-vector space spanned by $Sq^2_s u_m$, the unique non-trivial element of degree $m+2$. This element is primitive and therefore 
+$$P^{m+2}H^*(K(G,m);\F_2)=\F_2\{Sq^2u_m\}.$$ Let us show by induction that $Sq^{\gamma(m-2)}Sq^2u_m$ is a square. If $m=2$ we have $Sq^2u_2=(u_2)^2$. Suppose now that $m\geq3$. Then we have
+\begin{align*}
+\sigma^*Sq^{\gamma(m-2)}Sq^2u_m&=\sigma^*Sq^{2^{m-2}-1}Sq^{\gamma(m-3)}Sq^2u_m &&\text{by definition of $\gamma$,}\\
+&=Sq^{2^{m-2}-1}Sq^{\gamma(m-3)}Sq^2\sigma^*u_{m}\\
+&=Sq^{2^{m-2}-1}Sq^{\gamma(m-3)}Sq^2u_{m-1}\\
+&=Sq^{2^{m-2}-1}(\text{square}) &&\text{by induction,}\\
+&=0 &&\text{by Cartan's formula.}
+\end{align*}
+Therefore, $Sq^{\gamma(m-2)}Sq^2u_m$ is decomposable since it is well known that $\sigma^*:QH^*(K(G,m)\F_2)\to PH^*(K(G,m-1);\F_2)$ is a monomorphism (see \cite[Expos\'e 15, Proposition 3, p. 8]{Ca55}). By the Milnor-Moore theorem, $Sq^{\gamma(m-2)}Sq^2u_m$ is a square since it is primitive and decomposable (see p. \pageref{t:Milnor-Moore}). Finally, $Sq^{\gamma(m-1)}Sq^2u_m=0$ by Cartan's formula. This proves the first statement.
+
+An $\F_2$-basis for $P^{\geq m+3}H^*(K(G,m);\F_2)$ is given by $\{Sq^I_s u_m\ |\ \text{$e(I)<m$ and $\degst(I)\geq3$}\}$. Let us show by induction that $Sq^{\gamma(m-1)}Sq^I_s u_m$ is a square. If $m=2$ then the basis contains elements of the form $Sq^I_s u_2$ with $I=(2^l,2^{l-1},\dots,1)$ for all $l\geq1$. We have $Sq^1Sq^I_s u_2=Sq^{2^l+1}Sq^{I^-}_s u_2=(Sq^{I^-}_s u_2)^2$ since $\deg(Sq^{I^-}_s u_2)=(2^{l-1}+\dots+1)+2=(2^l-1)+2=2^l+1$ (see Definition \ref{d:I^-} for $I^-$). Suppose now that $m\geq3$. Then we have
+\begin{align*}
+\sigma^*Sq^{\gamma(m-1)}Sq^I_s u_m&=\sigma^*Sq^{2^{m-1}-1}Sq^{\gamma(m-2)}Sq^I_s u_m &&\text{by definition of $\gamma$,}\\
+&=Sq^{2^{m-1}-1}Sq^{\gamma(m-2)}Sq^I_s \sigma^*u_{m}\\
+&=Sq^{2^{m-1}-1}Sq^{\gamma(m-2)}Sq^I_s u_{m-1}\\
+&=Sq^{2^{m-1}-1}(\text{square}) &&\text{by induction,}\\
+&=0 &&\text{by Cartan's formula.}
+\end{align*}
+This proves the second statement.
+\end{proof}
+
+We are now able to prove the main theorem of this work.
+
+\begin{thm_first_main}
+\input thm_first_main
+\end{thm_first_main}
+
+\begin{proof} %[Proof of Theorem \ref{t:no exponent for spaces with two homotopy groups}]
+Let us consider the $2$-stage Postnikov system of the space $X$:
+$$\xymatrix{
+K(\pi_nX,n)\ar[d]_i\\
+X\ar[d]\ar[r] &PK(\pi_nX,n+1)\ar[d]\\
+K(\pi_mX,m)\ar[r]_-f &K(\pi_nX,n+1)
+}$$ where $n>m\geq2$.
+If $f$ is trivial, then $X$ is a product of two Eilenberg-MacLane spaces and has clearly no homological exponent. Suppose that $f$ is non-trivial and consider $u\in P^{n+1}H^*(K(\pi_nX,n+1);\F_2)=H^{n+1}(K(\pi_nX,n+1);\F_2)$, a generator of a direct factor $\Z/2^s$ in $\pi_nX$, such that $f^*(u)\not=0$. Now set
+$$
+I=\begin{cases}
+(2^{m}-2,\gamma(m-1)) &\text{if $n=m+1$,}\\
+(2^{m+1}-2,\gamma(m)) &\text{if $n\geq m+2$ and $m+n\equiv1(2)$,}\\
+(2^{m+2}-2,\gamma(m+1)) &\text{if $n\geq m+2$ and $m+n\equiv0(2)$}
+\end{cases}
+$$ and set $x=Sq^I_s u$. By Lemma \ref{l:criminal} we have $x\in\ker f^*$. Since $I$ is admissible of excess $<n$, $x$ is indecomposable in $H^*(K(\pi_nX,n+1);\F_2)$ and {\it a fortiori} in $\subker f^*$. It is also easy to check that $\deg(x)$ is odd. Then $x\in Q\odd\subker f^*$. Moreover $\sigma^*Sq^1x=Sq^1Sq^I_s\sigma^*(u)\not=0\in H^*(K(\pi_nX,n);\F_2)$ since $e(I)<n$, $\deg(\sigma^*(u))=n$ and . We conclude with results of Section \ref{section:strategy}.
+\end{proof}
+
+\endinput

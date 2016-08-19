@@ -1,0 +1,7 @@
+Let $G$ be a non-trivial finitely generated $2$-torsion abelian group of type $(s_1,\dots,s_l)$ and let $n\geq2$. Consider the Eilenberg-MacLane space $K(G,n)$ and its mod-$2$ cohomology Bockstein spectral sequence $\{B^*_r,d_r\}$. Suppose that one of the following assumptions holds:
+\begin{itemize}
+\item[$\bullet$]{$n$ is even and $x\in B^n_{s_j}$ is $0$-transverse for any $1\leq j\leq l$,}
+\item[$\bullet$]{$x\in P\even B_1^*$ is $0$-transverse ($Sq^1x\not=0$).}
+\end{itemize}
+Then $x$ is $\infty$-transverse.
+\endinput

@@ -1,0 +1,147 @@
+\section{Statement of the main results}\label{section:main results}
+
+In the first part of this work, we shall study Cartan's work \cite{Ca55} on (co)homology of Eilenberg-MacLane spaces. We mainly focus on elements in the mod-$2$ (co)homology of Eilenberg-MacLane spaces which behave in such a way that they are of key interest for our purpose, namely the study of homology exponents. We call such elements {\it transverse}, and the accurate definition runs as follows:
+
+\begin{defn}\index{transverse@$\ell$-transverse}\index{transverse@$\infty$-transverse}
+\label{defn_transverse_coH}
+\input defn_transverse_coH
+\end{defn}
+\theoremstyle{definition}
+\newtheorem*{defn_transverse_coH}{\mbox{\ref{defn_transverse_coH}.~Definition}}
+
+Suppose that $x\in B_1^2$ is $\infty$-transverse. Let us picture how the transverse implications of $x$ look like in the Bockstein spectral sequence:
+
+$$\xymatrix@C=0.2cm@R=0.5truecm{
+B_3^* &&\ar@{.}[rrrrrrrr] & & & & & & & &x^4\ar@/^0.5truecm/[r]^-{d_3} &\bullet\ar@{.}[rr] & &  &\dots\\
+B_2^* &&\ar@{.}[rrrr] & & & &x^2\ar@/^0.5truecm/[r]^-{d_2} &\bullet\ar@{.}[rrrrrr] & & & & & &  &\dots\\
+B_1^* &&\ar@{.}[rr] & &x\ar@/^0.5truecm/[r]^-{d_1} &\bullet\ar@{.}[rrrrrrrr] & & & & & & & & &\dots\\
+{*}&&0 &1 &2 &3 &4 &5 &6 &7 &8 &9 &10 &11 &\dots
+}$$
+
+\bigskip
+Thus every transverse element gives rise to $2$-torsion of arbitrarily high order in the integral cohomology of $X$. Our strategy for disproving the existence of a homology exponent for a space will then consist in exhibiting a transverse element in its mod-$2$ cohomology Bockstein spectral sequence. In the special case of Eilenberg-MacLane spaces, we have the following key result (see Section \ref{section:qwertz}):
+
+\begin{thm}\label{t:transversity for Eilenberg-MacLane spaces}
+\label{thm_main_technical}
+\input thm_main_technical
+\end{thm}
+\theoremstyle{plain}
+\newtheorem*{thm_main_technical}{\mbox{\ref{thm_main_technical}.~Theorem}}
+
+Let us remark that a $0$-transverse implication does not imply $\infty$-transverse implications for more general H-spaces. More precisely, the fact that $x\in P\even H^*(X;\F_2)$ is such that $Sq^1x\not=0$ does not always force $x$ to be $\infty$-transverse. A counterexample is given by $X=BSO$ and $x=w_2$, the second Stiefel-Withney class in $H^2(BSO;\F_2)$. See Section \ref{section:counterexample}.
+
+As a corollary of the previous theorem, it is then possible to give a new proof of H. Cartan's original result:
+
+\begin{cor}\label{c:no exponent for Eilenberg-MacLane spaces}
+\label{cor_Cartan_result}
+\input cor_Cartan_result
+\end{cor}
+\theoremstyle{plain}
+\newtheorem*{cor_Cartan_result}{\mbox{\ref{cor_Cartan_result}.~Corollary}}
+
+We shall provide a proof of this corollary in Section \ref{section:qwertz} for the special case $G=\Z/2$; this is particularly interesting since the argument shows where transverse implications arise.
+
+\bigskip
+H. Cartan's method allows us actually to compute the (co)homology groups of the $K(G,n)$ spaces accurately. A glance at the tables in the Appendix \ref{a:tables} gives some ``heuristic'' formulae about the exponents of these groups. 
+
+\begin{prop}\label{p:homology exponent for K(Z/2,2)}
+\label{prop_heuristic_H}
+\input prop_heuristic_H
+\end{prop}
+\theoremstyle{plain}
+\newtheorem*{prop_heuristic_H}{\mbox{\ref{prop_heuristic_H}.~Proposition}}
+
+\begin{prop}\label{p:cohomology exponent for K(Z/2,2)}
+\label{prop_heuristic_coH}
+\input prop_heuristic_coH
+\end{prop}
+\theoremstyle{plain}
+\newtheorem*{prop_heuristic_coH}{\mbox{\ref{prop_heuristic_coH}.~Proposition}}
+
+These two results, as well as the cohomology Bockstein spectral sequence of $K(\Z/2,2)$, will be discussed in Section \ref{section:heuristic}.
+
+\newpage
+In the second part of this work, we shall consider Postnikov pieces with more than only one non-trivial homotopy group, in other words, Postnikov pieces which are not Eilenberg-MacLane spaces. One can classify this family of spaces into two classes. Actually, some Postnikov pieces retract onto an Eilenberg-MacLane space and this class is then very easy to study from our homology viewpoint. To illustrate our purpose, let us consider the following example (see Section \ref{section:space_with_retract}):
+
+\begin{exmp}\label{e:Schochet}
+\label{exmp_retract}
+\input exmp_retract
+\end{exmp}
+\theoremstyle{definition}
+\newtheorem*{exmp_retract}{\mbox{\ref{exmp_retract}.~Example}}
+
+\begin{thm}\label{t:space with a retract}
+\label{thm_retract}
+\input thm_retract
+\end{thm}
+\theoremstyle{plain}
+\newtheorem*{thm_retract}{\mbox{\ref{thm_retract}.~Theorem}}
+
+
+% (see Section \ref{s:slight generalization}, p. \pageref{s:slight generalization})
+
+One can actually find a lot of Postnikov pieces which retract onto an Eilenberg-MacLane space. If one concentrate on some particular H-spaces with only two non-trivial homotopy groups, we have the following general result which will be proved in Section \ref{s:slight generalization}:
+
+\begin{thm}\label{t:retract for two stage Postnikov systems}
+\label{thm_slight_gen}
+\input thm_slight_gen
+\end{thm}
+\theoremstyle{plain}
+\newtheorem*{thm_slight_gen}{\mbox{\ref{thm_slight_gen}.~Theorem}}
+
+The existence of a retract onto an Eilenberg-MacLane space clearly implies that the space cannot have a homology exponent. This ``topological'' feature is here sufficient to conclude. For spaces without such a retract, we need to develop more ``algebraic'' tools in order to study homology exponents. To see this, let us look at the following interesting example:
+
+\begin{exmp}\label{e:space without a retract}
+\label{exmp_no_retract}
+\input exmp_no_retract
+\end{exmp}
+\theoremstyle{definition}
+\newtheorem*{exmp_no_retract}{\mbox{\ref{exmp_no_retract}.~Example}}
+
+\vskip2cm
+From the viewpoint of homotopy groups, this space seems ``less complicated'' than the space of Example \ref{e:Schochet}. Nevertheless, it is really ``more difficult'' to study. This particular space, as well as the following theorem, are the genesis of the rest of this work.
+
+\begin{thm}\label{t:space without a retract}
+\label{thm_no_retract}
+\input thm_no_retract
+\end{thm}
+\theoremstyle{plain}
+\newtheorem*{thm_no_retract}{\mbox{\ref{thm_no_retract}.~Theorem}}
+
+
+This result will be proved in Section \ref{section:azerty}. It is due in part to the following lemma which states that the $\infty$-transverse implications of an element in the cohomology of the total space of a fibration can be read in the cohomology of the fibre.
+
+\begin{lem}\label{l:transversity from the fibre}
+\label{lem_transverse_fibre}
+\input lem_transverse_fibre
+\end{lem}
+\theoremstyle{plain}
+\newtheorem*{lem_transverse_fibre}{\mbox{\ref{lem_transverse_fibre}.~Lemma}}
+
+In the last part of this work, we shall exploit further this result and set a strategy for detecting $\infty$-transverse implications in Postnikov pieces. Let us state our first main result (see Section \ref{section:proof_first_main}):
+
+\begin{thm}\label{t:no exponent for spaces with two homotopy groups}
+\label{thm_first_main}
+\input thm_first_main
+\end{thm}
+\theoremstyle{plain}
+\newtheorem*{thm_first_main}{\mbox{\ref{thm_first_main}.~Theorem}}
+
+Finally, we generalize this kind of result to more complicated Postnikov pieces, namely certain stable two stage Postnikov systems. Before stating our second main result, let us set the following definition:
+
+\begin{defn}\index{anticonnected@$m$-anticonnected}\index{strictly anticonnected@strictly $m$-anticonnected}
+A space $X$ is {\bf $m$-anticonnected} if $\pi_i(X)=0$ for all $i>m$ and {\bf strictly $m$-anticonnected} if it is $m$-anticonnected and $\pi_m(X)\not=0$.
+\end{defn}
+
+The most general result we obtain is the following theorem which is proved in Section \ref{s:proof of thm on 2-stage Postnikov systems}.
+
+\begin{thm}\label{t:no exponent for some Postnikov pieces}
+\label{thm_second_main}
+\input thm_second_main
+\end{thm}
+\theoremstyle{plain}
+\newtheorem*{thm_second_main}{\mbox{\ref{thm_second_main}.~Theorem}}
+
+It is important to point out that this result does not imply Theorem \ref{t:no exponent for spaces with two homotopy groups} since there is a ``homotopy gap'' in dimension $m+1$ that seems difficult to fill. See discussion at the end of Section \ref{s:proof of thm on 2-stage Postnikov systems}, p. \pageref{s:proof of thm on 2-stage Postnikov systems:discussion}.
+
+\endinput

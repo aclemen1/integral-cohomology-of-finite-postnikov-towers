@@ -1,0 +1,112 @@
+\section{Duality}
+
+\begin{thm}[duality]
+Suppose $(C_*,d)$ is a chain complex with finite type homology. Let $\{B_*^r,d^r\}$ denote its associated mod-$2$ homology Bockstein spectral sequence and let $\{B^*_r,d_r\}$ denote the mod-$2$ cohomology spectral sequence associated to the cochain complex $(\Hom(C_*,\Z),\delta)$. Then $\{B_*^r,d^r\}$ and $\{B^*_r,d_r\}$ are dual in the following sense: $B^*_r\cong\Hom(B_*^r,\F_2)$ and $d^r$ is adjoint to $d_r$, i.e. 
+$$<d^r x,\bar{x}>_r=<x,d_r \bar{x}>_r$$ 
+where $<x,\bar{x}>_r$ is the evaluation on $x\in B_n^r$ by the map in $\Hom(B_n^r,\F_2)$ corresponding to $\bar{x}\in B^n_r$ via the above isomorphism. Moreover, if $f:(C_*,d)\to(C'_*,d')$ is a morphism of chain complexes, then $f^r$ is the adjoint of $f_r$, i.e. $$
+<f^r x,\bar{x}>_r=<x,f_r\bar{x}>_r.
+$$
+
+If $X$ is a H-space of finite type, then the mod-$2$ homology Bockstein spectral sequence for $X$, $B_*^r(X)=B_*^r(C_*(X),d)$, is a spectral sequence of Hopf algebras dual to the mod-$2$ cohomology Hopf algebras $B^*_r(X)$.
+\end{thm}
+
+\begin{proof}
+See \cite[Proposition 1.4, p. 28 and Proposition 4.7, pp. 36-37]{Br61} or \cite[Theorem 10.12, p. 466]{Mc00}.
+\end{proof}
+
+\begin{conv}
+When no confusion is possible, we will write $<-,->$ instead of $<-,->_r$. The notation $<-,->_r$ will only be used when the situation requires it.
+\end{conv}
+
+\begin{lem}\label{l:adjointness}
+Let $n\geq1$ and $s\geq1$. Consider the dual mod-$2$ homology and cohomology Bockstein spectral sequences $\{B_*^r,d^r\}$ and $\{B^*_r,d_r\}$ associated to $K(\Z/2^s,n)$. Let $x\in B_m^r$ and $x'\in B^m_r$. Then we have
+$$
+<\gamma_2(x),(x')^2>=\begin{cases}
+<x,x'> &\text{if $\gamma_2(x)\not=0$ and $(x')^2\not=0$,}\\
+0 &\text{otherwise.}\\
+\end{cases}
+$$
+\end{lem}
+
+\begin{proof}
+See \cite[Expos\'e 15, Th\'eor\`eme 3, pp. 8-9]{Ca55}.
+\end{proof}
+
+Recall that ${\mathcal S}$ denotes the set of all admissible sequences.
+
+\begin{defn}\label{d:I^-}\index{0@$I^-$}
+Let $(-)^-:{\mathcal S}\to{\mathcal S}$ be the map given by $I^-=(a_1,\dots,a_k)$ for all $I=(a_0,\dots,a_k)\in{\mathcal S}$.
+\end{defn}
+
+\vskip5cm
+\begin{defn}\label{d:g}\index{0@$g_I(n)$}
+For any integer $n\geq0$ and any admissible sequence $I=(a_0,\dots,a_k)\in{\mathcal S}$ with $e(I)\leq n$ we define an admissible word $g_I(n)\in{\mathcal W}$ inductively as follows:
+\begin{align*}
+g_{(0)}(n)&=\sigma^n,\\
+g_{(1)}(n)&=\sigma^{n-1}\psi_2,\\
+g_I(n)&=\begin{cases}
+\beta_2\sigma^{n-e(I)-1}\varphi_2 g_{I^-}(e(I)) &\text{if $a_0\equiv0(2)$ and $e(I)<n$,}\\
+\gamma_2g_{I^-}(n) &\text{if $a_0\equiv0(2)$ and $e(I)=n$,}\\
+\sigma^{n-e(I)}\varphi_2 g_{I^-}(e(I)-1) &\text{if $a_0\equiv1(2)$,}\\
+\end{cases}\\
+&\qquad\text{when $I\not=(0)$ and $(1)$.}
+\end{align*}
+\end{defn}
+
+\begin{thm}\label{t:Cartan-Serre duality}
+Let $n\geq1$ and $s\geq1$. Consider the dual graded $\F_2$-vector spaces $H_*=H_*(K(\Z/2^s,n);\F_2)$ and $H^*=H^*(K(\Z/2^s,n);\F_2)$. Let $u\in\Z/2^s$ be a generator, $u'=2^{s-1}u$, and $u_n\in H^n$ be the reduction mod-$2$ of the fundamental class in $H^n(K(\Z/2^s,n);\Z/2^s)$. Then we have the following {\bf duality relations}\index{duality relations}:
+\begin{align*}
+\tag{D1}\label{f:D1}&<\sigma^n u,u_n>=1,\\
+\tag{D2}\label{f:D2}&<\sigma^{n-1}\psi_{2^s}u,d_s u_n>=1,\\
+\tag{D3}\label{f:D3}&<g_I(n)u,Sq^J_s u_n>=\delta_{IJ} &&\text{if $g_I(n)\in{\mathcal W}^I$,}\\
+\tag{D4}\label{f:D4}&<g_I(n)u',Sq^J_s u_n>=\delta_{IJ} &&\text{if $g_I(n)\in{\mathcal W}^{II}$,}\\
+\end{align*} where $\delta_{IJ}=\begin{cases}1&\text{if $I=J$,}\\ 0&\text{if $I\not=J$.}\end{cases}$
+\end{thm}
+
+\begin{proof}
+Let us begin with relation \eqref{f:D1}. We have
+\begin{align*}
+&<\sigma^n u,u_n>\\
+&\qquad= <u,u_0> &&\text{by duality,}\\
+&\qquad=1 &&\text{by definition.}
+\end{align*}
+For relation \eqref{f:D2} we have
+\begin{align*}
+&<\psi_{2^s}u,d_su_1>\\ 
+&\qquad=<d^s\psi_{2^s}u,u_1> &&\text{by duality,}\\
+&\qquad=<\sigma u,u_1> &&\text{by \cite[Expos\'e 11, p. 1]{Ca55},}\\
+&\qquad=<u,u_0> &&\text{by duality,}\\
+&\qquad=1 &&\text{by definition.}
+\end{align*}
+We will prove relation \eqref{f:D3} when $I=J$ by induction on the length of the admissible sequence $I=(a_0,\dots,a_k)$. Suppose $a_0\equiv0(2)$ and $e(I)<n$. Then we have
+\begin{align*}
+&<g_I(n)u,Sq^I_s u_n>\\
+&\qquad=<\beta_2\sigma^{n-e(I)-1}\varphi_2g_{I^-}(e(I))u, Sq^I_s u_n> &&\text{by definition,}\\
+&\qquad=<\varphi_2g_{I^-}(e(I))u,Sq^1Sq^I_s u_{e(I)+1}> &&\text{by duality,}\\
+&\qquad=<\gamma_2\sigma g_{I^-}(e(I))u,Sq^1Sq^I_s u_{e(I)+1}> &&\text{by basic relation \eqref{f:R2},}\\
+&\qquad=<\sigma g_{I^-}(e(I))u,Sq^{I^-}_s u_{e(I)+1}> &&\text{by Lemma \ref{l:adjointness},}\\
+&\qquad=<g_{I^-}(e(I))u,Sq^{I^-}_s u_{e(I)}> &&\text{by duality,}\\
+&\qquad=1 &&\text{by induction.}
+\end{align*}
+Suppose $a_0\equiv0(2)$ and $e(I)=n$. Then we have
+\begin{align*}
+&<g_I(n)u,Sq^I_s u_n>\\
+&\qquad=<\gamma_2g_{I^-}(n)u, Sq^I_s u_n> &&\text{by definition,}\\
+&\qquad=<g_{I^-}(n)u,Sq^{I^-}_s u_{n}> &&\text{by Lemma \ref{l:adjointness},}\\
+&\qquad=1 &&\text{by induction.}
+\end{align*}
+Suppose $a_0\equiv1(2)$. Then we have
+\begin{align*}
+&<g_I(n)u,Sq^I_s u_n>\\
+&\qquad=<\sigma^{n-e(I)}\varphi_2g_{I^-}(e(I)-1)u, Sq^I_s u_n> &&\text{by definition,}\\
+&\qquad=<\varphi_2g_{I^-}(e(I)-1)u,Sq^I_s u_{e(I)}> &&\text{by duality,}\\
+&\qquad=<\gamma_2\sigma g_{I^-}(e(I)-1)u,Sq^I_s u_{e(I)}> &&\text{by basic relation \eqref{f:R2},}\\
+&\qquad=<\sigma g_{I^-}(e(I)-1)u,Sq^{I^-}_s u_{e(I)}> &&\text{by Lemma \ref{l:adjointness},}\\
+&\qquad=<g_{I^-}(e(I)-1)u,Sq^{I^-}_s u_{e(I)-1}> &&\text{by duality,}\\
+&\qquad=1 &&\text{by induction.}
+\end{align*}
+We conclude by remarking that the first step of the induction is given by \eqref{f:D1}.
+Relation \eqref{f:D4} when $I=J$ is proved by substituting $u'$ to $u$ in the three preceeding computations and by remarking that the first step of the induction is given by $g_{(1)}(1)$, which means that it remains to compute $<\psi_2u',Sq^1_s u_1>$. By \cite[Expos\'e 6, p. 9]{Ca55}, $\psi_2u'$ is the single generator of $H_2(K(\Z/2^s,1);\F_2)$, and by Theorem \ref{t:Serre's description}, $Sq^1_s u_1=\delta_s\iota_1$ is the single generator of $H^*(K(\Z/2^s,1);\F_2)$. Thus the desired result $<\psi_2u',Sq^1_s u_1>=1$ is forced by duality. The duality relations \eqref{f:D3} and \eqref{f:D4} when $I\not=J$ are established by induction in a very similar way.
+\end{proof}
+
+\endinput

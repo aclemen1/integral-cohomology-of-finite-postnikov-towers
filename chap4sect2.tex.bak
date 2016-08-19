@@ -1,0 +1,211 @@
+\section{A generalization for some H-spaces ``with retract''}\label{s:slight generalization}
+
+Let us consider all spaces which have the same homotopy groups as those of Example \ref{e:Schochet}, namely $\pi_2(X)\cong\Z/2\oplus\Z/2$ and $\pi_3(X)\cong\Z/2$. According to Postnikov theory, these spaces are classified by their unique Postnikov invariant which is an element of the cohomology group
+$$
+H^4(K(\Z/2,2)\times K(\Z/2,2);\F_2)\cong\F_2\{u_2^2\otimes1, u_2\otimes v_2,1\otimes v_2^2\},
+$$ where $u_2$ and $v_2$ are the fundamental classes of both copies of $K(\Z/2,2)$. Therefore, there are {\it a priori} $\dim_{\F_2}\F_2\{u_2^2\otimes1, u_2\otimes v_2,1\otimes v_2^2\}=2^3=8$ homotopy types corresponding to $k=0$, $u_2^2\otimes1$, $1\otimes v_2^2$, $u_2\otimes v_2$, $u_2^2\otimes1+1\otimes v_2^2$, $u_2^2\otimes1+u_2\otimes v_2$, $u_2\otimes v_2+1\otimes v_2^2$ and $u_2^2\otimes1+u_2\otimes v_2+1\otimes v_2^2$. But only $6$ are really different, and they are classified by the elements $0$, $u_2^2\otimes1$, $u_2\otimes v_2$, $u_2^2\otimes1+u_2\otimes v_2$, $u_2^2\otimes 1+1\otimes v_2^2$ and $u_2^2\otimes1+u_2\otimes v_2+1\otimes v_2^2$. Only $3$ of them are H-spaces, namely those classified by primitive elements: $0$, $u_2^2\otimes1$ and $u_2^2\otimes1+1\otimes v_2^2$. These three spaces are actually infinite loop spaces.
+
+We will develop a method to determine which of these homotopy types retract onto an Eilenberg-MacLane space. This will be done in a more general way.
+
+%\begin{defn}
+%Let $V=\bigoplus_{1\leq j\leq s}\Sigma^{e_j}\Z/2$ and 
+%$W=\bigoplus_{1\leq k\leq t}\Sigma^{f_k}\Z/2$ be two finite dimensional 
+%graded vector spaces over $\F_2$. We say that $V$ is {\bf subordinated} to $W$ 
+%if $e_j\leq f_k$ for all $1\leq j\leq s$ and $1\leq k\leq t$, i.e. 
+%if $\max\{e_j\ |\ 1\leq j\leq s\}\leq\min\{f_k\ |\ 1\leq k\leq t\}$.
+%\end{defn}
+
+\bigskip
+Consider the following particular two-stage Postnikov system where $k$ is an H-map (we call such a system {\bf stable}):
+$$\xymatrix{
+KV\ar[d]\ar@{=}[r] &KV\ar[d]\\
+X\ar[r]\ar[d]_i &PK\Sigma V\ar[d]\\
+K\Sigma^mU\ar[r]_-k &K\Sigma V,
+}$$ with $m\geq1$, $U=\bigoplus_{1\leq i\leq s}\F_2$ a finite dimensional vector space over $\F_2$, $V=\bigoplus_{1\leq j\leq t}\Sigma^{d_j}\F_2$ a finite dimensional graded vector space over $\F_2$ and $k$ an H-map. Let us remark here that, since $k$ is an H-map, $X$ is an H-space.
+
+\begin{defn}
+For all $m\geq1$, $U=\bigoplus_{1\leq i\leq s}\F_2$ and $U'=\bigoplus_{1\leq i'\leq s'}\F_2$ we define the isomorphism $\Phi$ by the following steps:
+$$\xymatrix{
+\ell\ar@{|->}[d] &[K\Sigma^m U,K\Sigma^m U']\ar[d]^\cong\ar@<1.5cm>@/^1.5cm/[ddddd]_\cong^\Phi\\
+(\underbrace{\proj_{i'} \ell}_{\ell_{i'}})_{1\leq {i'}\leq s'}\ar@{|->}[d] &\displaystyle\prod_{1\leq {i'}\leq s'}[K\Sigma^m U,K\Sigma^m \F_2]\ar[d]^\cong\\
+(\ell_{i'}^*(u_m))_{1\leq {i'}\leq s'}\ar@{|->}[d] &\displaystyle\bigoplus_{1\leq {i'}\leq s'}H^m(K\Sigma^m U;\F_2)\ar[d]^\cong\\
+(\underbrace{\incl_i^*\ell_{i'}^*(u_m)}_{\ell_{{i'}i}u_m})_{\substack{1\leq {i'}\leq s'\\ 1\leq i\leq s}}\ar@{|->}[d] &\displaystyle\bigoplus_{\substack{1\leq {i'}\leq s'\\ 1\leq i\leq s}}H^m(K\Sigma^m \F_2;\F_2)\ar[d]^\cong\\
+\displaystyle\sum_{\substack{1\leq {i'}\leq s'\\ 1\leq i\leq s}}e_{i'}\otimes \ell_{{i'}i}e_i\ar@{|->}[d] &\F_2^{\oplus s'}\otimes\F_2^{\oplus s}\ar[d]^\cong\\
+(\ell_{{i'}i})_{\substack{1\leq {i'}\leq s'\\ 1\leq i\leq s}} &M_{s'\times s}(\F_2)
+}$$ where the $e_i$'s and $e_{i'}$'s denote the standard basis for $\F_2^{\oplus s}$ and $\F_2^{\oplus s'}$ respectively and where $M_{s'\times s}(\F_2)$ denotes the $(s'\times s)$-matrices with $\F_2$ coefficients.
+\end{defn}
+
+\begin{lem}\label{l:then retracts}
+Consider the following two-stage Postnikov system 
+$$\xymatrix{
+KV\ar[d]\ar@{=}[r] &KV\ar[d]\\
+X\ar[r]\ar[d]_i &PK\Sigma V\ar[d]\\
+K\Sigma^mU\ar[r]_-k &K\Sigma V,
+}$$ with $m\geq1$, $U=\bigoplus_{1\leq i\leq s}\F_2$ a finite dimensional vector space over $\F_2$, $V=\bigoplus_{1\leq j\leq t}\Sigma^{d_j}\F_2$ a finite dimensional graded vector space over $\F_2$ and $k$ an H-map. If there exists a map $\ell:K\Sigma^m U\to K\Sigma^m U$ such that $k\ell\simeq *$, then $X$ retracts onto $K\Sigma^m\F_2^{\oplus\rk\Phi(\ell)}$.
+\end{lem}
+
+\begin{proof}
+We have the following homotopy commutative diagram:
+$$\xymatrix{
+&X\ar[d]^i\\
+K\Sigma^m U\ar[r]^-{\ell}\ar@/^/@{.>}[ru]^{\tilde{\ell}}\ar@/_/[rd]_{*} &K\Sigma^m U\ar[d]^k\\
+&K\Sigma V.
+}$$ The hypothesis $k\ell\simeq *$ implies the existence of a map $\tilde{\ell}:K\Sigma^m U\to X$ such that $i\tilde{\ell}\simeq\ell$. Let $s'=\rk\Phi(\ell)$. Consider the matrix $\Phi(\ell)$. By linear combinations of its rows we obtain a matrix with only $s'$ non-trivial and linearly independant rows. Then, by linear combinations on the columns of $\Phi(\ell)$, we obtain a new matrix with a single non-trivial and invertible $(s'\times s')$-block. Therefore there exist matrices $P\in M_{s'\times s}(\F_2)$ and $J\in M_{s\times s'}(\F_2)$ such that $P\Phi(\ell)J=I_{s'\times s'}$ where $I_{s'\times s'}$ denotes the identity matrix. Set $p=\Phi^{-1}(P)$ and $j=\Phi^{-1}(J)$ and $U'=\F_2^{\oplus s'}$ in order to have $p\ell j\simeq\id_{K\Sigma^m U'}$ since $\Phi(p\ell j)=\Phi(p)\Phi(\ell)\Phi(j)=\Phi(\Phi^{-1}(P))\Phi(\ell)\Phi(\Phi^{-1}(J))=P\Phi(\ell)J=I_{s'\times s'}$. Now we can complete the previous diagram with these maps:
+$$\xymatrix{
+&&X\ar[d]^i\ar@/^/@{.>}[rd]^f\\
+K\Sigma^m\F_2^{\oplus s'}\ar[r]^-j\ar@/^0.5truecm/@{.>}[rru]^g &K\Sigma^m U\ar[r]^-{\ell}\ar@/^/[ru]^{\tilde{\ell}}\ar@/_/[rd]_{*} &K\Sigma^m U\ar[d]^k \ar[r]^-p &K\Sigma^m\F_2^{\oplus s'}\\
+&&K\Sigma V.
+}$$ This completes the proof.
+\end{proof}
+
+\begin{lem}\label{l:when retracts}
+Consider the following two-stage Postnikov system 
+$$\xymatrix{
+KV\ar[d]\ar@{=}[r] &KV\ar[d]\\
+X\ar[r]\ar[d]_i &PK\Sigma V\ar[d]\\
+K\Sigma^mU\ar[r]_-k &K\Sigma V,
+}$$ with $m\geq1$, $U=\bigoplus_{1\leq i\leq s}\F_2$ a finite dimensional vector space over $\F_2$, $V=\bigoplus_{1\leq j\leq t}\Sigma^{d_j}\F_2$ a finite dimensional graded vector space over $\F_2$ and $k$ an H-map. If $X$ retracts onto $K\Sigma^m \F_2$, then there exists $\ell:K\Sigma^m U\to K\Sigma^m U$ such that $\ell\not\simeq *$ and $k\ell\simeq *$.
+\end{lem}
+
+\vskip5cm
+\begin{proof}
+Assume the existence of maps $f:X\to K\Sigma^m\F_2$ and $g:K\Sigma^m\F_2\to X$ such that $fg\simeq\id$. Set $l=ig:K\Sigma^m\F_2\to K\Sigma^m U$, which is clearly not nullhomotopic, and finally set $\ell=l\proj_1:K\Sigma^m U\to K\Sigma^m U$. We then obtain $k\ell=kig\proj_1\simeq *$ since $ki\simeq *$.
+\end{proof}
+
+\begin{defn}\index{0@$[X,Y]_H$}
+Let $X$ and $Y$ be two H-spaces. Let us define $[X,Y]_H$ as the subset of $[X,Y]$ consisting of all H-maps classes.
+\end{defn}
+
+\begin{lem}\label{l:caract retracts}
+Let $k:K\Sigma^m U\to K\Sigma V$ be an H-map, $\ell:K\Sigma^m U\to K\Sigma^m U$ be a map (which is obviously an H-map) and consider the following composition:
+$$\xymatrix{
+k\ell\ar@{|->}[d] &[K\Sigma^m U,K\Sigma V]_H\ar[d]^\cong\\
+(\underbrace{\proj_j k}_{k_j}\ell)_{1\leq j\leq t}\ar@{|->}[d] &\displaystyle\prod_{1\leq j\leq t}[K\Sigma^m U,K\Sigma\Sigma^{d_j}\F_2]_H\ar[d]^\cong\\
+(\ell^*k_j^*(u_{d_j+1}))_{1\leq j\leq t}\ar@{|->}[d] &\displaystyle\bigoplus_{1\leq j\leq t}P^{d_j+1}H^*(K\Sigma^m U;\F_2)\ar[d]^\cong\\
+(\incl_i^*\ell^*k_j^*(u_{d_j+1}))_{\substack{1\leq i\leq s\\ 1\leq j\leq t}}\ar@{=}[d]^{\displaystyle \ell^*=\sum_{1\leq {i'}\leq s}\ell_{i'}^*\incl_{i'}^*} &\displaystyle\bigoplus_{\substack{1\leq i\leq s\\ 1\leq j\leq t}}P^{d_j+1}H^*(K\Sigma^m\F_2;\F_2)\ar[dd]^\cong\\
+(\displaystyle\sum_{1\leq {i'}\leq s}\ell_{{i'}i}\incl_{i'}^*k_j^*(u_{d_j+1}))_{\substack{1\leq i\leq s\\ 1\leq j\leq t}}\ar@{|->}[d] &\\
+\displaystyle\sum_{\substack{1\leq {i'}\leq s\\ 1\leq i\leq s}}(\incl_{i'}^*k_j^*(u_{d_j+1}))_{1\leq j\leq t}\otimes \ell_{{i'}i}e_i&\displaystyle\bigoplus_{1\leq j\leq t}P^{d_j+1}H^*(K\Sigma^m\F_2;\F_2)\otimes\F_2^{\oplus s}
+}$$ where the $e_i$'s form a basis of $\F_2^{\oplus s}$.
+Then $k\ell\simeq *$ if and only if $\sum_{1\leq i'\leq s} \incl_{i'}^*k_j^*(u_{d_j+1})\otimes \ell_{{i'}i}e_i=0$ for all $1\leq i\leq s$ and $1\leq j\leq t$.
+\end{lem}
+
+\begin{proof}
+We have $k\ell\simeq *$ if and only if 
+\begin{align*}
+&\sum_{\substack{1\leq {i'}\leq s\\ 1\leq i\leq s}}(\incl_{i'}^*k_j^*(u_{d_j+1}))_{1\leq j\leq t}\otimes \ell_{{i'}i}e_i=0 &&\text{i.e.}\\
+&\sum_{1\leq {i'}\leq s}(\incl_{i'}^*k_j^*(u_{d_j+1}))_{1\leq j\leq t}\otimes \ell_{{i'}i}e_i=0 &&\text{for all $1\leq i\leq s$, i.e.}\\
+&\sum_{1\leq {i'}\leq s}\incl_{i'}^*k_j^*(u_{d_j+1})\otimes \ell_{{i'}i}e_i=0 &&\text{for all $1\leq i\leq s$ and $1\leq j\leq t$.}
+\end{align*}
+\end{proof}
+
+%\begin{thm}
+%Consider the following compliant system 
+%$$\xymatrix{
+%K\Sigma^d\F_2\ar[d]\ar@{=}[r] &K\Sigma^d\F_2\ar[d]\\
+%X\ar[r]\ar[d] &PK\Sigma V\ar[d]\\
+%K\Sigma^mU\ar[r]_-k &K\Sigma\Sigma^d \F_2,
+%}$$ with $d\geq1$, $m\geq1$ and $U=\bigoplus_{1\leq i\leq s}\F_2$.
+%The H-space $X$ retracts onto $K\Sigma^m \F_2$ if and only if one of the two 
+%following assumptions is verified:
+%\begin{itemize}
+%\item[$\bullet$]{$0\in\{\incl_{i}^*k^*(u_{d+1})\ |\ 1\leq i\leq s\}$ or}
+%\item[$\bullet$]{$\#\{\incl_{i}^*k^*(u_{d+1})\ |\ 1\leq i\leq s\}<s$.}
+%\end{itemize}
+%where $\incl_i:K\Sigma^m\F_2\to K\Sigma^m U$ denotes the $i$-th obvious inclusion.
+%\end{thm}
+
+We are now able to prove the main general result of this chapter. It involves H-spaces $X$ with two non-trivial homotopy groups $\pi_m(X)\cong\bigoplus_{1\leq i\leq s}\F_2$ and $\pi_d(X)\cong\F_2$, where $m\geq1$ and $d\geq1$. In other words, we are looking at the special case where $V=\Sigma^d\F_2$.
+
+\begin{thm_slight_gen}
+\input thm_slight_gen
+\end{thm_slight_gen}
+
+\begin{proof} %[Proof of Theorem \ref{t:retract for two stage Postnikov systems}]
+Suppose that $X$ retracts onto $K\Sigma^m\F_2$. By Lemma \ref{l:when retracts} there exists a map $\ell:K\Sigma^mU\to K\Sigma^mU$ such that $\ell\not\simeq *$ and $k\ell\simeq *$. By Lemma \ref{l:caract retracts}, for all $1\leq i\leq s$ we have
+$$
+\sum_{1\leq i'\leq s}\incl_{i'}^*k^*(u_{d+1})\otimes\ell_{i'i}e_i=0.
+$$ But there are integers $i_0$ and $i'_0$ such that $\ell_{i'_0i_0}=1$ since $\ell\not\simeq *$. Therefore we can write
+\begin{align*}
+&\sum_{1\leq i'\leq s}\incl_{i'}^*k^*(u_{d+1})\otimes\ell_{i'i_0}e_{i_0}=\\
+&\incl_{i'_0}^*k^*(u_{d+1})\otimes e_{i_0}+\sum_{\substack{1\leq i'\leq s\\ i'\not=i'_0}}\incl_{i'}^*k^*(u_{d+1})\otimes\ell_{i'i_0}e_{i_0}=0.
+\end{align*} If $\incl_{i'_0}^*k^*(u_{d+1})\not=0$ then there is obviously an integer $i'_1\not=i'_0$ such that $\incl_{i'_1}^*k^*(u_{d+1})=\incl_{i'_0}^*k^*(u_{d+1})$. We have proved that $\card(S)<s$. 
+
+Conversely, suppose first that there is an integer $i'_0$ such that $\incl_{i'_0}^*k^*(u_{d+1})=0$. Set 
+$$\ell_{i'i}=\begin{cases}
+1 &\text{if $(i',i)=(i_0',1)$,}\\
+0 &\text{otherwise,}
+\end{cases}$$
+which satisfies $\ell\not\simeq *$. Then, for all $1\leq i\leq s$ we have
+\begin{align*}
+&\sum_{1\leq i'\leq s}\incl_{i'}^*k^*(u_{d+1})\otimes\ell_{i'i}e_i=\\
+&\incl_{i_0'}^*k^*(u_{d+1})\otimes\ell_{i_0'i}e_i=0.
+\end{align*}
+By Lemma \ref{l:caract retracts} this implies that $k\ell\simeq*$. By Lemma \ref{l:then retracts}, $X$ retracts onto $K\Sigma^m\F_2$. Suppose now that there are $i'_0\not=i'_1$ such that $\incl_{i'_0}^*k^*(u_{d+1})=\incl_{i'_1}^*k^*(u_{d+1})$. Set 
+$$\ell_{i'i}=\begin{cases}
+1 &\text{if $(i',i)\in\{(i_0',1),(i_1',1)\}$,}\\
+0 &\text{otherwise,}
+\end{cases}$$
+which satisfies $\ell\not\simeq *$. Then, for all $1\leq i\leq s$ we have
+\begin{align*}
+&\sum_{1\leq i'\leq s}\incl_{i'}^*k^*(u_{d+1})\otimes\ell_{i'i}e_i=\\
+&\incl_{i_0'}^*k^*(u_{d+1})\otimes\ell_{i_0'i}e_i+\incl_{i_1'}^*k^*(u_{d+1})\otimes\ell_{i_1'i}e_i=0.
+\end{align*}
+By Lemma \ref{l:caract retracts} this implies that $k\ell\simeq*$. By Lemma \ref{l:then retracts}, $X$ retracts onto $K\Sigma^m\F_2$. This completes the proof.
+\end{proof}
+
+This result is general enough to solve the problem set at the beginning of this section. Recall that among the $6$ different homotopy types with two non-trivial homotopy groups $\pi_2(X)\cong\Z/2\oplus\Z/2$ and $\pi_3(X)\cong\Z/2$, only $3$ are H-spaces. The following corollary asserts that these H-spaces retract onto an Eilenberg-MacLane space (and therefore do not admit a homology exponent).
+
+\begin{cor}
+Every H-space $X$ with non-trivial homotopy groups $\pi_2(X)\cong\Z/2\oplus\Z/2$ and $\pi_3(X)\cong\Z/2$ retracts onto $K(\Z/2,2)$.
+\end{cor}
+
+\begin{proof}
+The only possible primitive k-invariants are 
+$$k^*(u_4)\in\{\underbrace{0}_{k_0},\underbrace{u_2^2\otimes1}_{k_1},\underbrace{1\otimes v_2^2}_{k_2}, \underbrace{u_2^2\otimes1+1\otimes v_2^2}_{k_3}\}.$$ 
+For all $\alpha=1,2,3,4$ set $S_\alpha=\{\incl_i^*k_\alpha\ |\ 1\leq i\leq s\}$. We have
+\begin{align*}
+&S_0=\{0\} &&\text{which contains $0$ and such that $\#S_0=1<2$,}\\
+&S_1=\{0,u_2^2\} &&\text{which contains $0$,}\\
+&S_2=\{0,u_2^2\} &&\text{which contains $0$ and}\\
+&S_3=\{u_2^2\} &&\text{whose cardinality is smaller than $2$.}
+\end{align*}
+\end{proof}
+
+The existence of a retract does actually not only rely on the values of the homotopy groups, but also depends on their relative position. To see this, let us consider all H-spaces such that, for some integer $n\geq3$,
+$$
+\pi_m(X)\cong\begin{cases}
+\Z/2\oplus\Z/2 &\text{if $m=2$,}\\
+\Z/2 &\text{if $m=n$,}\\
+0 &\text{otherwise.}
+\end{cases}
+$$ This is a very simple application of Theorem \ref{thm_slight_gen} to see that all these H-spaces retract onto $K(\Z/2,2)$. 
+
+Moreover, let us consider the H-space such that,
+$$
+\pi_m(X)\cong\begin{cases}
+\Z/2\oplus\Z/2 &\text{if $m=3$,}\\
+\Z/2 &\text{if $m=4$,}\\
+0 &\text{otherwise.}
+\end{cases}
+$$ It is also not very diffucult to see that this H-space retracts onto $K(\Z/2,3)$. 
+
+The following result concerns the ``next'' space we would like to consider:
+
+\begin{cor}\label{c:first_no_retract}
+There exists an H-space $X$ with non-trivial homotopy groups $\pi_3(X)\cong\Z/2\oplus\Z/2$ and $\pi_{5}(X)\cong\Z/2$ which does not retract onto $K(\Z/2,3)$.
+\end{cor}
+
+\begin{proof}
+It suffices to consider the following two-stage Postnikov system:
+$$\xymatrix{
+K\Sigma^{5}\F_2\ar[d]\ar@{=}[r] &K\Sigma^{5}\F_2\ar[d]\\
+X\ar[r]\ar[d] &PK\Sigma^{6} \F_2\ar[d]\\
+K\Sigma^3(\F_2\oplus\F_2)\ar[r]_-k &K\Sigma^{6} \F_2,
+}$$ where $k$ is such that $k^*(u_{6})=u_3^2\otimes1+1\otimes Sq^{2,1}u_3$. We have $\incl_1^*k^*(u_{6})=u_3^2$ and $\incl_2^*k^*(u_{6})=Sq^{2,1}u_3$. If we consider $S$ as in the Theorem we have $0\not\in S$ and $\card(S)=2$. Therefore $X$ does not retract onto $K(\Z/2,3)$.
+\end{proof}
+
+The space of Corollary \ref{c:first_no_retract} is then the ``first'' H-space having only two non-trivial homotopy groups with values $\Z/2\oplus\Z/2$ and $\Z/2$ and the property that it does not retract onto an Eilenberg-MacLane space.
+
+However, as we will see later in this work, the H-space of Corollary \ref{c:first_no_retract} has no homology exponent (see Theorems \ref{thm_first_main} and \ref{thm_second_main} in Sections \ref{section:proof_first_main} and \ref{s:proof of thm on 2-stage Postnikov systems} respectively).
+
+\endinput

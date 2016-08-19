@@ -1,0 +1,115 @@
+\section{Main algorithms}\label{section:alg}
+
+In this section, we state the main algorithms necessary for the Eilenberg-MacLane machine. Algorithms are given in so-called ``pseudo-code''.
+
+\renewcommand{\algorithmicensure}{\underline{\textbf{Ensure:}}}
+%\renewcommand{\algorithmicrequire}{\fbox{\textbf{Require:}}}
+
+\bigskip
+The next two algorithms give the list of all admissible sequences of bounded excess and  degree. This is a recursive task that we split into two processes. 
+
+\begin{alg}\label{alg:compute admissible sequences}
+\begin{algorithmic}[1]
+\ENSURE collection $\mathcal C$ of all admissible sequences $I$ such that $e(I)<n$ and $\degst(I)\leq d$;
+\REQUIRE $n\geq1$ and $d\geq0$;
+\STATE $\mathcal C$ is a collection of admissible sequence for output;
+\STATE set $\mathcal C$ as containing the single admissible sequence $(0)$;
+\REPEAT
+\STATE call Algorithm \ref{alg:iterating process for computing admissible sequences} with $\mathcal C$ as input;
+\UNTIL{$\mathcal C$ is stable};
+\STATE output $\mathcal C$;
+\end{algorithmic}
+\end{alg}
+
+\begin{defn}\index{length}
+The {\bf length} of an admissible sequence $I=(a_0,\dots,a_k)$ is given by $k$.
+\end{defn}
+
+\begin{alg}\label{alg:iterating process for computing admissible sequences}
+\begin{algorithmic}[1]
+\ENSURE $\mathcal C$ contains all admissible sequences of length $\leq\ell+1$ such that $e(I)<n$ and $\degst(I)\leq d$ (iterating process for Algorithm \ref{alg:compute admissible sequences});
+\REQUIRE a collection $\mathcal C$ of admissible sequences of length $\leq\ell$, $n\geq1$ and $d\geq0$;
+\STATE $\mathcal D$ is a collection of admissible sequences;
+\STATE set $\mathcal D$ as empty;
+\FORALL{admissible sequence $I$ of $\mathcal C$}
+\STATE consider all the admissible sequences $(a,I)$ such that $e(a,I)<n$ and $\degst(a,I)\leq d$;
+\STATE put them in $\mathcal D$;
+\ENDFOR;
+\STATE $\mathcal C$ $\Leftarrow$ $\mathcal C\cup\mathcal D$;
+\STATE output $\mathcal D$;
+\end{algorithmic}
+\end{alg}
+
+The following algorithm implements Lemma \ref{l:homology of EC}.
+
+\begin{alg}\label{alg:graded group for homology of elementary complexes}
+\begin{algorithmic}[1]
+\ENSURE graded group $\widetilde{H}_{\leq d}(EC_{h}(x,y);\Z_{(2)})$;
+\REQUIRE $\deg(x)$, $h\geq1$ and $d\geq0$;
+\STATE $H_{\leq d}$ is the graded group for output;
+\STATE set $H_{\leq d}$ as trivial in each degree;
+\FORALL{$1\leq m\leq d$}
+\IF{$\deg(x)$ is even}
+\IF{$\deg(x)$ divides $m$}
+\STATE $H_m$ $\Leftarrow$ cyclic group of order given by the $2$-primary part of the integer $h\cdot\frac{m}{\deg(x)}$;
+\ENDIF;
+\ELSIF{$\deg(x)+1$ divides $m+1$}
+\STATE $H_m$ $\Leftarrow$ cyclic group of order given by the $2$-primary part of the integer $h$;
+\ENDIF;
+\ENDFOR;
+\STATE output $H_{\leq d}$;
+\end{algorithmic}
+\end{alg}
+
+The next algorithm implements the K\"unneth formula for the homology of a tensor product of complexes. 
+
+\begin{alg}\label{alg:Kunneth}
+\begin{algorithmic}[1]
+\ENSURE graded group $\widetilde{H}_{\leq d}(EC_{h}(x,y)\otimes_\Z C;\Z_{(2)})$ when $C$ is a complex with known reduced homology graded group $\widetilde{H}_{\leq d}(C;\Z_{(2)})$;
+\REQUIRE $d\geq0$, $\deg(x)$, $h\geq1$ and $\widetilde{H}_{\leq d}(C;\Z_{(2)})$;
+\STATE $H_{\leq d}$ is the graded group for output;
+\STATE set $H_{\leq d}$ as trivial in each degree;
+\STATE call Algorithm \ref{alg:graded group for homology of elementary complexes} to compute $\widetilde{H}_{\leq d}(EC_{h}(x,y);\Z_{(2)})$
+\FORALL{$1\leq m\leq d$}
+\FORALL{$p+q=m$}
+\STATE $H_m$ $\Leftarrow$ $H_m\oplus\widetilde{H}_p(EC_{h}(x,y);\Z_{(2)})\otimes\widetilde{H}_q(C;\Z_{(2)})$;
+\ENDFOR;
+\FORALL{$p+q=m-1$}
+\STATE $H_m$ $\Leftarrow$ $H_m\oplus\Tor^\Z(\widetilde{H}_p(EC_{h}(x,y);\Z_{(2)}),\widetilde{H}_q(C;\Z_{(2)}))$;
+\ENDFOR;
+\ENDFOR;
+\STATE output $H_{\leq d}$;
+\end{algorithmic}
+\end{alg}
+
+The following result can be used at lines 6 and 9 when $C$ is an elementary complex.
+
+\begin{lem}
+If $G$ and $H$ are two finite cyclic groups, then
+$$
+\Tor^\Z(G,H)\cong\Z/\gcd(\exp(G),\exp(H))\cong G\otimes_\Z H.
+$$
+\end{lem}
+
+We state now the main algorithm.
+
+\begin{alg}
+\begin{algorithmic}[1]
+\ENSURE graded group $\widetilde{H}_{\leq d}(K(\Z/2^s,n);\Z)$;
+\REQUIRE $s\geq1$, $n\geq1$ and $d\geq0$;
+\STATE call Algorithm \ref{alg:compute admissible sequences} with $n$ and $d$ as input;
+\STATE $H_{\leq d}$ is the graded group for output;
+\STATE $H_{\leq d}$ $\Leftarrow$ output of Algorithm \ref{alg:graded group for homology of elementary complexes} called with $n\Rightarrow\deg(x)$ and $2^s\Rightarrow h$;
+\FORALL{admissible sequence $I\not=(0)$ of $\mathcal C$}
+\STATE $H_{\leq d}$ $\Leftarrow$ output of Algorithm \ref{alg:Kunneth} called with 
+\begin{align*}
+\degst(I)+n &\Rightarrow \deg(x),\\
+2 &\Rightarrow h, \\
+H_{\leq d} &\Rightarrow \widetilde{H}_{\leq d}(C;\Z_{(2)});
+\end{align*}
+\ENDFOR;
+\STATE output $H_{\leq d}$;
+\end{algorithmic}
+\end{alg}
+
+\endinput

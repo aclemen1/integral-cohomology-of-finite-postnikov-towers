@@ -1,0 +1,24 @@
+\section{A counterexample towards transverse implications}\label{section:counterexample}
+
+Let us consider the mod-$2$ cohomology Bockstein spectral sequence of $BSO$, the classifying space of the special orthogonal group. It is well known that 
+$$
+H^*(BSO;\F_2)\cong\F_2[w_j\ |\ j\geq2],
+$$ where $\deg(w_j)=j$ for all $j\geq1$ (see \cite{Bo67} or \cite[p. 216]{Mc00}). By Wu's formulae (see for instance \cite[8, Part I, p. 138]{MT91}), it is also well known that 
+$$
+Sq^1w_j=
+\begin{cases}
+w_{j+1} &\text{if $j$ is even,}\\
+0 &\text{otherwise.}
+\end{cases}
+$$ These informations are sufficient to deduce the entire Bockstein spectral sequence.\index{Bockstein spectral sequence of $BSO$} Actually, we have
+\begin{align*}
+B_1^*&\cong \F_2[w_j\ |\ j\geq2],\\
+B_2^*&\cong \F_2[w_{2j}^2\ |\ j\geq1],\\
+B_3^*&\cong B_2^*\text{, since $d_2$ is trivial for dimension reasons,}\\
+&\vdots\\
+B_\infty^*&\cong B_2^*\cong \F_2[w_{2j}^2\ |\ j\geq1].
+\end{align*}
+Let us consider the lowest degree element $w_2$ which is obviously primitive and $0$-transverse since $Sq^1w_2=w_3$ by Wu's formulae. We have $d_2w_2^2=0$ and therefore $w_2$ is not $1$-transverse. This shows that the hypothesis of Theorem \ref{t:transversity for Eilenberg-MacLane spaces} are not sufficient for a generalization to all simply connected H-spaces.
+
+
+\endinput

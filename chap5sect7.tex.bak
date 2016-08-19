@@ -1,0 +1,17 @@
+\section{Conclusion and conjectures}
+
+The purpose of this last section is to summarize our contribution to the investigation of the relationships between homotopy and homology exponents. 
+
+First, we have seen in Chapter \ref{chapter:2} that the Eilenberg-MacLane spaces which admit a homotopy exponent do not have a homology exponent. 
+
+We were able to extend this assertion to spaces with two non-trivial homotopy groups. Our main theorem (Theorem \ref{thm_first_main}) asserts that every $2$-local Postnikov piece with two non-trivial homotopy groups do not have a homology exponent. The same is also true for spaces which satisfy the hypothesis of Theorem \ref{thm_second_main}. 
+
+This leads us to the following reasonable conjecture: 
+
+\begin{conj_main}
+\input conj_main
+\end{conj_main}
+
+Section \ref{section:conjectures} provides a short discussion of this conjecture..
+
+\endinput

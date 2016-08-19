@@ -1,0 +1,15 @@
+Consider a stable two stage Postnikov system of the form
+$$\xymatrix{
+K\Sigma^d\F_2\ar[d]\ar@{=}[r] &K\Sigma^d\F_2\ar[d]\\
+X\ar[r]\ar[d] &PK\Sigma^{d+1} \F_2\simeq{*}\ar[d]\\
+K\Sigma^mU\ar[r]_-k &K\Sigma^{d+1} \F_2,
+}$$ with $d>m\geq1$, $U=\bigoplus_{1\leq i\leq s}\F_2$ and $k:K\Sigma^mU\to K\Sigma^{d+1}\F_2$ an H-map.
+Moreover, consider the set 
+$$S=\{\incl_{i}^*k^*(u_{d+1})\in H^{d+1}(K\Sigma^m\F_2;\F_2)\ |\ 1\leq i\leq s\},$$
+where $\incl_i:K\Sigma^m\F_2\to K\Sigma^m U$ is the $i$-th obvious inclusion, $\incl_i^*k^*:H^{d+1}(K\Sigma^{d+1}\F_2;\F_2)\to H^{d+1}(\Sigma^m\F_2;\F_2)$ is the induced homomorphism and where $u_{d+1}$ denotes the fundamental class in $H^{d+1}(K\Sigma^{d+1}\F_2;\F_2)$.
+The H-space $X$ retracts onto $K\Sigma^m \F_2$ if and only if one of the two following assumptions is verified:
+\begin{itemize}
+\item[$\bullet$]{$0\in S$ or}
+\item[$\bullet$]{$\card(S)<s$.}
+\end{itemize}
+\endinput

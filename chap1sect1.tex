@@ -1,0 +1,89 @@
+\section{Basic definitions and notations}
+
+Let $X=\{X_*\}$ be a graded object. The $m$-th {\bf shift}\index{shift}\index{0@$\Sigma^m X$} is the graded object $\Sigma^m X$ given by $(\Sigma^m X)_n=X_{n+m}$. We also set
+\begin{align*}
+X\even\text{ or }X^+&=\{\text{even degree elements}\}\text{ and}\\
+X\odd\text{ or }X^-&=\{\text{odd degree elements}\}.
+\end{align*}\index{0@$X^+$}\index{0@$X^-$}
+Every object can be seen as a graded one, concentrated in degree zero. 
+
+Unless otherwise specified, a {\bf space} will mean a pointed, connected and simple topological space with the homotopy type of a CW-complex of finite type. 
+
+We will denote by $K(G,n)$ the {\bf Eilenberg-MacLane space}\index{Eilenberg-MacLane space} with single non-trivial homotopy group isomorphic to $G$ in dimension $n$ ($G$~abelian if $n\geq2$). If $U=\bigoplus_{i\geq 1}U_i$ is a graded group, then we will denote by $KU$ the generalized Eilenberg-MacLane space (GEM)\index{generalized Eilenberg-MacLane space (GEM)} given by the (weak) product $\prod_{i\geq 1}K(U_i,i)$. For instance, we have $K\Sigma^m\F_2=K(\Z/2,m)$, since $\F_2$ can be seen as a graded object concentrated in degree zero.
+
+Since we will only consider simple spaces, we will only deal with abelian fundamental groups and it will always be possible to consider the {\bf Postnikov tower}\index{Postnikov tower} and the {\bf k-invariants}\index{k-invariants}\index{Postnikov invariants} of a space.  Let us recall that the Postnikov tower of a space $X$ looks like:
+$$\xymatrix{
+&&\\
+&&X[n+1] \ar@{.}[u] \ar[d]^{\gamma_n} &K(\pi_{n+1}X,n+1) \ar[l] \\
+X\ar[rru]^{\alpha_{n+1}}
+\ar[rr]^{\alpha_n}
+\ar[rrd]^{\alpha_{n-1}}
+\ar[rrdd]_{\alpha_1}
+&&X[n] \ar[d]^{\gamma_{n-1}} &K(\pi_{n}X,n) \ar[l] \\
+&&X[n-1] \ar@{.}[d] &K(\pi_{n-1}X,n-1) \ar[l] \\
+&&X[1] &K(\pi_1 X,1), \ar[l]_\simeq
+}$$ where $\alpha_n:X\to X[n]$ is the $n$-th {\bf Postnikov section}\index{Postnikov section} and $X[n]$ is given by the homotopy pullback along the $(n+1)$-th k-invariant $k^{n+1}(X)\in H^{n+1}(X[n-1];\pi_n X)\cong[X[n-1],K(\pi_n X,n+1)]$ and the path-loop fibration over $K(\pi_n X,n+1)$:
+$$\xymatrix{
+X[n]\ar[r]\ar[d]_{\gamma_{n-1}} &PK(\pi_n X,n+1)\simeq{*}\ar[d]\\
+X[n-1]\ar[r]_-{k^{n+1}(X)} &K(\pi_n X,n+1).
+}$$
+
+We will say that a space $X$ is a {\bf Postnikov piece}\index{Postnikov piece} if its Postnikov tower is finite, i.e. if $X\simeq X[m]$ for some positive integer $m$ or, equivalently, if it has finitely many non-trivial homotopy groups.
+
+A {\bf $2$-stage Postnikov system}\index{two-stage Postnikov system}\label{d:two-stage Postnikov system} is a Postnikov piece given by the following homotopy pullback along the path-loop fibration:
+$$\xymatrix{
+KV\ar[d]\ar@{=}[r] &KV\ar[d]\\
+X\ar[d]\ar[r] &PK\Sigma V\simeq{*}\ar[d]\\
+KU\ar[r]_-k &K\Sigma V,
+}$$ where $U$, $V$ are two graded abelian groups and $KU$, $KV$ their associated GEM. The system is called {\bf stable}\index{stable $2$-stage Postnikov system} if the map $k:KU\to K\Sigma V$ is an H-map. In this case, the space $X$ is an H-space.
+
+A space $X$ will be said to have a {\bf homology exponent}\index{homology exponent} if there exists an integer $e\geq1$ such that $e\cdot\widetilde{H}^*(X;\Z)=0$.
+
+Let $G$ be a non-trivial finitely generated $2$-torsion abelian group, i.e. a finite $2$-torsion abelian group. We will say that $G$ is of {\bf rank}\index{rank} $\rk(G)=l$ and of {\bf type}\index{type} $(s_1,\dots,s_l)$ with $s_1\geq\dots\geq s_l$ if its decomposition (unique up to permutation) into a direct sum of $2$-primary cyclic groups is given by
+$$
+G\cong\bigoplus_{j=1}^l\Z/2^{s_j}\text{ with $s_j\geq1$ for all $1\leq j\leq l$.}
+$$
+
+Let $X$ be a space. Its {\bf mod-$2$ cohomology Bockstein spectral sequence}\index{Bockstein spectral sequence} $\{B^*_r,d_r\}$ is the spectral sequence given by the exact couple 
+$$\xymatrix@C=0.4truecm{
+H^*(X;\Z)\ar[rr]^-{(\cdot2)_*} &&H^*(X;\Z)\ar[ld]^{(\red_2)_*}\\
+&H^*(X;\F_2)\ar[lu]^{\partial}
+}$$
+which is the long exact sequence in cohomology induced by the short exact sequence of coefficients
+$$\xymatrix{
+0\ar[r] &\Z\ar[r]^-{\cdot2} &\Z\ar[r]^-{\red_2} &\Z/2\ar[r] &0.
+}$$
+The first page is $B_1^*\cong H^*(X;\F_2)$ and the first differential is given by $d_1=(\red_2)_*\partial=\beta$, the {\bf Bockstein homomorphism}\index{Bockstein homomorphism}. The spectral sequence converges to $(H^*(X;\Z)/\text{torsion})\otimes\F_2$. Moreover, if $x\in B_r^{n}$ is such that $d_r x\not=0\in B_r^{n+1}$, then $d_r x$ detects an element of order $2^r$ in $H^{n+1}(X;\Z)$, i.e. there exists an element $y$ of order $2^r$ in $H^{n+1}(X;\Z)$ such that $\red_2(y)=d_rx$. Analogously, there is a mod-$2$ homological Bockstein spectral sequence.
+
+Let $H$ be an {\bf Hopf algebra}\index{Hopf algebra} on a field $k$, with multiplication $\mu:H\otimes H\to H$, comultiplication $\Delta:H\to H\otimes H$, augmentation $\epsilon:H\to k$ and unit $\eta:k\to H$ (see \cite{MM65} for the definitions). The {\bf augmentation ideal}\index{augmentation ideal} of $H$ is denoted by
+$$
+\bar{H}=\ker\epsilon:H\to k.
+$$ We will denote  by
+\begin{align*}
+QH&=\bar{H}/\mu(\bar{H}\otimes\bar{H})\\
+&=\coker \mu:\bar{H}\to\bar{H}\otimes\bar{H}
+\end{align*}
+the graded modules of {\bf indecomposables}\index{indecomposable}\index{module of indecomposables} elements of $H$. We will denote
+\begin{align*}
+PH&=\{x\in\bar{H}\ |\ \Delta(x)=x\otimes1+1\otimes x\}\\
+&=\ker \Delta:\bar{H}\to\bar{H}\otimes\bar{H}
+\end{align*}
+the graded modules of {\bf primitives}\index{primitive}\index{module of primitives} elements of $H$.  
+The modules of indecomposable and primitive elements of the Hopf algebra $H$ are related to those of the dual Hopf algebra $H^{\dual}$ as follows:
+\begin{align*}
+(QH)^{\dual}&\cong P(H^{\dual}),\\
+(PH)^{\dual}&\cong Q(H^{\dual}).
+\end{align*}
+
+Let $H$ and $H'$ be two associative Hopf algebras. If $H\subset H'$ and $\mu(\bar{H}\otimes H')=\mu(H'\otimes\bar{H})$, we say that $H$ is {\bf normal} in $H'$. This condition ensures that $k\otimes_{H}H'$ ($=H'/\mu(\bar{H}\otimes H'))$ is a Hopf algebra, which we denote $H'//H$\index{0@$//$}. Actually, the obvious map $H'\to H'//H$ is the {\bf cokernel} of the inclusion $H\subset H'$.
+
+If $\varphi:H\to H'$ is an epimorphism, then, under mild hypothesis (for instance if $H$ is bicommutative), $\varphi$ admits a {\bf kernel} denoted by $\ker\varphi:H\backslash\backslash\varphi\to H$ (see \cite[3.5. Definitions, pp. 223-224]{MM65}), \cite[3.6. Proposition, p. 224]{MM65} or \cite[Proposition 2.1 (2), pp. 64-65]{Sm70}). We also denote it by $H\backslash\backslash H'$ when $\varphi$ is clear from the context.\index{0@$\backslash\backslash$} 
+
+The {\bf Milnor-Moore theorem}\index{Milnor-Moore theorem}\label{t:Milnor-Moore} states that there is an exact sequence of graded modules
+$\xymatrix{
+0\ar[r] &P(\xi H)\ar[r] &PH\ar[r] &QH,
+}$ where $\xi H$ is the image of the {\bf Frobenius map}\index{Frobenius map} $\xi:x\mapsto x^2$. The Hopf algebra $H$ is said to be {\bf primitively generated} if $PH\to QH$ in the above exact sequence is an epimorphism. The prefered reference is \cite{MM65}.
+
+A finite non-empty sequence of non-negative integers $I=(a_0,\dots,a_k)$ is {\bf admissible}\index{admissible sequence} if $a_i\geq2a_{i+1}$ for all $0\leq i\leq k-1$. Its {\bf stable degree}\index{stable degree} is defined by $\degst(I)=\sum_{i=0}^k a_i$ and its {\bf excess}\index{excess} by $e(I)=2a_0-\degst(I)$.
+
+\endinput

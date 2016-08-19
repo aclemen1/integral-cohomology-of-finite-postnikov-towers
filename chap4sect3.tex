@@ -1,0 +1,88 @@
+\section{A space ``without retract''}\label{section:azerty}
+%\section{Proof of Theorem \ref{t:space without a retract}}\label{section:azerty}
+
+Let us now consider the simplest possible example of a space with two non-trivial homotopy groups:
+
+\begin{exmp_no_retract}
+\input exmp_no_retract
+ Moreover, this is an H-space.
+\end{exmp_no_retract}
+
+As a corollary of Theorem \ref{thm_slight_gen} we have the following result:
+
+\begin{cor}
+The H-space of Example \ref{e:space without a retract} does not retract onto $K(\Z/2,2)$.
+\end{cor}
+
+\begin{proof}
+Since $\incl_i^*k^*(u_4)=u_2^2$, we have $S=\{u_2^2\}$, $S$ as in Theorem \ref{thm_slight_gen}. The two conditions $0\not\in S$ and $\card(S)=1$ are satisfied and consequently the space does not retract onto $K(\Z/2,2)$.
+\end{proof}
+
+As we did for Example \ref{exmp_retract} in Section \ref{section:space_with_retract}, we state and summarize the properties of the space $X$ in the following theorem:
+
+\begin{thm_no_retract}
+\input thm_no_retract
+\end{thm_no_retract}
+
+\begin{proof}
+The space $X$ is not a GEM since its k-invariant $u_2^2$ is not trivial. It is an infinite loop space since $u_2^2=Sq^2u_2=\sigma^*Sq^2u_3=\sigma^{(2)}Sq^2u_4=\dots$, where $\sigma^{(n)}$ denotes the $n$-fold cohomology suspension. We have just checked that $X$ does not retract onto $K(\Z/2,2)$.
+
+In order to show that $X$ does not retract onto $K(\Z/2,3)$, let us consider now the mod-$2$ cohomology Serre spectral sequence of the fibration $\xymatrix{K(\Z/2,3)\ar[r]^-j &X\ar[r]^-i &K(\Z/2,2)}$. 
+
+The $E_2$-term looks like the following:
+$$\xymatrix@R=0.1cm@C=0.1cm{
+&&\\
+{\bf Sq^1u_3}  &&0 &{*} &{*} &{*} &{*} &{*}\\
+{\bf u_3}  &&0 &u_2u_3&{*} &{*} &{*} &{*}\\
+{\bf 0} &&0 &0 &0 &0 &0 &0\\
+{\bf 0} &&0 &0 &0 &0 &0 &0\\ \ar@{-}[rrrrrrrr] &&&&&&&&\\
+{\bf 1} &\ar@{-}[uuuuuu] &{\bf 0} &{\bf u_2} &{\bf Sq^1u_2} &{\bf u_2^2} &{\bf Sq^{2,1}u_2} &{\bf u_2^3}\\
+&&&&&&{\bf u_2Sq^1u_2} &{\bf (Sq^1 u_2)^2}
+}$$
+We have $\bigoplus_{s}E_\infty^{s,2-s}\cong E_\infty^{2,0}$ and $H^2(X;\F_2)\cong\F_2\{v\}$ with $u_2\mapsto v$ via the composition isomorphism
+$$
+i^*:\xymatrix{H^2(K(\Z/2,2);\F_2)\cong E^{2,0}_2\ar@{->>}[r] &E^{2,0}_3\cong E^{2,0}_\infty\cong H^2(X;\F_2)}.
+$$ 
+The transgression on $u_3$ is given by the k-invariant. To see this, consider the following homotopy pullback along the path-loop fibration:
+$$\xymatrix{
+K(\Z/2,3)\ar[d]_j\ar@{=}[r] &K(\Z/2,3)\ar[d]\\
+X\ar[d]_i\ar[r] &{*}\ar[d]\\
+K(\Z/2,2)\ar[r]_-k &K(\Z/2,4)
+}$$ and the Serre spectral sequence of both columns. By naturality of the spectral sequence, we have the following commutative diagram:
+$$\xymatrix@C=2truecm{
+H^3(K(\Z/2,3);\F_2)\ar@{=}[d]\ar[r]^-\cong &H^4(K(\Z/2,4);\F_2)\ar[d]^{k^*}\\
+H^3(K(\Z/2,3);\F_2)\ar[r]_-{\text{(transgression)}} &H^4(K(\Z/2,2);\F_2).
+}$$ The Serre's transgression theorem (see for instance \cite[Theorem 6.8, p. 189]{Mc00}) implies that $d_4$ coincides with the transgression. Thus we have $d_4u_3=k^*(u_4)=u_2^2$. 
+
+Therefore $\bigoplus_{s}E_\infty^{s,3-s}\cong E_\infty^{3,0}$ and $H^3(X;\F_2)\cong\F_2\{w\}$ with $Sq^1u_2\mapsto w$ via the composition
+$$
+i^*:\xymatrix{H^*(K(\Z/2,2);\F_2)\cong E_2^{3,0}\ar@{->>}[r] &\dots\ar@{->>}[r] &E_4^{3,0}\cong E_\infty^{3,0}\cong H^3(X;\F_2)}.
+$$ 
+We clearly have $Sq^1v=w$.
+Suppose that there are maps $f:X\to K(\Z/2,3)$ and $g:K(\Z/2,3)\to X$ with $fg\simeq \id_{K(\Z/2,3)}$. 
+
+The only non-trivial map $f:X\to K(\Z/2,3)$ is given by the single non-trivial element $w\in H^3(X;\F_2)$. Therefore we have \begin{align*}
+g^*f^*(u_3)&=g^*(w)\\
+&=g^*(Sq^1v)\\
+&=Sq^1g^*(v) &&\text{by naturality,}\\
+&=0 &&\text{since $g^*(v)\in H^2(K(\Z/2,3);\F_2)=0$.}
+\end{align*} In other words, we always have $fg\simeq*$ and $X$ cannot retract onto $K(\Z/2,3)$.
+
+Let us show that $Sq^1u_3\not=0\in E_5^{0,4}$. For connexity reasons, it suffices to show that $d_2Sq^1u_3=0\in E_2^{2,3}=\F_2\{u_2u_3\}$. Suppose that $d_2Sq^1u_3=u_2u_3$. Then we would have $u_2u_3=0\in E_4^{2,3}$ and $0=d_4(u_2u_3)=u_3d_4u_2+u_2d_4u_3=u_2u_2^2=u_2^3$ (this make sense since both $u_2$ and $u_3$ survive in $E_4$, as well as their product $u_2u_3$). This is absurd since $u_2^3\not=0\in E_4^{6,0}$ by connexity. 
+
+Let us show now that $d_5Sq^1u_3=0$. Since cohomology operations ``commute'' with transgressions (see \cite[Corollary 6.9, p. 189]{Mc00}), we have $d_5Sq^1u_3=Sq^1 u_2^2=0$. 
+
+Finally, we conclude that $Sq^1u_3\not=0\in E_6^{0,4}\cong E_\infty^{0,4}$. Therefore, there exists $x'\in H^4(X;\F_2)$ such that $x'\mapsto Sq^1u_3$ via the composition
+$$
+j^*:\xymatrix{H^4(X;\F_2)\ar@{->>}[r] &E^{0,4}_\infty\cong E^{0,4}_6\subset\dots\subset E^{0,4}_2\cong H^4(K(\Z/2,2);\F_2)}.
+$$ Set $x=Sq^2x'$. We have $j^*(x)=j^*(Sq^2x')=Sq^2j^*(x')=Sq^{2,1}u_3$ which is $\infty$-transverse by Theorem \ref{t:transversity for Eilenberg-MacLane spaces} (see also the proof of Corollary \ref{cor_Cartan_result}, p. \pageref{c:Cartan_result}). 
+
+\label{arg:no_retract}Suppose that $x$ is not $\infty$-transverse. Then there exists an integer $r\geq0$ such that $d_{r+1}x^{2^r}=0$ in the Bockstein spectral sequence of $X$. Therefore we have
+\begin{align*}
+d_{r+1}j^*(x)^{2^r} &=d_{r+1}j^*(x^{2^r}) &&\text{since $j^*$ is an algebra map,}\\
+&=j^*d_{r+1}x^{2^r} &&\text{by naturality,}\\
+&=0 &&\text{since $d_{r+1}x^{2^r}=0$},
+\end{align*} which contradicts $\infty$-transverse implications of $j^*(x)=Sq^{2,1}u_3$. Thus $x$ is also $\infty$-transverse and $X$ cannot admit a homology exponent. 
+\end{proof}
+
+\endinput

@@ -1,0 +1,7 @@
+Let $G$ and $H$ be two $2$-local finitely generated graded abelian groups. Consider a two-stage Postnikov system
+$$\xymatrix{
+KH\ar@{=}[r]\ar[d] &KH\ar[d]\\
+X\ar[r]\ar[d] &PK\Sigma H\ar[d]\\
+KG\ar[r]_-f &K\Sigma H
+}$$ such that $KG$ is a $1$-connected $m$-anticonnected GEM, $KH$ a $1$-connected strictly $n$-anticonnected GEM with $n\in[m+2,\infty[$ and $f$ an H-map (i.e. the system is {\bf stable}). Then $X$ has no homology exponent.
+\endinput

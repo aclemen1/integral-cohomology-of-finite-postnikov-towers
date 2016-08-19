@@ -1,0 +1,167 @@
+\section{Transverse implications in Eilenberg-MacLane spaces}\label{section:qwertz}
+%\section{Proof of Theorem \ref{t:transversity for Eilenberg-MacLane spaces}}
+
+Recall from Section \ref{section:main results} the definition of an $\ell$-transverse element in a mod-$2$ cohomology Bockstein spectral sequence.
+
+\begin{defn_transverse_coH}
+\input defn_transverse_coH
+\end{defn_transverse_coH}
+
+We will also need the notion of transverse implications in the mod-$2$ homology Bockstein spectral sequence.
+
+\begin{defn}\index{transverse@$\ell$-transverse}\index{transverse@$\infty$-transverse}
+Let $X$ be a space and $\{B_*^r,d^r\}$ be its mod-$2$ homology Bockstein spectral sequence. Moreover, assume that $B_*^1$ is endowed with a divided square algebra structure. Recall that in this case $\gamma_2^lx=\underbrace{\gamma_2\circ\dots\circ\gamma_2(x)}_{\text{$l$ times}}$ for any $l\geq0$. An element $x\in B_n^r$ is said to be {\bf $\ell$-transverse} if $\gamma_2^lx\not=0\in\im d^{r+l}\subset B_{2^l n}^{r+l}$ for all $0\leq l\leq\ell$. An element $x\in B_n^r$ is said to be {\bf $\infty$-transverse}, or simply {\bf transverse}, if it is $\ell$-transverse for all $\ell\geq0$.
+\end{defn}
+
+\begin{defn}
+For all $r\geq1$ and $m\geq0$, we formally define the following assertions:
+\begin{align*}
+P^r_m(x,x'):\qquad&\text{`` $\gamma_2^{m+1}x\not=0\in\im d^{r+m+1}$ ''}\\
+Q^r_m(x,x'):\qquad&\text{`` $\gamma_2^{m+1+k}x\not=0\in B^{r+m+1}$ for all $k\geq0$ ''}\\
+R^r_m(x,x'):\qquad&\text{`` $<\gamma_2^{m+k}x,(x')^{2^{m+k}}>_{r+m}=1$ for all $k\geq0$ ''}\\
+S^r_m(x,x'):\qquad&\text{`` $d_{r+m}(x')^{2^m}\not=0\in B_{r+m}$ ''}
+\end{align*}
+\end{defn}
+
+\begin{lem}\label{l:induction_step_transversity}
+Let $X$ be a space, $\{B_*^r,d^r\}$ and $\{B^*_r,d_r\}$ be its mod-$2$ homology and cohomology Bockstein spectral sequences. Moreover, assume that $B^*_1$ and $B_*^1$ are endowed with a polynomial and a divided square algebra structure respectively. Let $x\in B^r_n$ and $x'\in B_r^n$. If $P^r_m(x,x')$, $Q^r_m(x,x')$, $R^r_m(x,x')$ and $S^r_m(x,x')$, then $R^r_{m+1}(x,x')$ and $S^r_{m+1}(x,x')$.
+\end{lem}
+
+\begin{proof}
+The fact that $d_{r+m}(x')^{2^m}\not=0$ (i.e. $S^r_m(x,x')$) implies that $d_{r+m}(x')^{2^{m+1+k}}=0$ for all $k\geq0$. If we suppose that $(x')^{2^{m+1+k}}=0\in B_{r+m+1}$ for some $k\geq0$, then it has to exist $z\in B_{r+m}$ such that $(x')^{2^{m+1+k}}=d_{r+m}z$. In this case we have
+\begin{align*}
+1&=<\gamma_2^{m+1+k}x,(x')^{2^{m+1+k}}>_{r+m} &&\text{since $R^r_m(x,x')$,}\\
+&=<\gamma_2^{m+1+k}x, d_{r+m}z>_{r+m}\\
+&=<d^{r+m}\gamma_2^{m+1+k}x,z>_{r+m}\\
+&=0
+\end{align*} since $\gamma_2^{m+1+k}x\not=0\in B^{r+m+1}$ (i.e. $Q^r_m(x,x')$) implies that $d^{r+m}\gamma_2^{m+1+k}=0$. This contradiction forces $(x')^{2^{m+1+k}}\not=0\in B_{r+m+1}$ for all $k\geq0$. As an obvious consequence we have
+\begin{align*}
+R^r_{m+1}(x,x'):\qquad&<\gamma_2^{m+1+k}x,(x')^{2^{m+1+k}}>_{r+m+1}=1 &&\text{for all $k\geq0$.}
+\end{align*}
+When $k=0$ we have
+\begin{align*}
+1&=<\gamma_2^{m+1}x,(x')^{2^{m+1}}>_{r+m+1}\\
+&=<d^{r+m+1}w,(x')^{2^{m+1}}>_{r+m+1} &&\text{for some $w\in B^{r+m+1}$ since $P^r_m(x,x')$,}\\
+&=<w,d_{r+m+1}(x')^{2^{m+1}}>_{r+m+1} &&\text{by duality,}
+\end{align*}
+which implies that $d_{r+m+1}(x')^{2^{m+1}}\not=0\in B_{r+m+1}$ (i.e. $S^r_{m+1}(x,x')$).
+\end{proof}
+
+\begin{thm}\label{t:duality and transversity}
+Let $X$ be a space, $\{B_*^r,d^r\}$ and $\{B^*_r,d_r\}$ be its mod-$2$ homology and cohomology Bockstein spectral sequences. Moreover, assume that $B^*_1$ and $B_*^1$ are endowed with a polynomial and a divided square algebra structure respectively. Let $x\in B^r_n$ and $x'\in B_r^n$. If $<\gamma_2^k x,(x')^{2^k}>_r=1$ for all $k\geq0$, i.e. $R^r_0(x,x')$, and $x$ is $\infty$-transverse, then $x'$ is $\infty$-transverse.
+\end{thm}
+
+\begin{proof}
+We will prove $R^r_m(x,x')$ and $S^r_m(x,x')$ for all $m\geq0$ by induction on $m$. We have
+\begin{align*}
+1&=<x,x'>_r &&\text{since $R^r_0(x,x')$ (case $k=0$),}\\
+&=<d^rw,x'>_r &&\text{for some $w\in B^r$ since $x$ is $0$-transverse,}\\
+&=<w,d_r x'>_r &&\text{by duality.}
+\end{align*}
+which implies that $d_r x'\not=0\in B_r$, i.e. $S^r_0(x,x')$. Before we start our induction process on $m$, let us remark that we have $P^r_m(x,x')$ and $Q^r_m(x,x')$ for all $m\geq0$ since $x$ is $\infty$-transverse (this is an obvious consequence of the definition). Suppose now that $R^r_m(x,x')$ and $S^r_m(x,x')$. Lemma \ref{l:induction_step_transversity} implies that $R^r_{m+1}(x,x')$ and $S^r_{m+1}(x,x')$. In particular, we just have proved that $d_{r+m}(x')^{2^m}\not=0\in B_{r+m}$ (i.e. $S^r_m(x,x')$) for all $m\geq0$. In other words, $x'$ is $\infty$-transverse.
+\end{proof}
+
+%\begin{cor}\label{c:duality and transversity}
+%Let $n\geq1$ and $s\geq1$. Consider the dual mod-$2$ homology and cohomology 
+%Bockstein spectral sequences $\{B_*^r,d^r\}$ and $\{B^*_r,d_r\}$ associated to $K(\Z/2
+%^s,n)$. Let $x\in B_m^r$ and $x'\in B^m_r$ such that $<x,x'>=1$. If $x$ is $\infty$-
+%transverse, then $x'$ is $\infty$-transverse.
+%\end{cor}
+
+%\begin{proof}
+%By Lemma \ref{l:adjointness}, we clearly have $<\gamma_2^kx,(x')^{2^k}>=1$ for all 
+%$k\geq0$ (i.e. $(R^r_0)$). It suffices then to apply the theorem to obtain the result.
+%\end{proof}
+
+\begin{lem}\label{l:implications of sigma to the n u and u_n}
+Let $n\geq1$ and $s\geq1$. Consider the dual mod-$2$ homology and cohomology Bockstein spectral sequences $\{B_*^r,d^r\}$ and $\{B^*_r,d_r\}$ associated to $K(\Z/2^s,n)$. Let $\sigma^n u\in B_n^s$ and $u_n\in B^n_s$. We have $<\gamma_2^k \sigma^n u,(u_n)^{2^k}>_s=1$ for all $k\geq0$, i.e. $R^s_0(\sigma^n u,u_n)$.
+\end{lem}
+
+\begin{proof}
+By Lemma \ref{l:adjointness}, we have $R^1_0(\sigma^n u,u_n)$. It suffices then to see that $(u_n)^{2^k}\not=0\in B_s$ for all $k\geq0$. Suppose that there exist $k\geq0$ and $1\leq r\leq s-1$ such that $(u_n)^{2^k}=d_r z\not=0\in B_r$ for some $z\in B_r$. Then we have the following contradiction:
+\begin{align*}
+1&=<\gamma_2^k \sigma^n u,(u_n)^{2^k}>_r &&\text{since $\gamma_2^k \sigma^n u$ and $(u_n)^{2^k}\not=0$}\\
+&=<\gamma_2^k \sigma^n u,d_r z>_r\\
+&=<d^r\gamma_2^k \sigma^n u,z>_r &&\text{by duality,}\\
+&=0
+\end{align*} since $\gamma_2^k \sigma^n u\not=0\in B^s$ implies that $d^r\gamma_2^k \sigma^n u=0$. Moreover we have $d_s u_n\not=0\in B_s$. This implies that $u_n\not=0\in B_r$ and $d_r u_n=0\in B_r$ for all $1\leq r\leq s-1$. Therefore, $(u_n)^{2^k}$ is a square in $B_r$ for all $k\geq1$ and $1\leq r\leq s$. Thus we have $d_r(u_n)^{2^k}=0$ for all $k\geq0$ and $1\leq r\leq s-1$.
+\end{proof}
+
+In order to detect $\infty$-transverse implications in the cohomology of $K(G,n)$, it suffices now to detect $\infty$-transverse implications in homology by using Cartan's methods and to use duality relations of Theorem \ref{t:Cartan-Serre duality}.
+
+As we have already mentioned in Remark \ref{r:high order classes}, elements of arbitrarily high order in the integral homology of $K(\Z/2^s,n)$ are given by divided squares of even degree admissible words of the form $\sigma^n$, $\beta_2\sigma^k\varphi_2\alpha$ with $0\leq k\leq n-3$, $\alpha\in{\mathcal W}^{I}_{*,n-k-1}$ and $\beta_2\sigma^k\varphi_2\alpha$ with $0\leq k\leq n-2$, $\alpha\in{\mathcal W}^{II}_{*,n-k-1}$. Now a simple application of Lemma \ref{l:homology of EC} gives the following results.
+
+\begin{lem}\label{l:transversity 1}
+Let $n\geq1$, $s\geq1$ and $u$ be a generator of $\Z/2^s$. If $n$ is even then $\gamma_2^r\sigma^n u\in H_{2^r n}(K(\Z/2^s,n);\Z)$ is of order $2^{r+s}$ for all $r\geq0$. In other words, $\sigma^n u\in B_n^s$ is $\infty$-transverse.
+\end{lem}
+
+\begin{proof}
+If we consider the Cartan's complex associated to $K(\Z/2^s,n)$ and in particular the elementary complex $EC_{(-1)^{n-1}2^s}(\sigma^n u,\sigma^{n-1}\psi_{2^s}u)$, Lemma \ref{l:homology of EC} implies that $\gamma_2^r\sigma^n u$ is of order $2^r\cdot2^s=2^{r+s}$ since $\sigma^n u$ lies in even degree.
+\end{proof}
+
+\begin{lem}\label{l:transversity 2}
+Let $n\geq1$, $s\geq1$ and $u$ be a generator of $\Z/2^s$. If $0\leq k\leq n-3$ and $\alpha\in{\mathcal W}^{I}_{*,n-k-1}$ are such that $\beta_2\sigma^k\varphi_2\alpha u\in H_*(K(\Z/2^s,n);\Z)$ lies in even degree, then $\gamma_2^r\beta_2\sigma^k\varphi_2\alpha u$ is of order $2^{r+1}$ for all $r\geq0$. In other words, $\beta_2\sigma^k\varphi_2\alpha u\in B_*^1$ is $\infty$-transverse.
+\end{lem}
+
+\begin{proof}
+If we consider the Cartan's complex associated to $K(\Z/2^s,n)$ and in particular the elementary complex $EC_{(-1)^k 2}(\beta_2\sigma^k\varphi_2\alpha u,\sigma^k\varphi_2\alpha u)$, Lemma \ref{l:homology of EC} implies that $\gamma_2^r\beta_2\sigma^k\varphi_2\alpha u$ is of order $2^r\cdot2=2^{r+1}$ since $\beta_2\sigma^k\varphi_2\alpha u$ lies in even degree.
+\end{proof}
+
+\begin{lem}\label{l:transversity 3}
+Let $n\geq1$, $s\geq1$, $u$ be a generator of $\Z/2^s$ and $u'=2^{s-1}u$. If $0\leq k\leq n-2$ and $\alpha\in{\mathcal W}^{II}_{*,n-k-1}$ are such that $\beta_2\sigma^k\varphi_2\alpha u'\in H_*(K(\Z/2^s,n);\Z)$ lies in even degree, then $\gamma_2^r\beta_2\sigma^k\varphi_2\alpha u'$ is of order $2^{r+1}$ for all $r\geq0$. In other words, $\beta_2\sigma^k\varphi_2\alpha u'\in B_*^1$ is $\infty$-transverse.
+\end{lem}
+
+\begin{proof}
+Analogous to the two previous proofs.
+%If we consider the Cartan's complex associated to $K(\Z/2^s,n)$ and in 
+%particular the elementary complex $EC_{(-1)^k 2}(\beta_2\sigma^k\varphi_2
+%\alpha u',\sigma^k\varphi_2\alpha u')$, Lemma \ref{l:homology of EC} implies 
+%that $\gamma_2^r\beta_2\sigma^k\varphi_2\alpha u'$ is of order $2^r\cdot2=2^
+%{r+1}$ since $\beta_2\sigma^k\varphi_2\alpha u'$ lies in even degree.
+\end{proof}
+
+We are now able to establish conditions for detecting $\infty$-transverse elements in the cohomology of Eilenberg-MacLane spaces.
+
+\begin{thm_main_technical}
+\input thm_main_technical
+\end{thm_main_technical}
+
+\begin{proof} %[Proof of Theorem \ref{t:transversity for Eilenberg-MacLane spaces}]
+It is clearly sufficient to establish the result when $G=\Z/2^s$, $s\geq1$.
+
+Assume that $n$ is even and $x\in B^n_s$ is $0$-transverse. Then $x=u_n$. By Lemma \ref{l:implications of sigma to the n u and u_n}, we have $R^s_0(\sigma^n u,u_n)$. By Lemma \ref{l:transversity 1}, $\sigma^n u$ is $\infty$-transverse. Then $u_n$ is $\infty$-transverse by Theorem \ref{t:duality and transversity}. 
+
+Assume now that $x\in P\even B^*_1$ is such that $Sq^1x\not=0$. Then we can write $x=\sum_{1\leq i\leq j}Sq^{I_i}_s u_n$ with $\#\{I_i\}=j$. Pick $I=I_i$ such that $Sq^1Sq^I_s u_n\not=0$. 
+
+Suppose that $g_I(n)\in{\mathcal W}^{I}$. Then we have 
+\begin{align*}
+<g_I(n)u,x>&=<g_I(n)u,\sum_{1\leq i\leq j}Sq^{I_i}_s u_n> &&\text{by assumption,}\\
+&=\sum_{1\leq i\leq j}<g_I(n)u,Sq^{I_i}_s u_n> &&\text{by linearity,}\\
+&=<g_I(n)u,Sq^I_s u_n>=1 &&\text{by Theorem \ref{t:Cartan-Serre duality} \eqref{f:D3}.}
+\end{align*}
+By Lemma \ref{l:adjointness}, we have $R^1_0(g_I(n)u,Sq^I_s u_n)$. By Lemma \ref{l:transversity 2}, $g_I(n)u$ is $\infty$-transverse. Then $x$ is $\infty$-transverse by Theorem \ref{t:duality and transversity}.
+
+Suppose that $g_I(n)\in{\mathcal W}^{II}$. Then we have 
+\begin{align*}
+<g_I(n)u',x>&=<g_I(n)u',\sum_{1\leq i\leq j}Sq^{I_i}_s u_n> &&\text{by assumption,}\\
+&=\sum_{1\leq i\leq j}<g_I(n)u',Sq^{I_i}_s u_n> &&\text{by linearity,}\\
+&=<g_I(n)u',Sq^I_s u_n>=1 &&\text{by Theorem \ref{t:Cartan-Serre duality} \eqref{f:D4}.}
+\end{align*}
+By Lemma \ref{l:adjointness}, we have $R^1_0(g_I(n)u',Sq^I_s u_n)$. By Lemma \ref{l:transversity 3}, $g_I(n)u'$ is $\infty$-transverse. Then $x$ is $\infty$-transverse by Theorem \ref{t:duality and transversity}.
+\end{proof}
+
+\begin{cor_Cartan_result}\label{c:Cartan_result}
+\input cor_Cartan_result
+\end{cor_Cartan_result}
+
+\begin{proof}
+According to the K\"unneth formula, it is sufficient to establish the result when $G=\Z/2^s$ for some $s\geq1$. If $n$ is even, consider the fundamental class $u_n\in H^n(K(\Z/2^s,n);\F_2)$. This class survives to $B^n_s$ and is $0$-transverse. Then $u_n\in B^n_s$ is $\infty$-transverse. If $n$ is odd, consider the admissible sequence $(2,1)$. Its excess is exactly $1$ and therefore $Sq^{2,1}_s u_n\in P\even H^*(K(\Z/2,n);\F_2)$ when $n\geq3$. Moreover we have $Sq^1Sq^{2,1}_s u_n=Sq^{3,1}_s u_n$ by Adem relations, which means that $Sq^{2,1}_s u_n$ is $0$-transverse. Hence $Sq^{2,1}_s u_n\in B^{n+3}_1$ is $\infty$-transverse.
+\end{proof}
+
+Chapter \ref{chapter:EMM} will be devoted to the ``Eilenberg-MacLane machine'' which is a C++ program designed to compute the integral homology groups of the Eilenberg-MacLane spaces. The proof of Corollary \ref{cor_Cartan_result} enables us to predict some results that the computations of the machine should confirm. 
+
+For instance, let us look at the Eilenberg-MacLane space $K(\Z/2,2)$ and its integral homology and cohomology groups $H_*=H_*(K(\Z/2,2);\Z)$ and $H^*=H^*(K(\Z/2,2);\Z)$ respectively. The fundamental class $u_2\in H^*(K(\Z/2,2);\F_2)$ is $\infty$-transverse. This implies that the classes $u_2$, $u_2^2$, $u_2^4$, and more generally $(u_2)^{2^l}$ for all $l\geq0$, give elements of order $2$, $4$, $8$ and $2^{l+1}$ in $H^3\cong H_2$, $H^5\cong H_4$, $H^9\cong H_8$ and $H^{2^{l+1}+1}\cong H_{2^{l+1}}$ respectively. A glance at Table \ref{A:integral homology of K(Z/2,2)}, p. \pageref{A:integral homology of K(Z/2,2)}, shows that $H_2\cong\Z/2$, $H_4\cong\Z/4$, $H_8\cong\Z/2\oplus\Z/8$, and so on. This corroborates our guesses.
+
+Let us finally look at the Eilenberg-MacLane space $K(\Z/2,3)$ and its integral homology and cohomology groups $H_*=H_*(K(\Z/2,3);\Z)$ and $H^*=H^*(K(\Z/2,3);\Z)$ respectively. The element $Sq^{2,1}u_3$, which lies in degree $6$, is $\infty$-transverse. This implies that there are elements of order $2$, $4$, $8$, and more generally $2^{l+1}$ for all $l\geq0$, in $H^7\cong H_6$, $H^{13}\cong H_{12}$, $H^{25}\cong H_{24}$ and $H^{6\cdot 2^l+1}\cong H_{6\cdot 2^l}$ respectively. A glance at Table \ref{A:integral homology of K(Z/2,3)}, p. \pageref{A:integral homology of K(Z/2,3)}, shows that $H_6\cong\Z/2$, $H_{12}\cong\Z/2^{\oplus3}\oplus\Z/4$, $H_{24}\cong\Z/2^{\oplus36}\oplus\Z/8$, and so on.
+
+\endinput

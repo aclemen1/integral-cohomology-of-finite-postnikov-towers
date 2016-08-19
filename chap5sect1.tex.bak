@@ -1,0 +1,43 @@
+\section{Transverse implications coming from the fibre}
+%\section{Proofs of Theorems \ref{t:caract_cohomol} and \ref{t:caract_homol}}
+
+Let us recall that if $X$ is a space and $\{B^*_r,d_r\}$ is its mod-$2$ cohomology Bockstein spectral sequence, then an element $x\in B^n_r$ is {\bf $\ell$-transverse} if $d_{r+l}x^{2^l}\not=0\in B^{2^l n}_{r+l}$ for all $0\leq l\leq\ell$. Moreover, $x\in B^n_r$ is {\bf $\infty$-transverse}, or simply {\bf transverse}, if it is $\ell$-transverse for all $\ell\geq0$.
+
+\medskip
+The argument we used in the proof of Theorem \ref{thm_no_retract}, p. \pageref{arg:no_retract},  can be used in many situations. Let us formulate it as the following lemma.
+
+\begin{lem_transverse_fibre}
+\input lem_transverse_fibre
+\end{lem_transverse_fibre}
+
+\begin{proof} %[Proof of Lemma \ref{l:transversity from the fibre}]
+\label{l:transversity from the fibre:proof}
+Suppose that $x$ is not $\infty$-transverse. Then there exists $r\geq0$ such that $d_{r+1}x^{2^r}=0$. Therefore we have
+\begin{align*}
+d_{r+1}i^*(x)^{2^r} &=d_{r+1}i^*(x^{2^r}) &&\text{since $i^*$ is an algebra map,}\\
+&=i^*d_{r+1}x^{2^r} &&\text{by naturality,}\\
+&=0 &&\text{since $d_{r+1}x^{2^r}=0$},
+\end{align*} which contradicts $\infty$-transversity of $i^*(x)$.
+\end{proof}
+
+This simple result allows us to give a general property of spaces which admit a homology exponent.
+
+\begin{thm}\label{t:caract_cohomol}
+Let $X$ be a $2$-local H-space of finite type, $G$ a finitely generated $2$-torsion abelian group and $n$ an integer $\geq2$. If $X$ has a homology exponent, then $i^*Sq^1P\even H^*(X;\F_2)=0$ for all H-maps $i:K(G,n)\to X$.
+\end{thm}
+
+\begin{proof} %[Proof of Theorem \ref{t:caract_cohomol}]
+Suppose that there exists $x\in P\even H^*(X;\F_2)$ such that $i^*Sq^1x=Sq^1i^*(x)\not=0\in H^*(K(G,n);\F_2)$. Then $i^*(x)\not=0\in P\even H^*(K(G,n);\F_2)$ since $i^*$ sends primitives to primitives. By Theorem \ref{t:transversity for Eilenberg-MacLane spaces}, $i^*(x)$ is $\infty$-transverse since $Sq^1i^*(x)\not=0$. By Lemma \ref{l:transversity from the fibre}, $x$ is then $\infty$-transverse and $X$ has no homological exponent.
+\end{proof}
+
+We can exploit the duality of the homology and cohomology mod-$2$ Bockstein spectral sequences in order to give a homological analogue of this result.
+
+\begin{thm}\label{t:caract_homol}
+Let $X$ be a $2$-local H-space of finite type, $G$ a finitely generated $2$-torsion abelian group and $n$ an integer $\geq2$. If $X$ has a homology exponent, then $i_*P\deven \beta H_*(K(G,n);\F_2)=0$ for all H-maps $i:K(G,n)\to X$, where $\beta:H_*(K(G,n);\F_2)\to H_{*-1}(K(G,n);\F_2)$ is the Bockstein homomorphism.
+\end{thm}
+
+\begin{proof} %[Proof of Theorem \ref{t:caract_homol}]
+Let us first notice that $PH_*(K(G,n);\F_2)\subset QH_*(K(G,n);\F_2)$ since $H^*(K(G,n);\F_2)$ is primitively generated and dual. Suppose now that there exists an element $x\in H_*(K(G,n);\F_2)$ such that $\beta x\in P\deven H_*(K(G,n);\F_2)\subset Q\deven H_*(K(G,n);\F_2)$ and $i_*\beta x\not=0$. Observe that $i_*\beta x\in Q\deven H_*(X;\F_2)$ since $i_*$ sends primitives to primitives or indecomposables to indecomposables. By duality, let $x'\in P\even H^*(X;\F_2)$ such that $<i_*\beta x,x'>=1$. Then we have $<x,i^*Sq^1x'>=1$ and thus $i^*Sq^1x'\not=0$. The result follows from Theorem \ref{t:caract_cohomol}.
+\end{proof}
+
+\endinput

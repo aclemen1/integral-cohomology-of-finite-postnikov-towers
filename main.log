@@ -1,0 +1,1534 @@
+This is pdfeTeX, Version 3.141592-1.20a-2.2 (Web2C 7.5.3) (format=pdflatex 2005.9.13)  17 JAN 2007 18:10
+entering extended mode
+\write18 enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, d
+utch, italian, norsk, portuges, spanish, swedish, nohyphenation, loaded.
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amscls/amsbook.cls
+Document Class: amsbook 2004/08/06 v2.20
+\linespacing=\dimen102
+\normalparindent=\dimen103
+\normaltopskip=\skip41
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip42
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count79
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count80
+\leftroot@=\count81
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count82
+\DOTSCASE@=\count83
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
+\dotsspace@=\muskip10
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
+\tag@help=\toks15
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip43
+\multlinetaggap=\skip44
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 386.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)
+\copyins=\insert233
+\abstractbox=\box28
+\listisep=\skip45
+\c@part=\count91
+\c@chapter=\count92
+\c@section=\count93
+\c@subsection=\count94
+\c@subsubsection=\count95
+\c@paragraph=\count96
+\c@subparagraph=\count97
+\c@figure=\count98
+\c@table=\count99
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\captionindent=\dimen113
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/babel/babel.sty
+Package: babel 2004/11/20 v3.8d The Babel package
+
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/babel/english.ldf
+Language: english 2004/06/14 v3.3o English support from the babel system
+
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/babel/babel.def
+File: babel.def 2004/11/20 v3.8d Babel common definitions
+\babel@savecnt=\count100
+\U@D=\dimen114
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/babel/frenchb.ldf
+Language: french 2004/04/02 v1.6f French support from the babel system
+Package babel Info: Making : an active character on input line 219.
+Package babel Info: Making ; an active character on input line 220.
+Package babel Info: Making ! an active character on input line 221.
+Package babel Info: Making ? an active character on input line 222.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 299.
+\parindentFFN=\dimen115
+\std@mcc=\count101
+\dec@mcc=\count102
+
+*************************************
+* Local config file frenchb.cfg used
+*
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/babel/frenchb.cfg)))
+(./fancyhdr.sty
+\headwidth=\dimen116
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c
+LaTeX Info: Redefining \nobreakspace on input line 77.
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xy.sty
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xy.tex Bootstrap'ing:
+catcodes, docmode,
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xyrecat.tex)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.7 <1999/02/16>
+ Copyright (c) 1991-1998 by Kristoffer H. Rose <krisrose@ens-lyon.fr>
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen117
+\Y@c=\dimen118
+\U@c=\dimen119
+\D@c=\dimen120
+\L@c=\dimen121
+\R@c=\dimen122
+\Edge@c=\toks25
+\X@p=\dimen123
+\Y@p=\dimen124
+\U@p=\dimen125
+\D@p=\dimen126
+\L@p=\dimen127
+\R@p=\dimen128
+\Edge@p=\toks26
+\X@origin=\dimen129
+\Y@origin=\dimen130
+\X@xbase=\dimen131
+\Y@xbase=\dimen132
+\X@ybase=\dimen133
+\Y@ybase=\dimen134
+\X@min=\dimen135
+\Y@min=\dimen136
+\X@max=\dimen137
+\Y@max=\dimen138
+\lastobjectbox@=\box29
+\zerodotbox@=\box30
+\almostz@=\dimen139
+ direction,
+\d@X=\dimen140
+\d@Y=\dimen141
+\K@=\count103
+\KK@=\count104
+\Direction=\count105
+\K@dXdY=\dimen142
+\K@dYdX=\dimen143
+\xyread@=\read1
+\xywrite@=\write3
+\csp@=\count106
+\quotPTK@=\dimen144
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks27
+\connectobjectbox@@=\box31
+ objects,
+\styletoks@=\toks28
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 1999/02/16 Xy-pic version 3.7
+
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.3
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.7 curve,
+\crv@cnt@=\count107
+\crvpts@=\toks29
+\splinebox@=\box32
+\splineval@=\dimen145
+\splinedepth@=\dimen146
+\splinetol@=\dimen147
+\splinelength@=\dimen148
+ circles,
+\L@=\dimen149
+ loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.7 loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.3
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.3 loaded) loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.6
+\xylinethick@=\dimen150
+ loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.3 loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.3 loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.4
+\Row=\count108
+\Col=\count109
+\queue@=\toks30
+\queue@@=\toks31
+\qcount@=\count110
+\qcount@@=\count111
+\matrixsize@=\count112
+ loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.5 path, \ar, loaded)
+(/usr/local/teTeX/share/texmf.tetex/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.7 loaded) loaded))
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks32
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count113
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(./algorithm.sty
+Package: algorithm 
+
+Document Style `algorithm' - floating environment
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count114
+\float@exts=\toks33
+\float@box=\box33
+\@float@everytoks=\toks34
+\@floatcapt=\box34
+)
+\@float@every@algorithm=\toks35
+\c@algorithm=\count115
+)
+(./algorithmic.sty
+Package: algorithmic 
+
+Document Style `algorithmic' - environment
+\c@ALC@line=\count116
+\c@ALC@rem=\count117
+\ALC@tlm=\skip51
+) (./moreverb.sty
+Package: moreverb 1997/12/07 v2.2d.2 `more' verbatim facilities
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks36
+\verbatim@line=\toks37
+\verbatim@in@stream=\read2
+)
+\verbatim@out=\write4
+\tab@position=\count118
+\tab@size=\count119
+\listing@line=\count120
+)
+(./supertabular.sty
+Package: supertabular 1999/08/07 v4.1d the supertabular environment
+\c@tracingst=\count121
+\ST@wd=\dimen153
+\ST@rightskip=\skip52
+\ST@leftskip=\skip53
+\ST@parfillskip=\skip54
+\ST@pageleft=\dimen154
+\ST@headht=\dimen155
+\ST@tailht=\dimen156
+\ST@pagesofar=\dimen157
+\ST@pboxht=\dimen158
+\ST@lineht=\dimen159
+\ST@stretchht=\dimen160
+\ST@prevht=\dimen161
+\ST@toadd=\dimen162
+\ST@dimen=\dimen163
+\ST@pbox=\box35
+) (./fancybox.sty
+Package: fancybox 2000/09/19 1.3
+
+Style option: `fancybox' v1.3 <2000/09/19> (tvz)
+\@fancybox=\box36
+\shadowsize=\dimen164
+\@Sbox=\box37
+\do@VerbBox=\toks38
+\the@fancyput=\toks39
+\this@fancyput=\toks40
+\EndVerbatimTokens=\toks41
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read3
+)
+\@indexfile=\write6
+\openout6 = `main.idx'.
+
+
+Writing index file main.idx
+\c@thm=\count122
+(./main.aux (./abstract.aux) (./acknowl.aux) (./chap1.aux) (./chap2.aux)
+(./chap3.aux) (./chap4.aux) (./chap5.aux) (./appendix.aux) (./biblio.aux)
+(./index.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/lmr/m/n on input line 123.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 123.
+ (/usr/local/teTeX/share/texmf.tetex/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2005/02/28 v1.1a Font defs for Latin Modern
+)
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Try loading font information for U+msa on input line 123.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 123.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+
+Package frenchb.ldf Warning: The definition of \@makecaption has been changed,
+(frenchb.ldf)                frenchb will NOT customize it;
+(frenchb.ldf)                reported on input line 123.
+
+LaTeX Info: Redefining \dots on input line 123.
+(/usr/local/teTeX/share/texmf.tetex/tex/context/base/supp-pdf.tex
+(/usr/local/teTeX/share/texmf.tetex/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count123
+\scratchcounter=\count124
+\scratchtoks=\toks42
+\scratchdimen=\dimen165
+\scratchskip=\skip55
+\scratchmuskip=\muskip11
+\scratchbox=\box38
+\scratchread=\read4
+\scratchwrite=\write7
+\zeropoint=\dimen166
+\onepoint=\dimen167
+\onebasepoint=\dimen168
+\minusone=\count125
+\thousandpoint=\dimen169
+\onerealpoint=\dimen170
+\emptytoks=\toks43
+\nextbox=\box39
+\nextdepth=\dimen171
+\everyline=\toks44
+\!!counta=\count126
+\!!countb=\count127
+\recursecounter=\count128
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen172
+\MPnumerator=\count132
+\everyMPtoPDFconversion=\toks45
+) <./LogoUNIL.pdf, id=1, 183.68625pt x 64.24pt>
+File: ./LogoUNIL.pdf Graphic file (type pdf)
+ <use ./LogoUNIL.pdf>
+<./logoSciences.pdf, id=2, 467.7475pt x 141.52875pt>
+File: ./logoSciences.pdf Graphic file (type pdf)
+ <use ./logoSciences.pdf>
+[0
+
+
+
+
+
+
+{/usr/local/teTeX/share/texmf.local/fonts/map/pdftex/updmap/pdftex.map} <./Logo
+UNIL.pdf> <./logoSciences.pdf>] [1] [2] [3]
+Contents
+(./main.toc
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1
+
+
+])
+\tf@toc=\write8
+\openout8 = `main.toc'.
+
+ [2]
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex
+Abstract
+[3
+
+
+
+] [4
+
+
+]
+R\'esum\'e
+) [5]
+\openout2 = `acknowl.aux'.
+
+ (./acknowl.tex [6
+
+
+
+
+]
+Remerciements
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[]\OT1/cmr/m/n/12 Je re-mer-cie [] ainsi que
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 8--9
+[] \OT1/cmr/m/n/12 d'avoir si spon-tan^^Sement ac-cept^^Se d'ex-
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/12 Je re-mer-cie cha-leu-reu-se-ment [] d'avoir
+ []
+
+) [7] [8
+
+
+
+]
+\openout2 = `chap1.aux'.
+
+ (./chap1.tex
+Chapter 1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+
+]
+[2] (./chap1sect1.tex <xymatrix 4x5 535> <xymatrix 2x2 171> [3] <xymatrix 2x3
+274> <xymatrix 3x2 148> <xymatrix 5x1 178> [4] <xymatrix 4x1 120>
+Underfull \hbox (badness 2111) in paragraph at lines 87--88
+[]\OT1/cmr/m/n/12 A fi-nite non-empty se-quence of non-negative in-te-gers $\OM
+L/cmm/m/it/12 I \OT1/cmr/m/n/12 =
+ []
+
+) [5] (./chap1sect2.tex [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+[]\OT1/cmr/m/n/12 He also stud-ied the be-hav-ior of the Poincar^^Se se-ries
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 66--67
+\OT1/cmr/m/n/12 does not. See for in-stance the ta-bles of com-pu-ta-tions for
+ []
+
+[8] [9] [10]) [11] (./chap1sect3.tex (./defn_transverse_coH.tex) <xymatrix
+15x4 599> (./thm_main_technical.tex) [12] (./cor_Cartan_result.tex)
+(./prop_heuristic_H.tex
+Underfull \hbox (badness 5681) in paragraph at lines 1--2
+[]\OT1/cmr/bx/n/12 1.3.4. Propo-si-tion. \OT1/cmr/m/it/12 The ex-po-nent of the
+ ho-mol-ogy group
+ []
+
+) (./prop_heuristic_coH.tex
+Underfull \hbox (badness 2393) in paragraph at lines 1--2
+[]\OT1/cmr/bx/n/12 1.3.5. Propo-si-tion. \OT1/cmr/m/it/12 The ex-po-nent of the
+ co-ho-mol-ogy group
+ []
+
+) [13] (./exmp_retract.tex <xymatrix 3x1 102>) (./thm_retract.tex
+Underfull \hbox (badness 4429) in paragraph at lines 5--6
+[]$\OML/cmm/m/it/12 X$ \OT1/cmr/m/it/12 re-tracts (weakly) onto the Eilenberg-M
+acLane space
+ []
+
+) (./thm_slight_gen.tex <xymatrix 2x3 274>
+Underfull \vbox (badness 2435) has occurred while \output is active []
+
+ [14])
+(./exmp_no_retract.tex <xymatrix 3x1 102>) [15] (./thm_no_retract.tex
+Underfull \hbox (badness 7064) in paragraph at lines 5--6
+[]$\OML/cmm/m/it/12 X$ \OT1/cmr/m/it/12 re-tracts nei-ther onto the Eilenberg-M
+acLane space
+ []
+
+) (./lem_transverse_fibre.tex) (./thm_first_main.tex) (./thm_second_main.tex
+<xymatrix 2x3 274>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]))
+[17] (./chap1sect4.tex (./conj_main.tex) <xymatrix 3x4 228> [18]) [19]
+(./chap1sect5.tex)) [20]
+\openout2 = `chap2.aux'.
+
+ (./chap2.tex
+Chapter 2
+(./chap2sect1.tex <xymatrix 5x1 158> [21
+
+
+
+
+] <xymatrix 8x2 368> <xymatrix 5x1
+158> [22]
+Underfull \hbox (badness 5302) in paragraph at lines 70--71
+[]\OT1/cmr/bx/n/12 2.1.6. Propo-si-tion. \OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12
+ P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ \OT1/cmr/m/it/12 de-n
+ote the Poincar^^Se se-ries
+ []
+
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 72.
+
+) [23] (./chap2sect2.tex
+Underfull \hbox (badness 2828) in paragraph at lines 27--28
+\OT1/cmr/m/n/12 MacLane spaces as-so-ci-ated to $\OML/cmm/m/it/12 G$\OT1/cmr/m/
+n/12 . In other words we have
+ []
+
+[24] [25] [26] [27] [28] [29] [30] [31]) [32] (./chap2sect3.tex
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+ [33]
+Underfull \hbox (badness 1325) in paragraph at lines 57--58
+[]\OT1/cmr/bx/n/12 2.3.6. The-o-rem. \OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 n \
+U/msa/m/n/12 > \OT1/cmr/m/n/12 1$ \OT1/cmr/m/it/12 and $\OML/cmm/m/it/12 s \U/m
+sa/m/n/12 > \OT1/cmr/m/n/12 1$\OT1/cmr/m/it/12 . Con-sider the
+ []
+
+[34]) [35] (./chap2sect4.tex (./defn_transverse_coH.tex)
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [36]
+Underfull \hbox (badness 1430) in paragraph at lines 37--38
+\OT1/cmr/m/n/12 since $\OML/cmm/m/it/12 ^^M[]x \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/1
+2 = 0 \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 B[]$ \OT1/cmr/m/n/12 (i.e. $\OML/cmm/
+m/it/12 Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; x[]\OT1/cmr/m/n/12 )$) im-plies
+ that
+ []
+
+
+Overfull \hbox (4.21672pt too wide) in paragraph at lines 46--46
+[] 
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+[]\OT1/cmr/m/n/12 If we con-sider the Car-tan's com-plex as-so-ci-ated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+\OT1/cmr/m/n/12 to $\OML/cmm/m/it/12 K\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/
+m/it/12 =\OT1/cmr/m/n/12 2[]\OML/cmm/m/it/12 ; n\OT1/cmr/m/n/12 )$ and in par-t
+ic-u-lar the el-e-men-tary com-plex
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 99--100
+\OML/cmm/m/it/12 EC[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^[[]u; ^^[[] []u\OT1/cm
+r/m/n/12 )$, Lemma 2.2.6[] im-plies that $\OML/cmm/m/it/12 ^^M[]^^[[]u$ \OT1/cm
+r/m/n/12 is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+[]\OT1/cmr/m/n/12 If we con-sider the Car-tan's com-plex as-so-ci-ated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\OT1/cmr/m/n/12 to $\OML/cmm/m/it/12 K\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/
+m/it/12 =\OT1/cmr/m/n/12 2[]\OML/cmm/m/it/12 ; n\OT1/cmr/m/n/12 )$ and in par-t
+ic-u-lar the el-e-men-tary com-plex
+ []
+
+[38] (./thm_main_technical.tex) [39] (./cor_Cartan_result.tex)
+Underfull \hbox (badness 2818) in paragraph at lines 163--164
+[]\OT1/cmr/m/n/12 For in-stance, let us look at the Eilenberg-MacLane space
+ []
+
+) [40] (./chap2sect5.tex)) [41]
+\openout2 = `chap3.aux'.
+
+ (./chap3.tex [42
+
+
+
+
+]
+Chapter 3
+
+Underfull \hbox (badness 1389) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/12 Appendix C[] con-tains ta-bles which were com-puted with the
+ []
+
+(./chap3sect1.tex
+Underfull \hbox (badness 1242) in paragraph at lines 3--4
+[]\OT1/cmr/m/n/12 In this sec-tion, we state the main al-go-rithms nec-es-sary 
+for
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 13--14
+[] []\OT1/cmr/m/n/12 collection $\OMS/cmsy/m/n/12 C$ \OT1/cmr/m/n/12 of all ad-
+mis-si-ble se-
+ []
+
+[43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Underfull \hbox (badness 5667) in paragraph at lines 68--69
+[] []\OT1/cmr/m/n/12 graded group $[](\OML/cmm/m/it/12 EC[]\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 x; y\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 
+[]
+ []
+
+) [45] (./chap3sect2.tex (./prop_heuristic_H.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+[][]\OT1/cmr/bx/n/12 . \OT1/cmr/m/it/12 The ex-po-nent of the ho-mol-ogy group
+ []
+
+) [46] (./prop_heuristic_coH.tex
+Underfull \hbox (badness 4686) in paragraph at lines 1--2
+[][]\OT1/cmr/bx/n/12 . \OT1/cmr/m/it/12 The ex-po-nent of the co-ho-mol-ogy gro
+up
+ []
+
+)
+Underfull \hbox (badness 6173) in paragraph at lines 33--34
+[]\OT1/cmr/m/n/12 Using Propo-si-tion 1.3.5[], it is very easy to check that
+ []
+
+[47])) [48]
+\openout2 = `chap4.aux'.
+
+ (./chap4.tex
+Chapter 4
+(./chap4sect1.tex (./exmp_retract.tex <xymatrix 3x1 102>) (./thm_retract.tex
+Underfull \hbox (badness 4429) in paragraph at lines 5--6
+[]$\OML/cmm/m/it/12 X$ \OT1/cmr/m/it/12 re-tracts (weakly) onto the Eilenberg-M
+acLane space
+ []
+
+) <xymatrix 3x3 344> [49
+
+
+
+
+] <xymatrix 3x2 152>) [50] (./chap4sect2.tex <xymatrix
+2x3 281> <xymatrix 2x6 481>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+<xymatrix 2x3 281> <xymatrix 2x3 248> [52] <xymatrix 4x3 448> <xymatrix 2x3
+281> [53] <xymatrix 2x6 391>
+Overfull \hbox (19.28334pt too wide) detected at line 88
+[]
+ []
+
+
+Overfull \hbox (4.6485pt too wide) in paragraph at lines 98--98
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+(./thm_slight_gen.tex <xymatrix 2x3 274>) [55] [56] <xymatrix 2x3 274> [57])
+[58] (./chap4sect3.tex (./exmp_no_retract.tex <xymatrix 3x1 102>)
+(./thm_no_retract.tex
+Underfull \hbox (badness 7064) in paragraph at lines 5--6
+[]$\OML/cmm/m/it/12 X$ \OT1/cmr/m/it/12 re-tracts nei-ther onto the Eilenberg-M
+acLane space
+ []
+
+) <xymatrix 3x1 102> <xymatrix 9x8 310> [59] <xymatrix 2x1 44> <xymatrix 2x3
+288> <xymatrix 2x2 181> <xymatrix 3x1 82> [60] <xymatrix 2x1 44>)) [61]
+\openout2 = `chap5.aux'.
+
+
+(./chap5.tex [62
+
+
+
+
+]
+Chapter 5
+(./chap5sect1.tex (./lem_transverse_fibre.tex) [63]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[]\OT1/cmr/m/n/12 Let us first no-tice that $\OML/cmm/m/it/12 PH[]\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 K\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G; n\OT1/cmr/m/n/12 ); 
+\U/msb/m/n/12 F[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^Z
+ []
+
+) [64] (./chap5sect2.tex
+Underfull \hbox (badness 2096) in paragraph at lines 28--29
+[]\OT1/cmr/bx/n/12 5.2.4. The-o-rem. \OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 F \
+OMS/cmsy/m/n/12 ! \OML/cmm/m/it/12 E \OMS/cmsy/m/n/12 ! \OML/cmm/m/it/12 B$ \OT
+1/cmr/m/it/12 be a WH-fibration
+ []
+
+[65]
+Underfull \hbox (badness 1184) in paragraph at lines 70--71
+[]\OT1/cmr/m/n/12 It is easy to see that $\OML/cmm/m/it/12 H[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 B\OT1/cmr/m/n/12 ; \U/msb/m/n/12 F[]\OT1/cmr/m/n/12 )\OMS/cmsy
+/m/n/12 nn\OML/cmm/m/it/12 f[] []
+ []
+
+[66] <xymatrix 3x1 92> [67] <xymatrix 2x2 164> <xymatrix 4x24 627>
+Overfull \hbox (10.02412pt too wide) detected at line 156
+[]
+ []
+
+
+Underfull \vbox (badness 1728) has occurred while \output is active []
+
+ [68]
+[69]) [70] (./chap5sect3.tex <xymatrix 2x3 209>) [71] (./chap5sect4.tex
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]\OT1/cmr/m/n/12 An $\U/msb/m/n/12 F[]$\OT1/cmr/m/n/12 -basis for $\OML/cmm/m/
+it/12 P[]H[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 K\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 G; m\OT1/cmr/m/n/12 ); \U/msb/m/n/12 F[]\OT1/cmr/m/n/12 )$ is given by
+ []
+
+[72] (./thm_first_main.tex) <xymatrix 2x3 209>) [73] (./chap5sect5.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74]
+Underfull \vbox (badness 5787) has occurred while \output is active []
+
+ [75]
+[76] [77] <xymatrix 7x7 239> [78]
+Underfull \hbox (badness 1173) in paragraph at lines 191--192
+[]\OT1/cmr/bx/n/12 Remark. \OT1/cmr/m/n/12 This lemma im-plies ob-vi-ously that
+ $\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 KG\OT1/cmr/m/n/12 )(\OM
+L/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^X
+ []
+
+) [79] (./chap5sect6.tex [80] (./thm_second_main.tex <xymatrix 2x3 274>)
+[81]) [82] [83] (./chap5sect7.tex (./conj_main.tex))) [84]
+\openout2 = `appendix.aux'.
+
+ (./appendix.tex
+\c@Athm=\count133
+\c@Adefn=\count134
+\c@Anota=\count135
+\c@Aconv=\count136
+\c@Aconj=\count137
+\c@Aexmp=\count138
+
+Appendix A
+
+Overfull \hbox (16.76385pt too wide) in paragraph at lines 45--45
+[] 
+ []
+
+(./appendix1.tex [85
+
+
+
+
+
+
+] [86
+
+
+]
+Appendix B
+[87]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 69.
+
+<xymatrix 8x14 932>
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 69.
+
+<xymatrix 8x14 932> [88]) [89] [90
+
+
+]
+Appendix C
+(./table1.tex [91] [92] [93] [94] [95] [96]
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
+
+ []
+
+) [97] (./table2.tex [98]
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[100]
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 528--529
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 533--534
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 592--593
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 597--598
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 620--621
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 624--625
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 625--626
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 629--630
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 652--653
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 656--657
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 657--658
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 660--661
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 661--662
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 665--666
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 684--685
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[102]
+Underfull \hbox (badness 1845) in paragraph at lines 688--689
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 689--690
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 693--694
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 716--717
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 720--721
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 721--722
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 724--725
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 725--726
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 729--730
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 748--749
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 752--753
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 753--754
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 756--757
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 757--758
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 761--762
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 780--781
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 784--785
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 785--786
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 789--790
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[103] [104]) [105] (./table3.tex [106] [107] [108] [109] [110] [111]
+Underfull \hbox (badness 10000) in paragraph at lines 816--817
+
+ []
+
+) [112] (./table4.tex [113]
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[114]
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 459--460
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[115]
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 464--465
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 491--492
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 496--497
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 523--524
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 527--528
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 528--529
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 532--533
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 555--556
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 559--560
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 560--561
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 563--564
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 564--565
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 568--569
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[116]
+Underfull \hbox (badness 1845) in paragraph at lines 587--588
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 591--592
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 592--593
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 596--597
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 619--620
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 623--624
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 624--625
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 628--629
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 659--660
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 664--665
+[]$\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2)[] \OMS/
+cmsy/m/n/12 ^^H \OT1/cmr/m/n/12 (\U/msb/m/n/12 Z\OML/cmm/m/it/12 =\OT1/cmr/m/n/
+12 2[])[] \OMS/cmsy/m/n/12 ^^H
+ []
+
+[117] [118] [119]
+Underfull \hbox (badness 10000) in paragraph at lines 816--817
+
+ []
+
+) [120]
+Appendix D
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 72.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [121
+
+
+]
+[122]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [123]
+[124]
+Overfull \hbox (13.66472pt too wide) in paragraph at lines 86--86
+[][] \OT1/cmtt/m/n/10.95 enum Mod2Letter {empty,beta_2,sigma,gamma_2,phi_2,psi_
+2_to_s};[] 
+ []
+
+[125] [126] [127]) [128]
+\openout2 = `biblio.aux'.
+
+ (./biblio.tex (./mrabbrev.tex)
+Bibliography
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [129
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [130]
+Underfull \hbox (badness 1019) in paragraph at lines 126--127
+[]\OT1/cmr/m/sc/10 S. Wen-huai\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 Note on the Se
+rre con-jec-ture the-o-rem of McGib-bon and
+ []
+
+) [131]
+\openout2 = `index.aux'.
+
+ (./index.tex (./main.ind [132
+
+
+
+
+]
+Index
+[133
+
+])) (./main.aux (./abstract.aux) (./acknowl.aux) (./chap1.aux) (./chap2.aux) (.
+/chap3.aux) (./chap4.aux) (./chap5.aux) (./appendix.aux) (./biblio.aux)
+(./index.aux)) ) 
+Here is how much of TeX's memory you used:
+ 10919 strings out of 95217
+ 105518 string characters out of 1184538
+ 2296148 words of memory out of 4750983
+ 13522 multiletter control sequences out of 10000+50000
+ 18949 words of font info for 74 fonts, out of 2000000 for 2000
+ 219 hyphenation exceptions out of 1000
+ 35i,23n,43p,1701b,814s stack positions out of 5000i,500n,6000p,200000b,40000s
+ 571 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 11 words of extra memory for PDF output out of 65536
+</usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy
+7.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmr7.pfb></usr
+/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/te
+TeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmtt10.pfb></usr/local/teTeX/share
+/texmf.tetex/fonts/type1/bluesky/cm/cmsl10.pfb></usr/local/teTeX/share/texmf.te
+tex/fonts/type1/bluesky/cm/cmmi5.pfb></usr/local/teTeX/share/texmf.tetex/fonts/
+type1/bluesky/cm/cmr5.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/blues
+ky/cm/cmbx8.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/symbols
+/msbm7.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy6.pfb
+></usr/local/teTeX/share/texmf.tetex/fonts/type1/public/xypic/xydash10.pfb></us
+r/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmr6.pfb></usr/local/teT
+eX/share/texmf.tetex/fonts/type1/public/xypic/xybtip10.pfb></usr/local/teTeX/sh
+are/texmf.tetex/fonts/type1/public/xypic/xyatip10.pfb></usr/local/teTeX/share/t
+exmf.tetex/fonts/type1/bluesky/cm/cmmi6.pfb></usr/local/teTeX/share/texmf.tetex
+/fonts/type1/bluesky/symbols/msam7.pfb></usr/local/teTeX/share/texmf.tetex/font
+s/type1/bluesky/cm/cmmi8.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bl
+uesky/cm/cmti12.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/
+cmex10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy8.pfb
+></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy10.pfb></usr/lo
+cal/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmtt12.pfb></usr/local/teTeX
+/share/texmf.tetex/fonts/type1/bluesky/symbols/msbm10.pfb></usr/local/teTeX/sha
+re/texmf.tetex/fonts/type1/bluesky/cm/cmr8.pfb></usr/local/teTeX/share/texmf.te
+tex/fonts/type1/bluesky/cm/cmmi12.pfb></usr/local/teTeX/share/texmf.tetex/fonts
+/type1/bluesky/symbols/msam10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/typ
+e1/bluesky/cm/cmti10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesk
+y/cm/cmr10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmr12
+.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmbx12.pfb></us
+r/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmcsc10.pfb>
+Output written on main.pdf (145 pages, 685782 bytes).

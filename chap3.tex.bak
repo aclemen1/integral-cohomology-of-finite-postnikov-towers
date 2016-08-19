@@ -1,0 +1,17 @@
+\chapter{The ``Eilenberg-MacLane machine''}
+
+The ``Eilenberg-MacLane machine'' is a program which computes the homology groups $H_*(K(\Z/2^s,n);\Z)$ for all $n\geq1$, $s\geq1$. 
+
+A first version, written in C, is actually able to do more since it computes $H_*(K(\Z/p^s,n);\Z)$ for all prime $p$. This version is far from being optimized and is based on the ``rude force'' of the computer you are working with. The aim was only to obtain a very reliable code. The program finds, in a very naive way, all admissible $p$-words (see \cite[Expos\'e 9, p. 1]{Ca55} for a definition when $p\not=2$) of given height and degree. It happens that it is a tricky, recursive problem which takes a lot of time and memory to be achieved.
+
+A second version, written in C++, provides an optimized and reliable code at the prime $2$. It is based on the results of Appendix \ref{appendix:elementary results} which mainly state that admissible words are in one-to-one correspondance with admissible sequences. As it is simpler to determine all admissible sequences of given excess and degree than admissible words, the process reveals fast and parcimonious in terms of memory.
+
+Since our interest lies only at the prime $2$ in this work, we will only describe the second version of the ``Eilenberg-MacLane machine'' in Section \ref{section:alg}.
+
+Appendix \ref{a:tables} contains tables which were computed with the ``Eilenberg-MacLane machine''. A glance at these tables reveals some heuristic results that are proved in Section \ref{section:heuristic}.
+
+For those who are interested in the C++ implementation, Appendix \ref{a:C++ implementation} contains some relevant header files.
+
+\input chap3sect1
+\newpage
+\input chap3sect2

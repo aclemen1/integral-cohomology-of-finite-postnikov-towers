@@ -1,0 +1,186 @@
+\section{Properties of the Eilenberg-Moore spectral sequence}
+
+The results exposed here are mainly those of S. Eilenberg and J. C. Moore \cite{EM66}, L. Smith \cite{Sm70} \cite{Sm67} and J. C. Moore and L. Smith \cite{MS68-I} \cite{MS68-II}.
+
+\begin{thm}\label{t:EMSS original}
+Let $F\to E\to B$ be a fibration with $1$-connected base space $B$ and connected fiber $F$. There is a second quadrant spectral sequence $\{E_r^{*,*},d_r\}$ such that $E_2^{p,q}\cong\Tor_{H^*(B;\F_2)}^{p,q}(\F_2,H^*(E;\F_2))$, and converging to $H^*(F;\F_2)$. Moreover, the spectral sequence is a spectral sequence of algebras, converging to its target as an algebra. This spectral sequence is called the {\bf mod-$2$ cohomology Eilenberg-Moore spectral sequence}\index{Eilenberg-Moore spectral sequence} of the fibration $F\to E\to B$.
+\end{thm}
+
+\begin{proof}
+See \cite[Corollary 7.16, p. 252 and Corollary 7.18, p. 256]{Mc00}. See also \cite[Theorem 6.2, pp. 51-52]{Sm70} for more properties of the spectral sequence.
+\end{proof}
+
+\begin{defn}\index{WH-fibration}
+Let $f:E\to B$ be a fibration. If $H^*(E;\F_2)$ and $H^*(B;\F_2)$ admit Hopf algebras structures such that $f^*:H^*(B;\F_2)\to H^*(E;\F_2)$ is a morphism of Hopf algebras, then $f:E\to B$ is said to be a {\bf WH-fibration}.
+\end{defn}
+
+\begin{rem*}
+J. C. Moore and L. Smith speak more generally of {\it Hopf fibre squares} in \cite[p. 56]{Sm70} and Hopf fibre squares {\it in the weak sense} in \cite[Appendix: Generalizations, pp. 779-780]{MS68-I}. This justifies the notation WH for ``{\it weak}'' and ``{\it Hopf}''.
+\end{rem*}
+
+\begin{exmp}
+Consider a two-stage (stable) Postnikov system with primitive k-invariant. The fibration involved in the system is a WH-fibration.
+\end{exmp}
+
+This enables us to modify slightly Theorem \ref{t:EMSS original} as follows:
+
+\begin{thm}
+Let $F\to E\to B$ be a WH-fibration with $1$-connected base space $B$ and connected fiber $F$. There is a second quadrant spectral sequence $\{E_r^{*,*},d_r\}$ such that $E_2^{p,q}\cong\Tor_{H^*(B;\F_2)}^{p,q}(\F_2,H^*(E;\F_2))$, and converging to $H^*(F;\F_2)$. Moreover, the spectral sequence is a spectral sequence of (bigraded) Hopf algebras, converging to its target as a Hopf algebra.
+\end{thm}
+
+\begin{proof}
+See \cite[Theorem 1.1, pp. 59-61]{Sm70} and \cite[Appendix: Generalizations, pp. 779-780]{MS68-I}.
+\end{proof}
+
+In what follows, we would like to identify the $E_2$-term of the spectral sequence as a Hopf algebra.
+
+\begin{thm}
+Let $f:E\to B$ be a WH-fibration with $1$-connected base space $B$ and connected fiber $F$. Consider its mod-$2$ cohomology Eilenberg-Moore spectral sequence $\{E_r^{*,*},d_r\}$. As a (bigraded) Hopf algebra, we have
+$$
+E_2^{*,*}\cong H^*(E;\F_2)//f^*\otimes\Tor_{H^*(B;\F_2)\backslash\backslash f^*}(\F_2,\F_2),
+$$ where $H^*(E;\F_2)//f^*$ denotes the cokernel of $f^*:H^*(B;\F_2)\to H^*(E;\F_2)$\index{0@$//$} and $H^*(B;\F_2)\backslash\backslash f^*$ the kernel of $f^*$\index{0@$\backslash\backslash$} (in the category of connected positively graded Hopf algebra over $\F_2$ whose multiplication is commutative).
+\end{thm}
+
+\begin{proof}
+See \cite[Theorem 2.4, p. 67]{Sm70}.
+\end{proof}
+
+We can specialize this result when $H^*(B;\F_2)$ is a free graded commutative $\F_2$-algebra, i.e. a graded polynomial $\F_2$-algebra, which is cocommutative as a Hopf algebra. For instance, this is the case if $B$ is an Eilenberg-MacLane space.
+
+\begin{prop}\label{p:sub-Hopf generator}
+Let $H$ be a cocommutative Hopf algebra and $I\subset H$ a Hopf ideal. There exists a unique sub-Hopf algebra $S\subset H$ such that $I=\bar{S}\cdot H$, where $\bar{S}$ denotes the augmentation ideal of $S$.
+\end{prop}
+
+\begin{proof}
+See \cite[Proposition 1.4, pp. 311-312]{Sm67}.
+\end{proof}
+
+\begin{defn}\index{0@$\subker\varphi$}
+Let $H$ be a cocommutative Hopf algebra, $H'$ a Hopf algebra and $\varphi:H\to H'$ be a Hopf algebra map. Following Proposition \ref{p:sub-Hopf generator}, we denote by $\text{\bf sub-ker }\mathbf\varphi$ the unique sub-Hopf algebra of $H$ generating the Hopf ideal $\ker\varphi$.
+\end{defn}
+
+\begin{cor}\label{c:main EMSS}
+Let $f:E\to B$ be a WH-fibration with $1$-connected base space $B$ and connected fiber $F$. Suppose further that $H^*(B;\F_2)$ is a free graded commutative $\F_2$-algebra which is cocommutative as a Hopf algebra. Consider the mod-$2$ cohomology Eilenberg-Moore spectral sequence $\{E_r^{*,*},d_r\}$ associated with the fibration $f:E\to B$. As a (bigraded) Hopf algebra we have
+$$
+E_2^{*,*}\cong H^*(E;\F_2)//f^*\otimes\Lambda_{\F_2}(s^{-1,0}Q\subker f^*),
+$$ where $s^{-1,0}$\index{0@$s^{-1,0}$}\index{shift} shifts the bidegree of the elements in $Q\subker f^*$ by $(-1,0)$, the decomposable elements of $\subker f^*$. Moreover, all the differentials $d_r$ are trivial for $r\geq2$ and therefore $E_2\cong E_\infty$.
+\end{cor}
+
+\begin{proof}[Sketch of proof]
+It is easy to see that $H^*(B;\F_2)\backslash\backslash f^*\cong\subker f^*$. But $\subker f^*$ is a sub-Hopf algebra of a polynomial algebra. Then by A. Borel's structure theorem, $\subker f^*$ is also a polynomial algebra. Using a Koszul resolution, it is easy to compute that $\Tor_{\F_2[x]}(\F_2,\F_2)\cong\Lambda_{\F_2}(s^{-1,0}x)$ as bigraded objects. Therefore we have $\Tor_{\subker f^*}(\F_2,\F_2)\cong\Lambda_{\F_2}(s^{-1,0}Q\subker f^*)$ since $\subker f^*$ is generated by its indecomposables. The differential $d_2$ is trivial on $E_2^{0,*}\cong H^*(E;\F_2)$ and $E_2^{-1,*}\cong Q\subker f^*$ since the spectral sequence lies in the second quadrant. Therefore $d_2$ is trivial since elements in $E_2^{0,*}$ and $E_2^{-1,*}$ generate $E_2^{*,*}$. The same argument holds for higher differentials and $d_r=0$ for all $r\geq2$. Therefore, we have $E_2\cong E_\infty$. See also \cite[Theorem 3.2, pp. 75-76]{Sm70}.
+\end{proof}
+
+We present here a technical, but non-surprising, result which we will need in the sequel.
+
+\begin{thm}\label{t:EMSS and cohomology suspension}
+Let $f:E\to B$ be a WH-fibration with $1$-connected base space $B$ and connected fiber $F$. Suppose further that $H^*(B;\F_2)$ is a free graded commutative $\F_2$-algebra which is cocommutative as a Hopf algebra. Consider the inclusion map $i:\Omega B\to F$ and its induced map $i^*:H^*(F;\F_2)\to H^*(\Omega B;\F_2)$. If $x\in Q\subker f^*\subset H^*(B;\F_2)$, then 
+$$i^*(\tilde{x})=\sigma^*(x),$$ 
+where $\tilde{x}$ is the image of $x\in Q\subker f^*\cong E_2^{-1,*}\cong E_\infty^{-1,*}$ in $H^*(F;\F_2)$ and $\sigma^*$ denotes the cohomology suspension $H^*(B;\F_2)\to H^{*-1}(\Omega B;\F_2)$.
+\end{thm}
+
+\begin{proof}
+See \cite[Proposition 5.4, p. 325]{Sm67}.
+\end{proof}
+
+\medskip
+To conclude this section, let us work out the Eilenberg-Moore spectral sequence of the space of Example \ref{e:space without a retract}\label{a:EMSS}: let $X$ be the space given by the fibration
+$$\xymatrix{
+X\ar[r] &K(\Z/2,2)\ar[r]^-f &K(\Z/2,4),
+}$$
+with
+\begin{align*}
+f \in& [K(\Z/2,2),K(\Z/2,4)]\\
+\cong &H^4(K(\Z/2,2);\F_2)\\
+\cong &\F_2\{u_2^2\}
+\end{align*}
+given by $f=u_2^2$ where $u_2$ is the fundamental class of $K(\Z/2,2)$.
+
+\medskip
+The definition of the functor $\Tor_{(-)}^{*,*}(-,-)$ in Theorem \ref{t:EMSS original} is rather technical and involves homological algebra (see for instance \cite[Definition 7.5, p. 240]{Mc00}). In order to compute $\Tor_\Gamma(M,N)$, we need a proper projective resolution of the left $\Gamma$-module $N$. This can be done using one of the more useful explicit constructions in homological algebra, namely the {\bf bar construction}. The bar construction can become quite large and complicated. But one of the features of homological algebra is the invariance of the derived functors with regard to the choice of resolution and so the construction of smaller and more manageable resolutions is of key interest. We will give here a method to compute $\Tor_\Gamma(M,N)$ when $\Gamma$, $M$ and $N$ are free graded commutative objects over $\F_2$. This will be achieved by using {\bf Koszul complexes}\index{Koszul complex}.
+
+\newpage
+\begin{thm}
+Let $S$ be a graded set and $L$ a graded commutative algebra over $\F_2[S]$. Then there is an isomorphism of bigraded algebras over $\F_2$
+$$
+\Tor^{*,*}_{\F_2[S]}(\F_2,L)\cong H(\Lambda_{\F_2}(s^{-1,0}S)\otimes_{\F_2}L,d_L)
+$$ where the Koszul complex $\Lambda_{\F_2}(s^{-1,0}S)\otimes_{\F_2}L$ has the differential $d_L$ given by
+$$
+d_L(s^{-1,0}x\otimes l)=1\otimes xl\text{ for all $x\in S$}
+$$ and the bidegree given by
+\begin{align*}
+\bideg(1\otimes l)&=(0,\deg(l))\text{ and}\\
+\bideg(s^{-1,0}x\otimes 1)&=(-1,\deg(x)).
+\end{align*}
+\end{thm}
+
+\begin{proof}
+See \cite[Corollary 7.23, p. 260]{Mc00}.
+\end{proof}
+
+Recall once more that the space $X$ of Example \ref{e:space without a retract} is given by the following homotopy pullback:
+$$\xymatrix{
+X\ar[r]\ar[d] &{*}\ar[d]\\
+K(\Z/2,2)\ar[r]_-f &K(\Z/2,4),
+}$$ where $f^*(u_4)=Sq^2u_2=u_2^2$.
+
+If one considers the graded set $$S=\{Sq^Iu_4\ |\ \text{$I$ admissible and $e(I)<4$}\},$$ then the $E_1$-term of the Eilenberg-Moore spectral sequence is given by 
+$$E_1^{*,*}\cong\Lambda_{\F_2}(s^{-1,0}S)\otimes_{\F_2}H^*(K(\Z/2,2);\F_2))$$ and the differential $$d_1(s^{-1,0}x\otimes l)=1\otimes f^*(x)\cdot l\text{ for all $x\in S$}.$$
+
+We can now picture the $E^{p,q}_1$-term of the spectral sequence (in the range $-1\leq p\leq 0$ and $0\leq q\leq 7$):
+
+$$\xymatrix@R=0.05truecm@C=1truecm{
+&&&\\
+&s^{-1,0}u_4\otimes Sq^1u_2\ar@{|->}[r]^-{d_1} &1\otimes u_2^2Sq^1u_2&{\bf 7}\\
+&\shadowbox{$s^{-1,0}Sq^3u_4\otimes1$}& \doublebox{$1\otimes u_2Sq^{2,1}u_2$}&\\
+&\shadowbox{$s^{-1,0}Sq^{2,1}u_4\otimes1$} &&\\
+&\fbox{$s^{-1,0}Sq^1u_4\otimes u_2$} &&\\
+&&&\\
+&s^{-1,0}Sq^2u_4\otimes 1\ar@{|->}[r]^-{d_1} &1\otimes(Sq^1u_2)^2&{\bf 6}\\
+&s^{-1,0}u_4\otimes u_2\ar@{|->}[r]^-{d_1} &1\otimes u_2^3&\\
+&&&\\
+&\shadowbox{$s^{-1,0}Sq^1u_4\otimes 1$} &\doublebox{$1\otimes Sq^{2,1}u_2$}&{\bf 5}\\
+&&\doublebox{$1\otimes u_2Sq^1u_2$}&\\
+&&&\\
+&s^{-1,0}u_4\otimes 1\ar@{|->}[r]^-{d_1} &1\otimes u_2^2&{\bf 4}\\
+&&&\\
+&&\doublebox{$1\otimes Sq^1u_2$}&{\bf 3}\\
+&&&\\
+&&\doublebox{$1\otimes u_2$}&{\bf 2}\\
+&&&\\
+&&&{\bf 1}\\
+&&&\\
+&&\doublebox{$1$}&{\bf 0}\\
+\ar[rrr]&&&\\
+&{\bf -1} &{\bf 0} &\ar@<1cm>[uuuuuuuuuuuuuuuuuuuuuu]\\
+&\shadowbox{$\Lambda_{\F_2}(s^{-1,0}Q\subker f^*)$} &\doublebox{$H^*(K(\Z/2,2);\F_2)//f^*$}
+}$$
+
+Boxed elements are those which survive to $E_2\cong E_\infty$ by Corollary \ref{c:main EMSS}. 
+
+\newpage
+Therefore we have the following table for $H^*(X;\F_2)$:
+
+\bigskip
+\begin{tabular}{|c|l|c|}
+\hline $n$ &$H^n(X;\F_2)$ &$\dim_{\F_2}$\\
+\hline&&\\
+0 &$\F_2$ &1\\
+1 &$0$ &0\\
+2 &$\F_2\{u_2\}$ &1\\
+3 &$\F_2\{Sq^1u_2\}$ &1\\
+4 &$\F_2\{s^{-1,0}Sq^1u_4\}$ &1\\
+5 &$\F_2\{Sq^{2,1}u_2,u_2Sq^1u_2\}$ &2\\
+6 &$\F_2\{s^{-1,0}Sq^3u_4,s^{-1,0}Sq^{2,1}u_4,s^{-1}Sq^1u_4\cdot u_2\}$ &3\\
+\hline
+\end{tabular}
+
+\bigskip
+We can also apply Theorem \ref{t:EMSS and cohomology suspension} to obtain the images of elements ``coming from'' $\Lambda_{\F_2}(s^{-1,0}Q\subker f^*)$ via $i^*:H^*(X;\F_2)\to H^*(K(\Z/2,3);\F_2)$:
+
+\begin{align*}
+i^*(s^{-1,0}Sq^1u_4) &=Sq^1u_3,\\
+i^*(s^{-1,0}Sq^{2,1}u_4) &=Sq^{2,1}u_3,\\
+i^*(s^{-1,0}Sq^{3}u_4) &=Sq^{3}u_3=u_3^2.\\
+\end{align*}
+
+\endinput

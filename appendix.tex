@@ -1,0 +1,110 @@
+{
+\appendix
+
+\numberwithin{equation}{chapter}
+
+%\swapnumbers
+\theoremstyle{plain}
+\newtheorem{Athm}{Theorem}[chapter]
+\newtheorem*{Athm*}{Theorem}
+\newtheorem{Alem}[Athm]{Lemma}
+\newtheorem{Aprop}[Athm]{Proposition}
+\newtheorem{Acor}[Athm]{Corollary}
+\newtheorem*{Acor*}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{Adefn}{Definition}[chapter]
+\newtheorem{Anota}{Notation}[chapter]
+\newtheorem{Aconv}{Convention}[chapter]
+\newtheorem{Aconj}{Conjecture}[chapter]
+\newtheorem{Aexmp}{Example}[chapter]
+
+\theoremstyle{remark}
+\newtheorem*{Arem}{Remark}
+\newtheorem*{Anote}{Note}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Adem relations among Steenrod Squares}\label{a:Adem relations}
+
+\begin{align*}
+Sq^iSq^j=\sum_{k=0}^{[i/2]}\binom{j-k-1}{i-2j}Sq^{i+j-k}Sq^k\\
+\text{for all $0<i<2j$.}
+\end{align*}
+
+\bigskip
+\begin{align*}
+Sq^1Sq^1=0, Sq^1Sq^3=0,\dots; &&&Sq^1Sq^{2n+1}=0\\
+Sq^1Sq^2=Sq^3,Sq^1Sq^4=Sq^5,\dots; &&&Sq^1Sq^{2n}=Sq^{2n+1}\\
+Sq^2Sq^2=Sq^3Sq^1, Sq^2Sq^6=Sq^7Sq^1,\dots; &&&Sq^2Sq^{4n-2}=Sq^{4n-1}Sq^1\\
+Sq^2Sq^3=Sq^5+Sq^4Sq^1,\dots; &&&Sq^2Sq^{4n-1}=Sq^{4n+1}+Sq^{4n}Sq^1\\
+Sq^2Sq^4=Sq^6+Sq^5Sq^1,\dots; &&&Sq^{2}Sq^{4n}=Sq^{4n+2}+Sq^{4n+1}Sq^1\\
+Sq^2Sq^5=Sq^6Sq^1,\dots; &&&Sq^2Sq^{4n+1}=Sq^{4n+2}Sq^1\\
+Sq^3Sq^2=0, Sq^3Sq^6=0,\dots; &&&Sq^3Sq^{4n+2}=0\\
+Sq^3Sq^3=Sq^5Sq^1,\dots; &&&\dots\\
+\dots;&&&Sq^{2n-1}Sq^n=0\\
+\vdots
+\end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input appendix1.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Tables for Eilenberg-MacLane spaces homology}\label{a:tables}
+
+The {\bf genus}\index{genus} of a generator $(x,y)$ (see Definition \ref{d:generators}, p. \pageref{d:generators}) is given by
+$$
+\begin{cases}
+1 &\text{if $x$ is of the form $\sigma^n$,}\\
+2 &\text{if $x$ is not of the form $\sigma^n$ and $x$ (or $y$) ends with $\sigma$,}\\
+3 &\text{if $x$ (or $y$) ends with $\psi_2$.}\\
+\end{cases}
+$$
+
+\input table1.tex
+\newpage
+\input table2.tex
+\newpage
+\input table3.tex
+\newpage
+\input table4.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{C++ implementation of the\\ ``Eilenberg-MacLane machine''}\label{a:C++ implementation}
+
+\renewcommand\verbatimtabsize{4\relax}
+
+\section{Header file \texttt{Mod2GradedGroups.hpp}}
+{\small
+\listinginput[1]{1}{"../Eilenberg-MacLane Machine/Mod2GradedGroups.hpp"}
+}
+
+\newpage
+\section{Header file \texttt{Mod2AdmissibleSequence.hpp}}
+{\small
+\listinginput[1]{1}{"../Eilenberg-MacLane Machine/Mod2AdmissibleSequences.hpp"}
+}
+
+\newpage
+\section{Header file \texttt{Mod2Words.hpp}}
+{\small
+\listinginput[1]{1}{"../Eilenberg-MacLane Machine/Mod2Words.hpp"}
+}
+
+\newpage
+\section{Header file \texttt{Mod2ElementaryComplexHomology.hpp}}
+{\small
+\listinginput[1]{1}{"../Eilenberg-MacLane Machine/Mod2ElementaryComplexHomology.hpp"}
+}
+
+\newpage
+\section{Header file \texttt{Mod2EilenbergMacLaneHomology.hpp}}
+{\small
+\listinginput[1]{1}{"../Eilenberg-MacLane Machine/Mod2EilenbergMacLaneHomology.hpp"}
+}
+
+\newpage
+\section{Header file \texttt{LaTeXLayout.hpp}}
+{\small
+\listinginput[1]{1}{"../Eilenberg-MacLane Machine/LaTeXLayout.hpp"}
+}
+
+}
+
+
+\endinput

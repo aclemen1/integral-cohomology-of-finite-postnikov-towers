@@ -1,0 +1,281 @@
+\documentclass[12pt,a4paper,twoside]{amsbook}
+\usepackage[english,french]{babel}
+\usepackage{fancyhdr}
+\usepackage{amssymb,amsfonts,amsxtra}
+\usepackage{ifthen}
+\usepackage[all]{xy}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{moreverb}
+\usepackage{supertabular}
+\usepackage{fancybox}
+%\usepackage[first,light,english]{draftcopy}
+\includeonly{
+abstract,
+acknowl,
+chap1,
+chap2,
+chap3,
+chap4,
+chap5,
+appendix,
+biblio,
+index}
+
+\makeindex
+
+%\parindent=0cm
+%\parskip=0.2truecm
+
+\sloppy
+
+\addtolength{\oddsidemargin}{0.5cm}
+\addtolength{\evensidemargin}{-0.5cm}
+
+\numberwithin{section}{chapter}
+\numberwithin{equation}{section}
+
+%\renewcommand\proofname{{\itshape Proof}}
+
+\swapnumbers
+\newtheoremstyle{plain}	%NAME
+	{0.6truecm}		%ABOVESPACE
+	{}			%BELOWSPACE
+	{\itshape}		%BODYFONT
+	{\parindent}		%INDENT
+	{\bfseries}		%HEADFONT
+	{.}			%HEADPUNCT
+	{\labelsep}		%HEADSPACE (\newline = linebreak)
+	{}			%CUSTOM-HEAD-SPEC
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem*{thm*}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem*{cor*}{Corollary}
+
+\newtheoremstyle{definition}%NAME
+	{0.6truecm}		%ABOVESPACE
+	{}			%BELOWSPACE
+	{\normalfont}		%BODYFONT
+	{\parindent}		%INDENT
+	{\bfseries}		%HEADFONT
+	{.}			%HEADPUNCT
+	{\labelsep}		%HEADSPACE
+	{}			%CUSTOM-HEAD-SPEC
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{nota}[thm]{Notation}
+\newtheorem{conv}[thm]{Convention}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{quest}[thm]{Question}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem*{exmp*}{Example}
+\newtheorem{alg}[thm]{Algorithm}
+
+\newtheoremstyle{remark}	%NAME
+	{0.6truecm}		%ABOVESPACE
+	{}			%BELOWSPACE
+	{\normalfont}		%BODYFONT
+	{\parindent}		%INDENT
+	{\bfseries}		%HEADFONT
+	{.}			%HEADPUNCT
+	{\labelsep}		%HEADSPACE
+	{}			%CUSTOM-HEAD-SPEC
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem*{rem*}{Remark}
+\newtheorem*{note*}{Note}
+
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\incl}{incl}
+\DeclareMathOperator{\FGC}{FGC}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\map}{map}
+\DeclareMathOperator{\red}{red}
+\DeclareMathOperator{\rk}{rank}
+\DeclareMathOperator{\subker}{sub-ker}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\odd}{^{odd}}
+\DeclareMathOperator{\even}{^{even}}
+\DeclareMathOperator{\teven}{even}
+\DeclareMathOperator{\deven}{_{even}}
+\DeclareMathOperator{\Tor}{Tor}
+\DeclareMathOperator{\bideg}{bideg}
+\DeclareMathOperator{\degst}{deg_{st}}
+\DeclareMathOperator{\card}{Card}
+\DeclareMathOperator{\dual}{dual}
+\DeclareMathOperator{\coker}{coker}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+
+\begin{document}
+\selectlanguage{french}
+\frontmatter
+
+\clearemptydoublepage
+
+\begin{titlepage}
+{\parindent=0cm\includegraphics[scale = 0.75]{./LogoUNIL.pdf}\hfill\includegraphics[scale = 0.3]{./logoSciences.pdf}}
+\vskip0.5truecm
+\hrule
+\begin{center}
+\vskip0.2truecm
+{\sc I\ \ n\ \ s\ \ t\ \ i\ \ t\ \ u\ \ t\ \ \ \ d\ \ e\ \ \ \ M\ \ a\ \ t\ \ h\ \ \'e\ \ m\ \ a\ \ t\ \ i\ \ q\ \ u\ \ e\ \ s}
+\vskip2truecm
+\selectlanguage{english}
+{\Large\bf Integral Cohomology of\vskip0.3truecm Finite Postnikov Towers}\\
+\selectlanguage{french}
+\vskip2truecm
+{\Large\bf Th\`ese de doctorat}\\
+\vskip0.5truecm
+pr\'esent\'ee \`a la\\ 
+\ \\
+Facult\'e des Sciences de\\
+l'Universit\'e de Lausanne\\
+\ \\
+par\\
+\vskip0.5truecm
+{\bf Alain Cl\'ement}\\
+\vskip0.5truecm
+Dipl\^om\'e en Math\'ematiques\\
+Universit\'e de Lausanne\\
+\vskip2truecm
+{\bf Jury}
+\vskip0.5truecm
+M. le Prof. Bernard Testa, pr\'esident\\
+M. le Prof. Dominique Arlettaz, directeur de th\`ese\\
+M. le Prof. Carles Casacuberta, expert\\
+M. le Prof. J\'er\^ome Scherer, expert\\
+\vskip1truecm
+LAUSANNE\\
+2002
+\end{center}
+\end{titlepage}
+%\thanks{The author was supported in part by FNRS Grant \#000000.}
+%\date{\today}
+%\maketitle
+\selectlanguage{english}
+
+\pagestyle{empty}
+
+%\clearemptydoublepage
+%\newpage
+%imprimatur
+%{\vspace*{-3cm}\hspace*{-5cm}\includegraphics[scale = 0.055]{./Imprimatur.pdf}\vspace*{-5cm}}
+%light
+\ 
+\newpage
+%\vskip1.5truecm
+\vskip0.5truecm
+\begin{flushright}
+\emph{
+%To My Mom And\\
+%To My Grandfather
+\ \\
+\ }
+\end{flushright}
+\vskip3truecm
+{\small
+\begin{quotation}
+\ 
+
+\selectlanguage{french}
+La derni\`ere d\'emarche de la raison est de reconna\^itre\\ 
+qu'il y a une infinit\'e de choses qui la surpassent.
+\vskip0.8truecm
+\raggedleft Pens\'ees, 267 -- \emph{Blaise Pascal}\\
+(1623-1662)
+
+%[\dots] If you can make one heap of all your winnings\\
+%And risk it on one turn of pitch-and-toss,\\
+%And lose, and start again at your beginnings\\
+%And never breathe a word about your loss;\\
+
+%If you can force your heart and nerve and sinew\\
+%To serve your turn long after they are gone,\\
+%And so hold on when there is nothing in you\\
+%Except the Will which says to them: "Hold on"; [\dots]\\
+
+%\vskip0.5truecm
+%$$\widetilde{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }$$
+%\vskip0.5truecm
+%\selectlanguage{french}
+%[\dots] Si tu peux rencontrer Triomphe apr\`es D\'efaite\\
+%Et recevoir ces deux menteurs d'un m\^eme front,\\
+%Si tu peux conserver ton courage et ta t\^ete\\
+%Quand tous les autres les perdront,\\
+
+%Alors les Rois, les Dieux, la Chance et la Victoire\\
+%Seront \`a tout jamais tes esclaves soumis\\
+%Et, ce qui vaut bien mieux que les Rois et la Gloire,\\
+%Tu seras un Homme, mon fils.\\
+\selectlanguage{english}
+
+%\vskip0.8truecm
+%\raggedleft If $\sim$ Si -- \emph{Sir Rudyard Kipling}
+\end{quotation}}
+
+%\clearemptydoublepage
+\newpage
+\ 
+\newpage
+
+\pagestyle{fancyplain}
+\renewcommand{\chaptermark}[1]%
+        {\markboth{\sc #1} {}}
+\renewcommand{\sectionmark}[1]%
+        {\markright{#1}}
+\lhead[\fancyplain{}{\thepage}]%
+        {\fancyplain{}{\leftmark}}
+\rhead[\fancyplain{}{\leftmark}]%
+        {\fancyplain{}{\thepage}}
+\cfoot[]{}
+%\footrulewidth=0,4pt
+
+\setcounter{page}{1}
+\tableofcontents
+
+\include{abstract}
+\include{acknowl}
+
+\mainmatter
+
+\renewcommand{\chaptermark}[1]%
+        {\markboth{#1} {}}
+\renewcommand{\sectionmark}[1]%
+        {\markright{\thesection\ #1}}
+\lhead[\fancyplain{}{\thepage}]%
+        {\fancyplain{}{\rightmark}}
+\rhead[\fancyplain{}{\rightmark}]%
+        {\fancyplain{}{\thepage}}
+\cfoot[]{}
+%\footrulewidth=0,4pt
+
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\include{chap4}
+\addtocontents{toc}{\protect\newpage}
+\include{chap5}
+
+\backmatter
+\include{appendix}
+%\include{notation}
+\include{biblio}
+\include{index} % ajouter \tiny dans le fichier main.ind
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

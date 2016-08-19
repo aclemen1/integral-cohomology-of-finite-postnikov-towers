@@ -1,0 +1,41 @@
+\section{Guesses, questions and further developments}\label{section:conjectures}
+
+Our results enable us to formulate the following conjecture:
+
+\begin{conj}\label{conj:main}
+\label{conj_main}
+\input conj_main
+\end{conj}
+\theoremstyle{plain}
+\newtheorem*{conj_main}{\mbox{\ref{conj_main}.~Conjecture}}
+
+In order to attack this conjecture, let us first look at the following problem.
+
+\begin{quest}\label{quest:map}
+Let $X$ be a $2$-local H-space (of finite type) and $G$ a finitely generated $2$-torsion abelian group. If $X$ has a homology exponent, is the space $\map_*(K(G,2),X)$ weakly contractible?
+\end{quest}
+
+To see that an affirmative answer to Question \ref{quest:map} implies Conjecture \ref{conj:main}, suppose that $X$ is a $2$-local H-space with finitely many non-trivial k-invariants. Then $X\simeq X[m]\times\text{GEM}$ for some integer $m$. However, the fact that $X$ has no homology exponent implies that $X$ should be a Postnikov piece $X\simeq X[m]$. Consider then the Postnikov tower of the space $X[m]$:
+$$\xymatrix{
+K(\pi_mX,m)\ar[r]^-i &X[m]\ar[d]\\
+&X[m-1]\ar[d]\ar[r]^-{k^{m+1}} &K(\pi_mX,m+1)\\
+&\vdots\ar[d]\\
+%&X[2]\ar[d]\\
+&K(\pi_1X,1).
+}$$ The map $i:K(\pi_m X,m)\to X[m]$ induces an isomorphism on the $m$-th homotopy groups. Therefore $\Omega^{m-2}i:K(\pi_m X,2)\to\Omega^{m-2}X[m]$ also induces an isomorphism on the 2nd homotopy groups and thus the adjoint map $\Sigma^{m-2}K(\pi_m X,2)\to X[m]$ is not nullhomotopic. This contradicts the fact that $\map_*(K(\pi_mX,2),X[m])$ is weakly contractible.
+
+\bigskip
+W. Browder proved in \cite[Theorem 6.11, p. 46]{Br61} that every H-space of finite type which has the homotopy type of a finite CW-complex and which is $1$-connected is actually $2$-connected. Its result relies on the notion of $\infty$-implications in the Bockstein spectral sequence of the H-space. One can readilly check that an element which is $\infty$-transverse has $\infty$-implications. Therefore, it is interesting to set the following question. 
+
+\begin{quest}
+Let $X$ be a $1$-connected $2$-local H-space of finite type with a homology exponent. Is $X$ always $2$-connected? If it is not the case for all such H-spaces, is it true for infinite loop spaces?
+\end{quest}
+
+\bigskip
+And finally, we conclude with the following reasonnable guess.
+
+\begin{conj}
+We can generalize to odd primes and relax the $2$-local hypotheses in all results, conjectures and questions above.
+\end{conj}
+
+\endinput

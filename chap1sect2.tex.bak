@@ -1,0 +1,127 @@
+\section{Historical survey}
+
+In order to make precise what is already known and what is our contribution, we begin this preface with a very short historical survey on the homotopy and homology theories of finite CW-complexes. Then we give the most important known results about the (co)homology of Postnikov pieces.
+% from the works by J.-P. Serre \cite{Se53}, H. Cartan \cite{Ca55}, L. Kristensen \cite
+%{Kr62} and E. K. Pedersen \cite{KP72}, J. Milgram \cite{Milg69}, L. Smith 
+%\cite{Sm70} 
+%and J. C Moore \cite{MS68-I} \cite{MS68-II}. Finally, we quote some miscellaneous 
+%results by M. Arkovitz, H. Haslam and J. C. Moore \cite{Mo56},  R. Levi \cite{Le95}, F. 
+%R. Cohen and late F. P. Peterson \cite{CP00} which are relevant and motivating for 
+%our 
+%purposes.
+
+\subsection{Homotopy theory of finite CW-complexes}
+The homotopy theory of finite CW-complexes has been an extensive subject of study since the 1930's. Computing the homotopy groups of such topological spaces is a very difficult problem in general. It suffices to think about spheres to be convinced. 
+
+In 1953, J.-P. Serre provided one of the most celebrated results in homotopy theory. He proved in  \cite{Se53} that every non-contractible simply connected finite CW-complex has infinitely many homotopy groups. Actually, he was able to establish that there are infinitely many homotopy groups containing a subgroup isomorphic to $\Z/2$ or $\Z$. His method involved the knowledge of the mod-$2$ cohomology of the Eilenberg-MacLane spaces and the asymptotic behavior of the related Betti numbers. 
+
+In 1984, C. A. McGibbon and J. A. Neisendorfer proved in \cite{MN84}, without requiring the space to be of finite type, that one can find infinitely many copies of $\Z/p$, $p$ any prime, in the homotopy groups of the space. The proof relies on H. Miller's solution of the D. Sullivan conjecture \cite{Mi84}. 
+
+All these results have then been generalized in several ways by a number of authors, all utilizing the theory of unstable modules over the Steenrod algebra as developed by J. Lannes and L. Schwartz \cite{LS86} \cite{LS89}. See for instance the works of N. Oda and Z.-Y. Yosimura \cite{OY86}, Y. F\'elix, S. Halperin, J.-M. Lemaire and J.-C. Thomas \cite{FHLT89}, W. G. Dwyer and C. W. Wilkerson \cite{DW90}, S. Wenhuai \cite{We94}, and J. Grodal \cite{Gr97}. 
+
+Recently, C. Casacuberta considered finite CW-complexes with finitely many non-trivial homotopy groups, without any {\it a priori} restriction on the fundamental group. Natural examples are wedges of circles, rationalizations of spheres and finite products of any of these. He proved that the homotopy groups of the universal cover of such spaces are $\Q$-vector spaces. An open question is to know if there exists such a space which is not a $K(G,1)$ for some group $G$. Along these lines, C. Casacuberta proved that the fundamental group is necessarily torsion-free and cannot contain any abelian subgroup of infinite rank.
+
+C. Broto, J. A. Crespo \cite{BC99}, and L. Saumell \cite{BCS01} considered non-simply connected H-spaces with more general finiteness conditions rather than ``simply'' requiring the space to be finite dimensional. For instance, they proved that H-spaces with noetherian mod-$p$ cohomology are extensions of finite mod-$p$ H-spaces or Eilenberg-MacLane spaces.
+
+\subsection{Homology theory of finite CW-complexes}
+The homology theory of finite CW-complexes has also been extensively studied since the 1930's. Actually, the focus at the very beginning was on the homology theory of Lie groups. 
+
+As mathematicians went along, it soon became apparent that some of the obtained results did not really depend on the entire Lie group structure but rather only on the much more general concept of finite H-spaces. 
+%The definition of an H-space is actually due to J.-P. Serre \cite{Se51} because of his 
+%interest in the path fibration of a space which lead him to consider loop spaces. 
+
+The first motivating result in the cohomology theory of finite H-spaces was discovered by H. Hopf \cite{Ho40}. Given a Lie group or an H-space $X$, the H-space structure induces a Hopf algebra structure on $H^*(X;\Q)$. The very strong restriction on $X$ to be finite dimensional forces this Hopf algebra to be a rational exterior algebra on finitely many generators of odd degrees. 
+
+Throughout the 1950's and early 1960's, a number of interesting general properties were obtained. See for instance the works by A. Borel \cite{Bo53} \cite{Bo54} \cite{Bo55}, R. Bott \cite{Bot54} \cite{Bot56} \cite{Bot58} and R. Bott and H. Samelson \cite{BS53}. Notably, we have Borel's mod-$p$ version of the preceeding Hopf result. It may be interesting to mention that throughout this period, the only known examples of connected finite H-spaces were products of Lie groups, the sphere $S^7$ and the real projective space $\R P^7$.
+
+From a chronological point of view, finite H-space theory has occured in two waves. The first one consists in the work in the 1960's of J. F. Adams, W. Browder, A. Clark, J. R. Hubbuck, J. Milnor, J. C. Moore, J. D. Stasheff and E. Thomas among others. The second wave consists of the work in the 1970's and 1980's of J. F. Adams, J. R. Harper, R. Kane, J. P. Lin, C. W. Wilkerson and A. Zabrodsky among others. Let us look at some results which are interesting for our own purposes.
+
+In J. F. Adams' celebrated Hopf Invariant One paper \cite{Ad60} he proved that $S^1$, $S^3$ and $S^7$ are the only spheres carrying an H-space structure. The problem of determining the connectivity of a finite H-space has a long history. W. Browder \cite{Br61} developped the notion of {\it $\infty$-implications} in the Bockstein spectral sequence of an H-space. He then proved, under the assumption that $X$ is a finite H-space, that $Sq^1P\even H^*(X;\F_2)=0$, where $PH^*(X;\F_2)$ denotes the module of primitive elements. The action of the Steenrod algebra on the cohomology of a finite H-space is therefore severely restricted. A consequence is that any simply connected finite H-space is actually $2$-connected. E. Thomas \cite{To62} proved that finite H-spaces with primitively generated mod $2$ cohomology have the first non-trivial homotopy group in degree $1$, $3$, $7$ or $15$. J. P. Lin \cite{Li87} generalized all the above work proving that the first non-trivial homotopy group of a finite H-space occurs in  degree $1$, $3$, $7$ or $15$. A. Clark \cite{Cl63} proved that finite loop spaces have the first non-trivial homotopy group in degree $1$ or $3$.
+
+\subsection{Known results on Postnikov pieces}
+
+\subsection*{Calculation of $H^*(K(\Z/2^r,n);\F_2)$ -- work of J.-P. Serre}
+
+J.-P. Serre \cite{Se53} computed the free graded commutative algebra structure of the mod-$2$ cohomology of Eilenberg-MacLane spaces. He showed that this is a graded polynomial algebra on generators given by iterated Steenrod squares. For instance, he proved the following result:
+
+\begin{thm*}
+Let $n\geq1$. The graded $\F_2$-algebra $H^*(K(\Z/2,n);\F_2)$ is isomorphic to the graded polynomial $\F_2$-algebra on generators $Sq^I u_n$, where $I$ covers all the admissible sequences of excess $e(I)<n$ and where $u_n\in H^n(K(\Z/2,n);\F_2)$ is the fundamental class.
+\end{thm*}
+
+His proof was done by means of the Serre spectral sequence and a theorem of A. Borel \cite{Bo53} on transgressive elements.
+
+He also studied the behavior of the Poincar\'e series $P(H^*(K(\Z/2,n);\F_2),t)$ around $t=1$ and then proved his celebrated result on the homotopy groups of a finite CW-complex.
+
+%\bigskip
+\subsection*{Calculation of $H^*(K(G,n);\Z)$ -- s\'eminaire H. Cartan 1954-1955}
+The goal of the seminar \cite{Ca55} was to compute the homology and cohomology of Eilenberg-MacLane spaces explicitely. The method consists in constructing a tensor product of {\it elementary complexes}. An elementary complex is itself a tensor product of a polynomial and an exterior algebra generated by a pair of {\it admissible words}. At the end, the (co)homology of this construction is isomorphic to the (co)homology of the associated Eilenberg-MacLane space.
+
+Let us remark that, in the mod-$2$ case, the cohomology is given by a tensor product of a polynomial and an exterior algebra, and the exterior part is not trivial. Therefore, as an algebra, this description is not isomorphic to the one given by J.-P. Serre. Nevertheless, we will prove that the two descriptions agree when we restrict our attention only to the graded vector space structures.
+
+Using H. Cartan's method, it is easy to establish that the reduced integral homology of an Eilenberg-MacLane space $K(G,n)$, with $G$ any finitely generated non-trivial abelian group and $n\geq2$, is a graded group which does not admit an exponent. In other words we have:
+
+\begin{thm*}
+Let $G$ be a finitely generated non-trivial abelian group and $n\geq2$. The Eilenberg-MacLane space $K(G,n)$ has no homology exponent.
+\end{thm*}
+It is interesting that even if $G$ admits an exponent, $\widetilde{H}_*(K(G,n);\Z)$ does not. See for instance the tables of computations for $H_*(K(Z/2^r,n);\Z)$ in the Appendix \ref{a:tables}. 
+
+\newpage
+The K\"unneth formula immediately implies the following consequence:
+\begin{cor*}
+A  simply connected GEM has no homology exponent.
+\end{cor*}
+
+%\bigskip
+\subsection*{Mod-$2$ cohomology of $2$-stage Postnikov systems}
+
+L. Kristensen \cite{Kr62} \cite{Kr63} computed the mod-$2$ cohomology, as a graded vector space, of certain $2$-local loop spaces with two non-trivial homotopy groups. His computations were carried out by means of J.-P. Serre's spectral sequence arguments. 
+
+His method can be described as follows. The spectral sequence argument of J.-P. Serre giving the cohomology of $K(\Z/2,2)$ relies heavily on the fact that the transgression commutes with the Steenrod squares. L. Kristensen needed to have some information about the image of the differentials on the $Sq^i x$ when $x$ lies in the fibre, even if $x$ is not transgressive (provided the differentials on $x$ were known). He succeeded in his computations by equipping the whole spectral sequence with Steenrod operations. This idea to have ${\mathcal A}_2$ acting on a spectral sequence was exploited by various authors like D. L. Rector \cite{Re70}, W. M. Singer \cite{Si73-I} \cite{Si73-II} and W. G. Dwyer \cite{Dw80}.
+
+L. Smith \cite{Sm67} studied the Eilenberg-Moore spectral sequence of stable $2$-stage Postnikov systems. He then recovered and generalized all the results of L. Kristensen in a very elegant way.
+
+The next step in the study of the mod-$2$ cohomology of such spaces with two non-trivial homotopy groups was to fetch more structure than simply the graded vector space one. A lot of authors have studied this problem. 
+
+R. J. Milgram \cite{Milg69} gave the unstable ${\mathcal A}_2$-module structures of the fibres of the Steenrod squares $Sq^n:K(\Z/2,n+k)\to K(\Z/2,2n+k)$, where $n\geq1$ and $k\geq0$. 
+
+J. R. Harper \cite{Ha70} gave the graded Hopf algebra structure of these spaces and recovered some of the mod-$2$ Steenrod algebra action. 
+
+L. Kristensen and E. K. Pedersen \cite{KP72} gave a very efficient method for determining all these additional structures. Their idea was to express the ${\mathcal A}_2$-module structure in terms of Massey products in ${\mathcal A}_2$. Thus they were able to describe completely the unstable ${\mathcal A}_2$-module structure and they also proved that the results of R. J. Milgram were incorrect.
+
+\subsection{Some Other Related and Motivating Results}
+
+\subsection*{On associative and commutative H-spaces}
+J. C. Moore \cite{Mo56} proved the following general result:
+\begin{thm*}
+Let $X$ be an associative and commutative connected H-space. Then all the k-invariants of $X$ are trivial and thus $X$ is a GEM.
+\end{thm*}
+
+As a corollary, the K\"unneth formula yields the following result:
+\begin{cor*}
+If $X$ is an associative and commutative simply connected H-space of finite type, then $X$ has no homology exponent.
+\end{cor*}
+
+\subsection*{R. Levi's PhD thesis}
+In his PhD thesis which was published in \cite{Le95}, R. Levi studied the homotopy type of $p$-completed classifying spaces of the form $BG^\wedge_p$ for $G$ a finite $p$-perfect group, $p$ a prime. He constructed an algebraic analogue of Quillen's ``plus'' construction for differential graded coalgebras. He then proved that the loop spaces $\Omega BG^\wedge_p$ admit integral homology exponents. More precisely, he proved the following result:
+\begin{thm*}
+Let $G$ be a finite $p$-perfect group of order $p^r\cdot m$, $m$ prime to $p$. Then
+$$
+p^r\cdot\widetilde{H}_*(\Omega BG^\wedge_p;\Z_{(p)})=0.
+$$
+\end{thm*}
+He also showed that his bound is best possible for groups $G$ containing a Sylow $2$-subgroup isomorphic to a dihedral or a semidihedral group. He then proved that in general $BG^\wedge_p$ admits infinitely many non-trivial k-invariants, and thus in particular $\pi_*BG^\wedge_p$ is non-trivial in arbitrarily high dimensions. His method for proving this last result is based on a version of H. Miller's theorem improved by J. Lannes and L. Schwartz \cite{LS86}.
+
+It may be interesting to ask if this last result remains true for a more general class of spaces, namely those for which a homology exponent exists. In other words, when is it possible for a Postnikov piece to admit a homology exponent? Our work shows that it is ``rarely'' the case, in a sense that will be made precise later.
+
+\subsection*{``A short walk in the Alps'' with F. R. Cohen and F. P. Peterson}
+
+Let $\Omega f:\Omega X\to K(\Z/2,n)$ be a loop map. If $\Omega f$ has a section, the space $\Omega X$ splits as a product $K(\Z/2,n)\times \Omega F$ where $F$ denotes the homotopy theoretic fibre of $f$. The order of the torsion in the homology of $\Omega F$ is then bounded by the order of the torsion in the homology of $\Omega X$. In the more general case where sections fail to exist, it sometimes happens that the behavior of the torsion is more complicated.
+
+In their article \cite{CP00}, F. R. Cohen and F. P. Peterson gave examples of loop maps $\Omega f:\Omega X\to K(\Z/2,n)$, $n\geq2$, with the property that $(\Omega f)^*:H^*(K(\Z/2,n);\F_2)\to H^*(\Omega X;\F_2)$ is a monomorphism and such that $\Omega f$ does not admit a section. In particular, using the classical result on the structure of Hopf algebras that a connected Hopf algebra is free over a sub-Hopf algebra, they proved that $H^*(\Omega X;\F_2)$ is a free module over $H^*(K(\Z/2,n);\F_2)$. 
+
+The examples are mainly provided by $\Omega\Sigma(\R P^\infty)^n\to K(\Z/2,n)$, the canonical multiplicative extension of Serre's map $e:(\R P^\infty)^n\to K(\Z/2,n)$, and by $\Omega\Sigma BSO(3)\to K(\Z/2,2)$, the canonical multiplicative extension of the second Stiefel-Whitney class in the mod-$2$ cohomology of $BSO(3)$ in the case $n=2$.
+
+Let us remark that $\Sigma(\R P^\infty)^n$ and $\Sigma BSO(3)$ are not Postnikov pieces. Then it may be interesting to ask if there exist a Postnikov piece $X$ and a map $f:X\to K(\Z/2,n)$, $n\geq2$, with the properties that $X$ is not a GEM and $f^*$ is a monomorphism. We will give a positive answer to that question.
+%prendre $X[3]\to K_2\times K_2 \to K_2$ pour $f$
+
+\endinput

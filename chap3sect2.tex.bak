@@ -1,0 +1,118 @@
+\section{Heuristic results}\label{section:heuristic}
+%\section{Proofs of Propositions \ref{p:cohomology exponent for K(Z/2,2)} 
+%and \ref{p:homology exponent for K(Z/2,2)}}
+
+Let us have a glance at Table \ref{A:integral homology of K(Z/2,2)}, p. \pageref{A:integral homology of K(Z/2,2)}. One remarks that the exponents of the integral cohomology groups of $K(\Z/2,2)$ behave strangely uniformously (the last column gives the $\log_2$ value of the exponent). One readilly checks in the table that the exponent of $\widetilde{H}_n(K(\Z/2,2);\Z)$ is given by the exponent of $\Z/n\otimes\Z_{(2)}$. Actually, this is exactly what Proposition \ref{p:homology exponent for K(Z/2,2)} states.
+
+\begin{prop_heuristic_H}
+\input prop_heuristic_H
+\end{prop_heuristic_H}
+
+\begin{proof} %[Proof of Proposition \ref{p:homology exponent for K(Z/2,2)}]
+It is a simple verification to see that admissible words involved in the Cartan's complex associated to $K(\Z/2,2)$ are given by $\sigma^2u_2$, $\sigma\psi_2u_2$, $\beta_2\gamma_2^k\psi_2$ and $\varphi_2\gamma_2^k\psi_2$ for all $k\geq0$. Thus generators are the pairs $(\sigma^2u_2,\sigma\psi_2u_2)$ and $(\beta_2\varphi_2\gamma_2^k\psi_2,\varphi_2\gamma_2^k\psi_2)$ of bidegrees $(2,3)$ and $(2^{k+2}+1,2^{k+2}+2)$ for all $k\geq0$. Therefore we have
+$$
+X=\underbrace{EC_{-2}(\sigma^2u_2,\sigma\psi_2u_2)}_{X'}\otimes\underbrace{\bigotimes_{k\geq0}EC_2(\beta_2\varphi_2\gamma_2^k\psi_2u_2,\varphi_2\gamma_2^k\psi_2u_2)}_{X'''}.
+$$
+Since $\deg(\beta_2\varphi_2\gamma_2^k\psi_2u_2)=2^{k+2}+1$ is odd for all $k\geq0$, Lemma \ref{l:homology of EC} implies that $2\widetilde{H}_*(X''';\Z_{(2)})=0$. Since $\deg(\sigma^2u_2)=2$ is even, Lemma \ref{l:homology of EC} implies that $\widetilde{H}_n(X';\Z_{(2)})\cong\Z/n\otimes\Z_{(2)}$ for all $n\geq0$. The result follows now by the K\"unneth formula.
+\end{proof}
+
+\begin{rem*}
+Appendix \ref{appendix:elementary results} essentially states that generators are in one-to-one correspondance with admissible sequences. Therefore, to see that $\sigma^2u_2$, $\sigma\psi_2u_2$, $\beta_2\gamma_2^k\psi_2$ and $\varphi_2\gamma_2^k\psi_2$ for all $k\geq0$ constitute all the admissible words involved in the Cartan's complex of $K(\Z/2,2)$, it suffices to see that $(0)$ and $(2^k,2^{k-1},\dots,1)$ are the only admissible sequences of excess $<2$.
+\end{rem*}
+
+A straightforward application of the Universal Coefficient Theorem in cohomology gives Proposition \ref{p:cohomology exponent for K(Z/2,2)}. \index{Bockstein spectral sequence of $K(\Z/2,2)$}
+
+\newpage
+\begin{prop_heuristic_coH}
+\input prop_heuristic_coH
+\end{prop_heuristic_coH}
+
+We conclude this chapter with some words on the cohomology Bockstein spectral sequence of $K(\Z/2,2)$.
+
+\medskip
+Using Proposition \ref{p:cohomology exponent for K(Z/2,2)}, it is very easy to check that $\exp\widetilde{H}^n(K(\Z/2,2);\Z)=2$ if and only if $n\in\{2m+6,4m+3\ |\ m\geq0\}$ and that $\exp\widetilde{H}^n(K(\Z/2,2);\Z)=2^r$, $r\geq2$, if and only if $n\in\{2^r(2m+1)+1\ |\ m\geq0\}$. Let us set
+\begin{align*}
+&N_1=\{2m+6,4m+3\ |\ m\geq0\},\\
+&N_r=\{2^r(2m+1)+1\ |\ m\geq0\} &&\text{for all $r\geq2$.}
+\end{align*}
+
+For all $r\geq1$, the set $N_r$ tells us in which dimensions elements are hit by the differential $d_r$ in the Bockstein spectral sequence of $K(\Z/2,2)$. The first integers in these sets are
+\begin{align*}
+&N_1=\{3,6,7,8,\dots\},\\
+&N_2=\{5,13,\dots\},\\
+&N_3=\{9,\dots\},\\
+&\vdots
+\end{align*}
+which corresponds to the following pairings
+\begin{align*}
+&u_2\mapsto d_1u_2=Sq^1u_2, \\
+&Sq^{2,1}u_2\mapsto d_1Sq^{2,1}u_2=(Sq^1u_2)^2,\\
+&u_2^3\mapsto d_1(u_2^3)=u_2^2Sq^1u_2,\\ 
+&u_2Sq^{2,1}u_2\mapsto d_1(u_2Sq^{2,1}u_2)=Sq^1u_2(Sq^{2,1}u_2+u_2Sq^1u_2),\\
+&\vdots\\
+&u_2^2\mapsto d_2u_2^2=u_2Sq^1u_2+Sq^{2,1}u_2,\\
+&u_2^6\mapsto d_2u_2^6=u_2^4(u_2Sq^1u_2+Sq^{2,1}u_2),\\
+&\vdots\\
+&u_2^4\mapsto d_3u_2^4=u_2^2(u_2Sq^1u_2+Sq^{2,1}u_2),\\
+&\vdots
+\end{align*}
+It is not very interesting here to know how these computations are done (the interested reader can have a glance at \cite[Theorem 5.4]{Br61}), but one can readilly deduce from them that $(d_2u_2^2)^2=0\in E_2^*$: suppose it is not the case, then $d_2(u_2^2d_2u_2^2)=(d_2u_2^2)^2\not=0$ and  $d_3u_2^4=u_2^2(u_2Sq^1u_2+Sq^{2,1}u_2)=u_2^2d_2u_2^2=0\in E_3^*$, which is false. Therefore $d_2u_2^2$ is an exterior element in $E_2^*$. Actually, one can see that 
+$$
+E_2^*\cong\F_2[u_2^2]\otimes\Lambda_{\F_2}(d_2u_2^2).
+$$
+Finally, we give here, without proof, a complete determination of the Bockstein spectral sequence of $K(\Z/2,2)$:
+\begin{align*}
+E_1^* &\cong\F_2[Sq^I u_2\ |\ e(I)<2 ],\\
+E_2^* &\cong\F_2[u_2^2]\otimes\Lambda_{\F_2}(d_2u_2^2),\\
+E_3^* &\cong\F_2[u_2^4]\otimes\Lambda_{\F_2}(d_3u_2^4),\\
+&\vdots\\
+E_r^* &\cong\F_2[u_2^{2^{r-1}}]\otimes\Lambda_{\F_2}(d_r u_2^{2^{r-1}}).
+\end{align*}
+
+\endinput
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{lem}\label{l:N_r}
+For all $r\geq2$ we have
+\begin{align*}
+&2^{r+1},2^{r+1}+1\not\in\bigcup_{2\leq s\leq r}N_s.
+\end{align*}
+\end{lem}
+
+\begin{proof}
+\end{proof}
+
+It is not very difficult to prove the following result using Adem relations between Steenrod squares. 
+
+\begin{lem}\label{l:survives to E_2}
+For all $r\geq1$, $(u_2)^{2^r}$ survives to $E_2^*$.
+\end{lem}
+
+\begin{prop}
+For all $r\geq1$ we have $(u_2)^{2^r}\not=0\in E_{r+1}^*$.
+\end{prop}
+
+\begin{proof}
+If $r=1$ then $(u_2)^2\not=0\in E_2^*$ by Lemma \ref{l:survives to E_2}. Suppose now that $r\geq2$ and that $(u_2)^{2^r}=0\in E_{r+1}^*$. Then there exists $1\leq s\leq r$ such that either 
+\begin{align*}
+&d_s(u_2)^{2^r}\not=0\in E_s^* &&\text{or}\\
+&(u_2)^{2^r}=d_s z &&\text{for some $z\in E_s^*$.}
+\end{align*} 
+Therefore we either have 
+\begin{align*}
+&\deg(d_s(u_2)^{2^r})=2^{r+1}+1\in N_s &&\text{or}\\
+&\deg(d_s z)=\deg((u_2)^{2^r})=2^{r+1}\in N_s.
+\end{align*}
+Lemma \ref{l:N_r} forces $s=1$. In other words, $(u_2)^{2^r}=0\in E_2^*$, which contradicts Lemma \ref{l:survives to E_2}.
+\end{proof}
+
+It is interesting to deduce the Bockstein spectral sequence from this result. We clearly have
+\begin{align*}
+E_1^* &\cong\F_2[Sq^I u_2\ |\ e(I)<2 ],\\
+E_2^* &\cong\F_2[\{u_2^2\},d_2\{u_2^2\}],\\
+E_3^* &\cong\F_2[\{u_2^4\},d_3\{u_2^4\}],\\
+&\vdots\\
+E_r^* &\cong\F_2[\{u_2^{2^{r-1}}\},d_r\{u_2^{2^{r-1}}\}].
+\end{align*}
+Moreover, it is easy to check that $d_2\{u_2^2\}=\{u_2Sq^1u_2+Sq^{2,1}u_2\}$ is the only possibility. Along these lines, one also easily check that $d_r\{u_2^{2^{r-1}}\}=\{\{u_2^{2^{r-2}}\}d_{r-1}\{u_2^{2^{r-2}}\}\}$. These informations completely determine the spectral sequence.
+
+\endinput

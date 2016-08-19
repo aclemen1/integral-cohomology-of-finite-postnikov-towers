@@ -1,0 +1,8 @@
+The space $X$ of Example \ref{e:space without a retract} has the following properties:
+\begin{itemize}
+\item[1.]{$X$ is not a GEM,}
+\item[2.]{$X$ is an infinite loop space,}
+\item[3.]{$X$ retracts nor onto the Eilenberg-MacLane space $K(\Z/2,2)$, neither onto $K(\Z/2,3)$,}
+\item[4.]{However, $X$ has no homological exponent.}
+\end{itemize}
+\endinput

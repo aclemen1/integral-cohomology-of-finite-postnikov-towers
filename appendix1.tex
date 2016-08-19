@@ -1,0 +1,397 @@
+\chapter{A universal table for admissible words}
+
+The purpose of this Appendix is to establish a universal table in which we can read all the admissible words in given stable degree and height range. This is an extension of results obtained in Chapter \ref{chapter:2}. Results are stated without proof.
+
+\section{Elementary theoretical results}\label{appendix:elementary results}
+
+\begin{defn}\index{height}
+The {\bf height} is a map $h:{\mathcal S}\to\N$ defined for all $I=(a_0,\dots,a_k)\in{\mathcal S}$ by
+$$
+h(I)=\begin{cases}
+e(I)+1 &\text{if $a_0$ is even and}\\
+e(I) &\text{if $a_0$ is odd.}
+\end{cases}
+$$
+Let ${\mathcal S}_{q,n}$ be the graded subset given by all admissible sequences $I\in{\mathcal S}$ such that $\degst(I)=q$ and $h(I)\leq n$. Let ${\mathcal S}_{*,n}=\cup_{q\geq0}{\mathcal S}_{q,n}$.
+\end{defn}
+
+\begin{defn}\label{Ad:g}\index{0@$g_I(n)$}
+Let $n\geq0$. For all admissible sequence $I=(a_0,\dots,a_k)\in{\mathcal S}$ with $e(I)\leq n$ we define an admissible word $g_I(n)\in{\mathcal W}$ inductively as follows:
+\begin{align*}
+g_{(0)}(n)&=\sigma^n,\\
+g_{(1)}(n)&=\sigma^{n-1}\psi_2,\\
+g_I(n)&=\begin{cases}
+\beta_2\sigma^{n-e(I)-1}\varphi_2 g_{I^-}(e(I)) &\text{if $a_0\equiv0(2)$ and $e(I)<n$,}\\
+\gamma_2g_{I^-}(n) &\text{if $a_0\equiv0(2)$ and $e(I)=n$,}\\
+\sigma^{n-e(I)}\varphi_2 g_{I^-}(e(I)-1) &\text{if $a_0\equiv1(2)$,}\\
+\end{cases}\\
+&\qquad\text{when $I\not=(0)$ and $(1)$.}
+\end{align*}
+Moreover we set $g_I=g_I(h(I))$.
+\end{defn}
+
+\begin{prop}
+The map $g_{(-)}:{\mathcal S}\to{\mathcal W}$ preserves heights and stable degrees.
+\end{prop}
+
+\begin{prop}\label{Ap:reduction}
+We have $g_I(n)=\sigma^{n-h(I)}g_I$.
+\end{prop}
+
+\begin{prop}\label{Ap:completeness}
+We have ${\mathcal W}-\{\sigma^{n}\psi_{2^s}\ |\ \text{$n\geq0$ and $s\geq2$}\}=\{g_I(n)\ |\ \text{$I\in{\mathcal S}$ and $n\geq0$}\}$.
+\end{prop}
+\newpage
+
+\section{Universal table in range $1\leq h\leq5$, $0\leq \degst\leq10$}\index{universal table}
+
+To obtain all admissible words $\mathcal W$, it suffices to apply Proposition \ref{Ap:completeness} and therefore to consider Proposition \ref{Ap:reduction} and the set $\{g_I\ |\ I\in{\mathcal S}\}$. Let us put this set in a table where we have substituted the only admissible word of height $1$ and stable degree $1$, $\psi_2$, by $\psi_{2^s}$.
+
+\begin{align*}
+\tiny
+\xymatrix@R=0.4cm@C=0.25cm{
+\ar@{-}[rd]^h_{\degst}
+&*+[.]{}\ar@{-}[ddddddddddddd]&1 &2 &3 &4 &5\\
+*+[.]{}\ar@{-}[rrrrrrr] &*+[.]{} &&&&&&\\
+0 &&\sigma\ar@{-}[d]_<{(0)}^>{(1)}\\
+1 &&\psi_{2^s}\\
+2 &&&&\beta_2\varphi_2\sigma^2\ar@{-}[d]_<{(2)}^>{(3)}\\
+3 &&&\beta_2\varphi_2\psi_2\ar@{-}[d]_<{(2,1)}^>{(3,1)} &\varphi_2\sigma^2\\
+4 &&&\varphi_2\psi_2 &&&\beta_2\varphi_2\sigma^4\ar@{-}[d]_<{(4)}^>{(5)}\\
+5 &&&&&\beta_2\varphi_2\sigma^2\psi_2\ar@{-}[d]_<{(4,1)}^>{(5,1)} &\varphi_2\sigma^4\\
+6 &&&&\beta_2\varphi_2\gamma_2\sigma^2\ar@{-}[d]_<{(4,2)}^>{(5,2)} &\varphi_2\sigma^2\psi_2\\
+7 &&&\beta_2\varphi_2\gamma_2\psi_2\ar@{-}[d]_<{(4,2,1)}^>{(5,2,1)} &\varphi_2\gamma_2\sigma^2\\
+8 &&&\varphi_2\gamma_2\psi_2 &&&\beta_2\varphi_2\sigma^2\gamma_2\sigma^2\ar@{-}[d]_<{(6,2)}^>{(7,2)}\\
+9 &&&&&\beta_2\varphi_2\sigma^2\gamma_2\psi_2\ar@<-7ex>@{-}[d]_<{(6,2,1)}^>{(7,2,1)}\qquad \beta_2\varphi_2^2\sigma^2\ar@<8ex>@{-}[d]_<{(6,3)}^>{(7,3)} &\varphi_2\sigma^2\gamma_2\sigma^2\\
+10 &&&&&\varphi_2\sigma^2\gamma_2\psi_2\qquad \varphi_2^2\sigma^2\\
+&
+}
+\end{align*}
+
+Vertical lines show that admissible words are paired off by a Bockstein operation (eventually ``higher'' Bockstein operation in the case $(\sigma,\psi_{2^s})$ when $s\geq2$). Near all admissible words stand the correponding admissible sequences.
+
+It may be interesting to remark that more than one admissible word can occur in given stable degree and height. For instance, both $\beta_2\varphi_2\sigma^2\gamma_2\psi_2$ and $\beta_2\varphi_2^2\sigma^2$ have stable degrees equal to $9$ and heights equal to $4$.
+\newpage
+
+\section{User's guide and examples}
+
+Suppose that you want to determine all admissible words of height $h$ and degree $d$. Then consider in the line $\degst=d-h$ all the admissible words of height $\leq h$. For each of these words, add $\sigma^k$ on the left with $k\geq0$ such that the degree of the new admissible word is exactly $d$.
+
+\begin{exmp*}[Admissible words of height $3$ and degree $6$]
+In the line $\degst=6-3=3$, we must consider the words of height $\leq 3$, namely $\beta_2\varphi_2\psi_2$ and $\varphi_2\sigma^2$, which are of degree $5$ and $6$ respectively. Thus admissible words of height $3$ and degree $6$ are $\sigma\beta_2\varphi_2\psi_2\sim\beta_2\sigma\varphi_2\psi_2$ and $\varphi_2\sigma^2$.
+\end{exmp*}
+
+A glance at the table of admissible words involved in the calculus of $H_*(K(\Z/2,3);\Z)$ at p. \pageref{subsection:Admissible Words Involved in the Calculus of K(Z/2,3)} also shows that these words $\beta_2\sigma\varphi_2\psi_2$ and $\varphi_2\sigma^2$ are the only two words of height $3$ and degree $6$.\bigskip
+
+Suppose now that you want to determine $H_*(K(\Z/2^s,n);\F_2)$ as a graded $\F_2$-vector space. Recall that following Theorem \ref{t:Cartan's description in homology}, we must determine all admissible words of height $\leq n$.
+
+\begin{exmp*}[$H_{\leq10}(K(\Z/2,2);\F_2)$]
+Admissible words of height $2$ and stable degree $\leq8$ (i.e. degree $\leq10$) are $\sigma^2$ ($d=2$), $\sigma\psi_2$ ($d=3$), $\beta_2\varphi_2\psi_2$ ($d=5$), $\varphi_2\psi_2$ ($d=6$), $\beta_2\varphi_2\gamma_2\psi_2$ ($d=9$) and $\varphi_2\gamma_2\psi_2$ ($d=10$). Let us determine $\F_2[\sigma^2,\varphi_2\psi_2,\varphi_2\gamma_2\psi_2]\otimes\Lambda_{\F_2}(\sigma\psi_2,\beta_2\varphi_2\psi_2,\beta_2\varphi_2\gamma_2\psi_2)$ as graded $\F_2$-vector space in degrees $\leq10$ (multiplication in polynomial and exterior algebras is denoted by $\cdot$).\bigskip
+
+\begin{tabular}{|c|l|c|}
+\hline
+Degree &$\F_2$-basis for $H_*(K(\Z/2,2);\F_2)$ &$\dim_{\F_2}$\\
+\hline
+0 &1&1\\
+1 &0&0\\
+2 &$\sigma^2$ &1\\
+3 &$\sigma\psi_2$ &1\\
+4 &$\gamma_2\sigma^2$ &1\\
+5 &$\sigma^2\otimes\sigma\psi_2$, $\beta_2\varphi_2\psi_2$ &2\\
+6 &$\sigma^2\cdot\gamma_2\sigma^2$, $\varphi_2\psi_2$ &2\\
+7 &$\gamma_2\sigma^2\otimes\sigma\psi_2$, $\sigma^2\otimes\beta_2\varphi_2\psi_2$ &2\\
+8 &$\gamma_2^2\sigma^2$, $\sigma\psi_2\cdot\beta_2\varphi_2\psi_2$, $\sigma^2\cdot\varphi_2\psi_2$ &3\\
+9 &$\gamma_2\sigma^2\otimes\beta_2\varphi_2\psi_2$, $\varphi_2\psi_2\otimes\sigma\psi_2$, $\beta_2\varphi_2\gamma_2\psi_2$ &3\\
+10 &$\gamma_2\sigma^2\cdot\varphi_2\psi_2$, $\varphi_2\gamma_2\psi_2$ &2\\
+\hline\end{tabular}
+\end{exmp*}
+
+Of course, this result agrees with table \ref{A:integral homology of K(Z/2,2)}, p. \pageref{A:integral homology of K(Z/2,2)}.
+
+\endinput
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Equivalence of J.-P. Serre and H. Cartan Descriptions}
+
+\begin{Adefn}
+Let $(-)^-:{\mathcal S}\to{\mathcal S}$ be the application given by $I^-=(\overset\vee a_0,a_1,\dots,a_k)$ for all $I=(a_0,\dots,a_k)\in{\mathcal S}$ ($I^-$ is clearly admissible).
+\end{Adefn}
+
+\begin{Alem}
+Let $n\geq1$, $s\geq1$ and $I\in\Sigma^n{\mathcal S}$. Then
+\begin{align}
+\label{f:vee1}&e(I^-)\leq e(I),\\ 
+\label{f:vee2}&I=(\deg(I^-),I^-)&&\text{if $e(I)=n$,}\\
+\label{f:vee3}&\deg(I)=2\deg(I^-)\equiv0\ (2)&&\text{if $e(I)=n$ and}\\
+\label{f:vee4}&Sq^I_s u_n=(Sq^{I^-}_s u_n)^2&&\text{if $e(I)=n$.}
+\end{align}
+\end{Alem}
+
+\begin{proof}
+To prove \eqref{f:vee1} it suffices to see that $e(I^-)=2a_1-\degst(I^-)=2a_1-(\degst(I)-a_0)=(a_0+2a_1)-\degst(I)\leq2a_0-\degst(I)=e(I)$ since $2a_1\leq a_0$ by admissibility of $I$. Suppose now that $e(I)=n$. To prove \eqref{f:vee2} it suffices to see that $\deg(I^-)=\deg(I)-a_0=\degst(I)+n-a_0=2a_0-e(I)+n-a_0=2a_0-n+n-a_0=a_0$. To prove \eqref{f:vee3} it suffices to see that $\deg(I)=\deg(\deg(I^-),I^-)=\deg(I^-)+\degst(I^-)+n=2\deg(I^-)$. Finally, to prove \eqref{f:vee4} it suffices to see that $Sq^I_s u_n=Sq^{\deg(I^-),I^-}_s u_n=Sq^{\deg(I^-)}Sq^{I^-}_s u_n=(Sq^{I^-}_s u_n)$ since $\deg(I^-)=\degst(I^-)+n=\deg(Sq^{I^-}_s u_n)$.
+\end{proof}
+
+\begin{Adefn}
+The {\bf height} is an application $h:{\mathcal S}\to\N$ defined for all $I=(a_0,\dots,a_k)\in{\mathcal S}$ by
+$$
+h(I)=\begin{cases}
+e(I)+1 &\text{if $a_0$ is even and}\\
+e(I) &\text{if $a_0$ is odd.}
+\end{cases}
+$$
+Let ${\mathcal S}_{q,n}$ be the graded subset given by all admissible sequences $I\in{\mathcal S}$ such that $\degst(I)=q$ and $h(I)\leq n$. Let ${\mathcal S}_{*,n}=\cup_{q\geq0}{\mathcal S}_{q,n}$.
+\end{Adefn}
+
+\begin{Alem}\label{l:l:Psi_S and Psi_C}
+Let $n\geq1$ and $s\geq1$. We have the following graded set equality
+$$
+(\Sigma^n{\mathcal S}_{*,n})^-=(\Sigma^n\{I\in{\mathcal S}\ |\ e(I)<n\})^-.
+$$ This induces the following homomorphism of graded $\F_2$-vector spaces
+$$
+\Psi_S:\Lambda_{\F_2}((\Sigma^n{\mathcal S}_{*,n})^-)\to\F_2[Sq^I_s u_n\ |\ \text{$I\in{\mathcal S}$ and $e(I)<n$}].
+$$
+The application
+$$
+\Psi_C:\F_2[Sq^I_s u_n\ |\ \text{$I\in{\mathcal S}$ and $e(I)<n$}]\to\Lambda_{\F_2}((\Sigma^n{\mathcal S}_{*,n})^-)
+$$ defined by
+$$
+\prod_{1\leq i\leq k} Sq^{I_i}_s u_n\mapsto \prod_{1\leq i\leq k}\begin{cases}
+0 &\text{if $\deg(I_i)\equiv0(2)$ and}\\
+I_i &\text{if $\deg(I_i)\equiv1(2)$,}
+\end{cases}
+$$ is a morphism of graded $\F_2$-vector spaces for which $\Psi_S$ is a section, i.e. $\Psi_C\Psi_S=\id_{\Lambda_{\F_2}((\Sigma^n{\mathcal S}_{*,n})^-)}$. In particular, $\Psi_S$ is a monomorphism of graded $\F_2$-vector spaces.
+\end{Alem}
+
+\begin{proof}
+Let $I\in(\Sigma^n{\mathcal S}_{*,n})^-$. Suppose that $e(I)=n$. Formula \eqref{f:vee3} implies that $\deg(I)$ is even, a contradiction. Hence $e(I)<n$ and $I\in(\Sigma^n\{I\in{\mathcal S}\ |\ e(I)<n\})^-$. The other inclusion is obvious. This proves the equality. The map $\Psi_C$ is defined on basis elements and therefore is linear. It is routine to check that $\Psi_S$ is a section.
+\end{proof}
+
+\begin{Adefn}
+For all $n\geq0$, let $(-)^\square:\Sigma^n{\mathcal S}\to\Sigma^n{\mathcal S}$ be the application given by $I^\square=(\degst(I)+\max(n,e(I)),I)$ for all $I=(a_0,\dots,a_k)\in\Sigma^n{\mathcal S}$ ($I^\square$ is admissible since $\degst(I)+\max(n,e(I))-2a_0=\max(n,e(I))-e(I)\geq0$).
+\end{Adefn}
+
+\begin{Alem}
+Let $n\geq1$ and $s\geq1$. Then
+\begin{align}
+\label{f:square1}&\deg(I^\square)\geq2\deg(I),\\
+\label{f:square2}&I^\square=(\deg(I),I) &\text{if $e(I)\leq n$,}\\
+\label{f:square3}&\deg(I^\square)=2\deg(I)\equiv0(2) &\text{if $e(I)\leq n$,}\\
+\label{f:square4}&Sq^{I^\square}_s u_n=(Sq^I_s u_n)^2 &\text{if $e(I)\leq n$ and}\\
+\label{f:square5}&h(I^\square)=\begin{cases}
+n+1 &\text{if $\deg(I)\equiv0(2),$}\\
+n &\text{if $\deg(I)\equiv1(2)$,}
+\end{cases}&\text{if $e(I)\leq n$.}
+\end{align}
+\end{Alem}
+
+\begin{proof}
+To prove \eqref{f:square1} it suffices to see that $\deg(I^\square)=\degst(I^\square)+n=\degst(I)+\max(n,e(I))+\degst(I)+n\geq\degst(I)+n+\degst(I)+n=2(\degst(I)+n)=2\deg(I)$. Suppose now that $e(I)\leq n$. To prove \eqref{f:square2} it suffices to see that $I^\square=(\degst(I)+\max(n,e(I)),I)=(\degst(I)+n,I)=(\deg(I),I)$. To prove \eqref{f:square3} it suffices to see that $\deg(I^\square)=\degst(I^\square)+n=\degst(\deg(I),I)+n=\deg(I)+\degst(I)+n=\deg(I)+\deg(I)=2\deg(I)$. To prove \eqref{f:square4} it suffices to see that $Sq^{I^\square}_s u_n=Sq^{(\deg(I),I)}_s u_n=Sq^{\deg(I)}Sq^I_s u_n=(Sq^I_s u_n)$ since $\deg(I)=\degst(I)+n=\deg(Sq^I_s u_n)$. Finally, to prove \eqref{f:square5} it suffices to see that $e(I^\square)=2(\degst(I)+\max(n,e(I)))-\degst(I^\square)=\max(n,e(I))=n$ and $\degst(I)+\max(n,e(I))=\degst(I)+n=\deg(I)$. Therefore we have
+\begin{align*}
+h(I^\square)&=\begin{cases}
+e(I^\square)+1&\text{if $\degst(I)+\max(n,e(I))\equiv0(2)$,}\\
+e(I^\square)&\text{if $\degst(I)+\max(n,e(I))\equiv1(2)$,}
+\end{cases}\\&=\begin{cases}
+n+1&\text{if $\deg(I)\equiv0(2)$,}\\
+n&\text{if $\deg(I)\equiv0(2)$.}
+\end{cases}
+\end{align*}
+\end{proof}
+
+\begin{Anota}
+We will write $(\Sigma^n{\mathcal S}_{*,n})^\square$ the graded set $\{I\in(\Sigma^n{\mathcal S}_{*,n})^+\ |\ e(I)=n\}$.
+\end{Anota}
+
+\begin{Alem}\label{l:deg(I) cong 2 (4)}
+If $I\in(\Sigma^n{\mathcal S}_{*,n})^\square$ then $\deg(I)\equiv2(4)$.
+\end{Alem}
+
+\begin{proof}
+Following \eqref{f:vee2} and \eqref{f:vee3} we have $I=(\deg(I^-),I^-)$ and $\deg(I)=2\deg(I^-)$. If $\deg(I^-)\equiv0(2)$ then $h(I)=e(I)+1=n+1>n$, a contradiction. Thus $\deg(I^-)\equiv1(2)$ and therefore $\deg(I)\equiv2(4)$.
+\end{proof}
+
+\begin{Alem}
+The applications $(-)^-$ and $(-)^\square$ induce the bijection
+$$
+(-)^-:(\Sigma^n{\mathcal S}_{*,n})^\square\longleftrightarrow(\Sigma^n{\mathcal S}_{*,n})^-:(-)^\square
+$$
+\end{Alem}
+
+\begin{proof}
+By \eqref{f:vee2} we have$(I^-)^\square=(\deg(I^-),I^-)=I$ and by \eqref{f:square2} we have $(I^\square)^-=(\deg(I),I)^-=I$.
+\end{proof}
+
+\begin{Alem}\label{l:Phi_S and Phi_C}
+Let $n\geq1$ and $s\geq1$. Let 
+$$
+\Phi_S:\F_2[(\Sigma^n{\mathcal S}_{*,n})^+]\to\F_2[Sq^I_s u_n\ |\ \text{$I\in{\mathcal S}$ and $e(I)<n$}]
+$$ be the morphism of graded $\F_2$-algebras defined by
+$$
+I\mapsto Sq^I_s u_n.
+$$ The application
+$$
+\Phi_C:\F_2[Sq^I_s u_n\ |\ \text{$I\in{\mathcal S}$ and $e(I)<n$}]\to\F_2[(\Sigma^n{\mathcal S}_{*,n})^+]
+$$ defined by
+$$
+\prod_{1\leq i\leq k}(Sq^{I_i}_s u_n)^{r_i}\mapsto\prod_{1\leq i\leq k}\begin{cases}
+I_i^{r_i} &\text{if $\deg(I_i)\equiv0(2)$,}\\
+(I_i^\square)^{r_i\over 2} &\text{if $\deg(I_i)\equiv1(2)$ and $r_i\equiv0(2)$,}\\
+0 &\text{if $\deg(I_i)\equiv1(2)$ and $r_i\equiv1(2)$.}
+\end{cases}
+$$ when all the $I_i$ are distincts (i.e. $\#\{I_i\ |\ 1\leq i\leq k\}=k$), is a morphism of graded $\F_2$-vector spaces for which $\Phi_S$ is a section, i.e. $\Phi_C\Phi_S=\id_{\F_2[(\Sigma^n{\mathcal S}_{*,n})^+]}$. In particular, $\Phi_S$ is a monomorphism of graded $\F_2$-vector spaces.
+\end{Alem}
+
+\begin{proof}
+The map $\Phi_C$ is defined on basis elements and therefore is linear. Let us check that $\Phi_S$ is a section. Let $\prod_i I_i^{r_i}\in\F_2[(\Sigma^n{\mathcal S}_{*,n})^+]$ with all the $I_i$ distincts. We have
+\begin{align*}
+\Phi_S(\prod_i I_i^{r_i}) &=\prod_i(Sq^{I_i}_s u_n)^{r_i}\\
+&= \prod_{e(I_i)=n}(Sq^{I_i}_s u_n)^{r_i}\prod_{e(I_i)<n}(Sq^{I_i}_s u_n)^{r_i}\\
+&= \prod_{e(I_i)=n}(Sq^{I_i^-}_s u_n)^{2r_i}\prod_{e(I_i)<n}(Sq^{I_i}_s u_n)^{r_i} &\text{by \eqref{f:vee4}.}
+\end{align*}
+Let us remark that $I_i^-\not=I_j$ for all $i$ and $j$. Suppose the converse. Then there are $i$ and $j$ such that $I_i^-=I_j$. Thus $I_i^-\equiv0(2)$ and therefore $I_i\equiv0(4)$, which contradicts Lemma \ref{l:deg(I) cong 2 (4)}. It suffices then to show that $\Phi_C((Sq^{I_i^-}_s u_n)^{2r_i})=((I_i^-)^\square)^{2r_i\over2}=I_i^{r_i}$.
+\end{proof}
+
+\begin{Alem}
+We have the relations
+$$\Phi_C\Psi_S=0=\Psi_C\Phi_S$$
+with $\Psi_S$, $\Psi_C$ as in Lemma \ref{l:l:Psi_S and Psi_C} and $\Phi_S$, $\Phi_C$ as in Lemma \ref{l:Phi_S and Phi_C}.
+\end{Alem}
+
+\begin{proof}
+The map $\Phi_C$ is zero on elements of odd degree and thus $\Phi_C\Psi_S=0$.
+The map $\Psi_C$ is zero on elements of even degree and thus $\Psi_C\Phi_S=0$.\end{proof}
+
+%%%
+
+\begin{Alem}
+We have the following Poincar\'e serie
+$$
+P(\F_2[Sq^I u_n\ |\ \text{$I\in{\mathcal S}$ and $e(I)<n$}],t)=\prod_{\substack{I\in{\mathcal S}\\ e(I)<n}}\frac{1}{1-t^{\deg(I)}}
+$$
+\end{Alem}
+
+\begin{proof}
+On vérifie faciAlement que pour toute suite admissible $I$ telle que $e(I)<n$ on a
+$$P(\F_2[Sq^I u_n],t)=1+\sum_{r\geq0}t^{2^r\deg(I)}=\frac{1}{1-t^{\deg(I)}}.$$
+On conclut en remarquant que l'isomorphisme d'algèbres
+$$
+\F_2[Sq^I u_n\ |\ \text{$I\in{\mathcal S}$ et $e(I)<n$}]\cong
+\bigotimes_{\substack{I\in{\mathcal S}\\ e(I)<n}} \F_2[Sq^I u_n]
+$$
+implique que
+$$
+P(\F_2[Sq^I u_n\ |\ \text{$I\in{\mathcal S}$ et $e(I)<n$}],t)=
+\prod_{\substack{I\in{\mathcal S}\\ e(I)<n}}P(\F_2[Sq^I u_n],t)
+$$
+\end{proof}
+
+\begin{Alem}
+On a la série de Poincaré
+$$
+P(\Lambda_{\F_2}[(\Sigma^n{\mathcal S}_{*,n})^-],t)=\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^-}1+t^{\deg(I)}
+$$
+\end{Alem}
+
+\begin{Athm}\label{t:equiv_SEp_CAp}
+On a un isomorphisme de $\F_2$-espaces vectoriels gradués
+$$
+SE':\Lambda_{\F_2}((\Sigma^n{\mathcal S}_{*,n})^-)\otimes_{\F_2} \F_2[(\Sigma^n{\mathcal S}_{*,n})^+]\cong
+$$
+$$
+\F_2[Sq^I u_n\ |\ \text{$I\in{\mathcal S}$ et $e(I)<n$}]:CA'
+$$
+L'isomorphisme $SE'$ est donné par
+$$
+SE':{\mathcal I}\otimes{\mathcal J}\mapsto\Psi_S({\mathcal I})\Phi_S({\mathcal J})
+$$ et l'isomorphisme $CA'$ est donné par
+$$
+CA':\prod_{1\leq i\leq k}Sq^{I_j} u_n\mapsto\prod_{1\leq i\leq k}(\Psi_C\otimes1+1\otimes\Phi_C)(Sq^{I_j}u_n)
+$$ avec $\Psi_S$, $\Psi_C$ comme dans le Lemme \ref{l:mono_ev} et $\Phi_S$, $\Phi_C$ comme dans le Lemme \ref{l:mono_alg}.
+\end{Athm}
+
+\begin{proof}
+Remarquons tout d'abord que les deux $\F_2$-espaces vectoriels ci-dessus ont les mêmes séries de Poincaré puisque
+\begin{flalign*}
+&\frac{P(\F_2[Sq^I u_n\ |\ \text{$I\in{\mathcal S}$ et $e(I)<n$}],t)}{P(\F_2[(\Sigma^n{\mathcal S}_{*,n})^+],t)}
+=\frac{\displaystyle\prod_{\substack{I\in{\mathcal S}\\ e(I)<n}}\frac{1}{1-t^{\deg(I)}}}{\displaystyle\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^+}\frac{1}{1-t^{\deg(I)}}}=\\
+&\frac{\displaystyle\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^+}1-t^{\deg(I)}}{\displaystyle\prod_{\substack{I\in{\mathcal S}\\ e(I)<n}}1-t^{\deg(I)}}
+\qquad=\qquad\frac{\displaystyle\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^\square}1-t^{\deg(I)}}{\displaystyle\prod_{\substack{I\in{\mathcal S}\\ e(I)<n\\ \text{$\deg(I)$ impair}}}1-t^{\deg(I)}}
+\end{flalign*}\begin{alignat*}{2}
+=\qquad&\frac{\displaystyle\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^\square}1-t^{\deg(I)}}{\displaystyle\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^-}1-t^{\deg(I)}}&&\qquad\text{par le Lemme \ref{l:mono_ev}}\\
+=\qquad&\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^-}\frac{1-t^{\deg(I^\square)}}{1-t^{\deg(I)}}&&\qquad\text{par le Lemme \ref{l:moins-carre}}\\
+=\qquad&\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^-}\frac{1-t^{2\deg(I)}}{1-t^{\deg(I)}}&&\qquad\text{d'après la definition \ref{d:square}}\\
+=\qquad&\prod_{I\in(\Sigma^n{\mathcal S}_{*,n})^-}1+t^{\deg(I)}\\=\qquad& P(\Lambda_{\F_2}((\Sigma^n{\mathcal S}_{*,n})^-),t).
+\end{alignat*}
+Pour conclure il suffit par exemple de voir que $SE'$ est injective. Le Lemme \ref{l:relations_SE_CA} assure que $SE'$ est une section de $CA'$, d'où le résultat.
+\end{proof}
+
+\begin{Adefn}
+On définit une application $S:{\mathcal W}\to{\mathcal S}$ en procédant comme suit. Pour tout mot admissible on choisit un mot brut $\alpha$ qui le représente et qui ne contient pas la lettre $\beta_2$. On numérote à partir de $0$ et de gauche à droite les lettres de $\alpha$ qui sont $\gamma_2$, $\varphi_2$ ou $\psi_{2^f}$ et on désigne par $k$ le nombre de ces lettres. On note $\alpha_i$ la $i$-ème de ces lettres et $\bar\alpha_i$ le mot brut formé des lettres de $\alpha$ qui suivent la $i$-ème de ces lettres. On pose $a_i=\deg(\bar\alpha_i)+h(\alpha_i)$ pour tout $0\leq i\leq k-1$ et $a_i=0$ pour tout $i\geq k$. On pose $S(\alpha)=(a_i)_{i\geq0}$.
+\end{Adefn}
+
+\begin{Alem}
+L'application $S:{\mathcal W}\to{\mathcal S}$ préserve les degrés stables.
+\end{Alem}
+
+\begin{proof}
+\end{proof}
+
+\begin{Adefn}
+Pour tout entier $k\geq0$ on définit une application $W^k:{\mathcal S}\to{\mathcal W}$ en procédant comme suit. Pour toute suite admissible $I=(a_i)_{i\geq0}$ on considère les lettres $\alpha_i$ définies par
+$$
+\alpha_i=\begin{cases}
+() &\text{si $a_i=0$, }\\
+\gamma_2 &\text{si $a_i\not=0$ est pair et}\\
+\varphi_2 &\text{si $a_i$ est impair.}
+\end{cases}
+$$
+On considère égaAlement la suite $(l_i)_{i\geq0}$ définie par
+$$
+l_i=a_{i}-h(\alpha_{i})-2a_{i+1}
+$$
+On pose $W^k(I)=\sigma^{k-h(\alpha_0)+1}\alpha_0\sigma^{l_0}\alpha_1\sigma^{l_1}\dots$.
+\end{Adefn}
+
+\begin{Alem}
+Les applications $W^k:{\mathcal S}\to{\mathcal W}$ préservent les degrés stables pour tout $k\geq0$.
+\end{Alem}
+
+\begin{proof}
+\end{proof}
+
+\begin{Athm}\label{t:equiv_S_W}
+Les applications $S$ et $W^n$ induisent la bijection d'ensembles gradués
+$$
+S^n:{\mathcal W}_{q,n}\longleftrightarrow\Sigma^n{\mathcal S}_{q,n}:W^n
+$$ pour tout $n\geq1$ et $q\geq0$. En particulier, pour tout $n\geq1$, on a la bijection d'ensembles gradués
+$$
+S^n:{\mathcal W}_{*,n}\longleftrightarrow\Sigma^n{\mathcal S}_{*,n}:W^n
+$$ qui induit l'isomorphisme d'algèbres graduées
+$$
+S^n:\Lambda_{\F_2}({\mathcal W}_{*,n}^-)\otimes_{\F_2} \F_2[{\mathcal W}_{*,n}^+]\cong
+$$
+$$
+\Lambda_{\F_2}((\Sigma^n{\mathcal S}_{*,n})^-)\otimes_{\F_2} \F_2[(\Sigma^n{\mathcal S}_{*,n})^+]:W^n
+$$
+\end{Athm}
+
+\begin{proof}
+
+\end{proof}
+
+\begin{Athm}\label{t:pont_mod_2}
+On a un isomorphisme de $\F_2$-espaces vectoriels gradués
+$$
+SE:\Lambda_{\F_2}({\mathcal W}_{*,n}^-)\otimes_{\F_2} \F_2[{\mathcal W}_{*,n}^+]\cong
+$$
+$$
+\F_2[Sq^I u_n\ |\ \text{$I\in{\mathcal S}$ et $e(I)<n$}]:CA
+$$
+L'isomorphisme $SE$ est donné par
+$$
+SE=SE'\circ S
+$$ et l'isomorphisme $CA$ est donné par
+$$
+CA=W^n\circ CA'
+$$ avec $S^n$, $W^n$ comme dans le théorème \ref{t:equiv_S_W} et $SE'$, $CA'$ comme dans le théorème \ref{t:equiv_SEp_CAp}. Cet isomorphisme munit $\Lambda_{\F_2}({\mathcal W}_{*,n}^-)\otimes_{\F_2} \F_2[{\mathcal W}_{*,n}^+]$ d'une structure de ${\mathcal A}_2$-module induite par la description de J.-P. Serre de $H^*(K(\Z/2,n);\F_2)$.
+\end{Athm}
+
+\endinput

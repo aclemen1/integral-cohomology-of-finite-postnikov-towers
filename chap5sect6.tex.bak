@@ -1,0 +1,101 @@
+\section{Proof of the second main theorem}\label{s:proof of thm on 2-stage Postnikov systems}
+%\section{Proof of Theorem \ref{t:no exponent for some Postnikov pieces}}
+
+\begin{lem}\label{l:sub-Hopf of primitive}
+Let $H$ be a primitive Hopf algebra. If $H'$ is a sub-Hopf algebra, then $H'$ is primitive.
+\end{lem}
+
+\begin{proof}
+For a direct proof, see \cite[Proposition 2.6, p. 69]{Sm70}. For a better result, see \cite[Proposition 6.3, p. 247]{MM65}.
+\end{proof}
+
+\begin{lem}\label{l:indecomposables}
+Let $H$ be a cocommutative primitive Hopf algebra, $H'$ be a polynomial Hopf algebra and $\varphi:H\to H'$ be a Hopf algebra map. Then $Q\subker \varphi=\subker\varphi\cap QH$.
+\end{lem}
+
+\begin{proof}
+If $x\not=0\in\subker\varphi$ is indecomposable, then it is primitive in $H$ since $\subker\varphi$ is a primitively generated sub-Hopf algebra by Lemma \ref{l:sub-Hopf of primitive}. If it is decomposable in $H$, then it is a square by Milnor-Moore theorem, say $x=w^2$, and $\varphi(x)=\varphi(w^2)=\varphi(w)^2=0$. This implies that $w\in\ker\varphi$ since $H'$ is polynomial. Therefore, $x$ is decomposable in $\subker\varphi$, which is a contradiction. Thus $x$ is indecomposable in $H$. The other inclusion is obvious.
+\end{proof}
+
+\begin{lem}\label{l:kernel}
+Let $1\leq m\leq n$, $KG$ be a strictly $m$-anticonnected GEM, $KH$ be a strictly $n$-anticonnected GEM and $f:KG\to K\Sigma H$ a continuous map. Consider the induced map of graded vector spaces $f^*:H^*(K\Sigma H;\F_2)\to H^*(KG;\F_2)$. For all $0<\delta\leq n-m$ we have
+$$
+\subker f^*\cap QH^*_{[\delta]}(K\Sigma H)\not=0.
+$$
+\end{lem}
+
+\begin{proof}
+Suppose that $\ker f^*\cap H^*_{[\delta]}(K\Sigma H)=0$. Then we have
+\begin{align*}
+P_{[\delta]}(K\Sigma H)(t)\leq P_{[0]}(KG)(t)
+\end{align*}
+and thus by Lemma \ref{l:Serre improved}
+\begin{align*}
+&\rk(H_n)\cdot\frac{x^{n+1-\delta}}{(n+1-\delta)!}\sim\varphi_{[\delta]}(K\Sigma H)(x)\\
+&\qquad\leq\varphi_{[0]}(KG)(x)\sim\rk(G_m)\cdot\frac{x^m}{m!}.
+\end{align*} 
+This contradicts the fact that $\delta\leq n-m$. Therefore 
+$$\ker f^*\cap H^*_{[\delta]}(K\Sigma H)\not=0.$$
+Let $x\not=0\in\ker f^*\cap H^*_{[\delta]}(K\Sigma H)$. Then $x=a\cdot k$ with $a\in H^*_{[\delta]}(K\Sigma H)$ and $k\not=0\in\overline{\subker f^*}\cap H^*_{[\delta]}(K\Sigma H)$. Since $\subker f^*$ is polynomial by Borel's results, it is generated (as an algebra) by its indecomposables and therefore $Q\subker f^*\cap H^*_{[\delta]}(K\Sigma H)\not=0$. Thus by Lemma \ref{l:indecomposables} we have $Q\subker f^*\cap H^*_{[\delta]}(K\Sigma H)=\subker f^*\cap QH^*_{[\delta]}(K\Sigma H)\not=0$.
+\end{proof}
+
+\vskip5cm
+Our second main result is:
+
+\begin{thm_second_main}
+\input thm_second_main
+\end{thm_second_main}
+
+\begin{proof} %[Proof of Theorem \ref{t:no exponent for some Postnikov pieces}]
+By hypothesis, $KG$ is strictly $m'$-anticonnected, with $m'\leq m$. By Lemma \ref{l:kernel} we have $\subker f^*\cap QH^*_{[2]}(K\Sigma H)\not=0$ since $n\geq m+2\geq m'+2$. Let $\sum_{1\leq i\leq j}Sq^{I_i}_{s_i}u_i\not=0\in\subker f^*\cap QH^*_{[2]}(K\Sigma H)$ with all the $Sq^{I_i}_{s_i}u_i$'s distinct. We have $e(I_i)<\deg(u_i)-2$ for all $1\leq i\leq j$. Renumber the $I_i$'s such that $I_1$ can be written $I_1=(a_0,\dots,a_k)$ with $a_0$ maximal. Let $d=\deg(\sum_{1\leq i\leq j}Sq^{I_i}_{s_i}u_i)$ and set
+\begin{align*}
+I'&=\begin{cases}
+(2a_0) &\text{if $d\equiv1(2)$,}\\
+(4a_0+2,2a_0+1) &\text{if $d\equiv0(2)$,}
+\end{cases}\\
+I''&=\begin{cases}
+(2a_0+1) &\text{if $d\equiv1(2)$,}\\
+(4a_0+3,2a_0+1) &\text{if $d\equiv0(2)$.}
+\end{cases}
+\end{align*} 
+Let us remark that the sequences $(I',I_i)$ and $(I'',I_i)$ are all distinct admissible sequences since $a_0$ is maximal. Consider now $x=Sq^{I'}\sum_{1\leq i\leq j}Sq^{I_i}_{s_i}u_i=\sum_{1\leq i\leq j}Sq^{I',I_i}_{s_i}u_i$. One readily check that $x\in P\odd H^*(K\Sigma H;\F_2)=Q\odd H^*(K\Sigma H;\F_2)$. We have
+\begin{align*}
+\sigma^*Sq^1x &=\sigma^*Sq^1\sum_{1\leq i\leq j}Sq^{I',I_i}_{s_i}u_i\\
+&=\sigma^*\sum_{1\leq i\leq j}Sq^1Sq^{I',I_i}_{s_i}u_i\\
+&=\sigma^*\sum_{1\leq i\leq j}Sq^{I'',I_i}_{s_i}u_i.
+\end{align*}
+Renumber the $I_i$'s again such that $e(I'',I_i)<\deg(u_i)$ for all $1\leq i\leq j_0$ and $e(I'',I_i)\geq\deg(u_i)$ for all $j_0+1\leq i\leq j$. We clearly have $j_0\geq1$ since $e(I'',I_1)\leq e(I_1)+2<\deg(u_i)$. Then the equality becomes
+\begin{align*}
+\sigma^*Sq^1x&=\sigma^*\sum_{1\leq i\leq j_0}\underbrace{Sq^{I'',I_i}_{s_i}}_{e<\deg(u_i)}u_i+\sigma^*\sum_{j_0+1\leq i\leq j}\underbrace{Sq^{I'',I_i}_{s_i}}_{e\geq\deg(u_i)}u_i\\
+&=\sigma^*\sum_{1\leq i\leq j_0}\underbrace{Sq^{I'',I_i}_{s_i}}_{e<\deg(u_i)}u_i+\sigma^*\sum\text{squares}\\
+&=\sigma^*\sum_{1\leq i\leq j_0}\underbrace{Sq^{I'',I_i}_{s_i}}_{e<\deg(u_i)}u_i
+\end{align*}
+since $\sigma^*$ vanishes on decomposables. Consequently $\sigma^*Sq^1x\not=0$ because all the $Sq^{I'',I_i}_{s_i}u_i$ are distinct indecomposables and $\sigma^*:QH^*(GEM;\F_2)\to PH^*(\Omega GEM;\F_2)$ is in general a monomorphism (see \cite[Expos\'e 15, Proposition 3, p. 8]{Ca55}). Thus we have proved that $Sq^1x\not\in\ker\sigma^*$. We conclude the proof by using results of Section \ref{section:strategy}.
+\end{proof}
+
+\label{s:proof of thm on 2-stage Postnikov systems:discussion}
+Let us make some closing comments on the methods that were used here. 
+
+The hypothesis of Theorem \ref{t:no exponent for some Postnikov pieces} force $KH$ to be at least $(m+2)$-anticonnected when $KG$ is $m$-anticonnected. Suppose it is not the case and, for instance, $KH$ is strictly $(m+1)$-anticonnected as $KG$ is strictly $m$-anticonnected. Let us now reconsider the proof of the theorem. By Lemma \ref{l:kernel} we have $\subker f^*\cap QH^*_{[1]}(K\Sigma H)\not=0$. Thus if $Sq^I_s u\not=0\in\subker f^*\cap QH^*_{[1]}(K\Sigma H)$, then $e(I)<\deg(u)-1$ and $e(I'',I)\leq\deg(u)$. Suppose that $e(I'',I)=\deg(u)$. Then $\sigma^*Sq^{I'',I}_s u=0$ since $Sq^{I'',I}_s u$ is a square. In these conditions, it is not possible to ensure the existence of an element $x\in Q\odd H^*(K\Sigma H;\F_2)$ such that $Sq^1x\not\in\ker\sigma^*$ and the strategy developped in Section \ref{section:strategy} cannot be utilized.
+
+It is possible to show that if $X[m]$ is a strictly $m$-anticonnected $2$-local Postnikov piece of finite type, then there is a generalized Serre function verifying the following asymptotic property:
+$$
+\varphi(X)(x)\stackrel{\leq}{\sim}\rk(\pi_mX)\cdot\frac{x^m}{m!}.
+$$
+Therefore, one might want to replace $KG$ by $X[m]$ in the Theorem and ask if it is still true. An adaptation of Lemma \ref{l:kernel} to this situation gives
+$$
+Q\subker f^*\cap H^*_{[\delta]}(K\Sigma H)\not=0.
+$$ But Lemma \ref{l:indecomposables} is not valid anymore since $H^*(X[m];\F_2)$ is not polynomial in general. Thus we can only conclude that 
+$$\subker f^*\cap PH^*_{[\delta]}(K\Sigma H)\not=0.$$ Suppose that $\subker f^*\cap PH^*_{[\delta]}(K\Sigma H)$ contains only squares. Then the method for proving Theorem \ref{t:no exponent for some Postnikov pieces} is compromised since cohomology suspension vanishes on decomposables.
+
+\endinput
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{lem}
+Let $G$ be a finitely generated $2$-torsion abelian group. For all $n>q\geq1$, we have a monomorphism 
+$$\sigma^*:QH^*_{(q)}(G,n)\to QH^*_{(q)}(G,n-1).$$
+\end{lem}
+
+\begin{proof}
+It is well known that $\sigma^*:QH^*(K(G,n);\F_2)\to PH^*(K(G,n);\F_2)$ is a monomorphism. Therefore the restriction to $QH^*_{(q)}(G,n)$ is also a monomorphism. Moreover, the suspension of an indecomposable in $QH^*_{(q)}(G,n)$ is not a square since its excess is lower than $n-1$ by hypothesis. Thus the Milnor-Moore theorem insures that it is an indecomposable.
+\end{proof}
